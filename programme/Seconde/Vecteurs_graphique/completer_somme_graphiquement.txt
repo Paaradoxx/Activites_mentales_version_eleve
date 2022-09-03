@@ -1,0 +1,29 @@
+a=randint(1,8)
+self.frame_init()
+self.add("\\begin{center} \n \\includegraphics[width=0.4\\textwidth]{GrilleIso2} \\end{center}")
+self.add("\\begin{center} \n \\includegraphics[width=0.4\\textwidth]{GrilleIso2} \\end{center}",False)
+if a==1 : 
+    self.add("$\\overrightarrow{MI}+\\overrightarrow{SV}=\\overrightarrow{K..}$  ",False)
+    self.add("$\\overrightarrow{MI}+\\overrightarrow{SV}=\\overrightarrow{KJ}$  ")
+elif a==2:
+    self.add("$\\overrightarrow{MI}+\\overrightarrow{IH}=\\overrightarrow{W..}$  ",False)
+    self.add("$\\overrightarrow{MI}+\\overrightarrow{IH}=\\overrightarrow{WS}$  ")
+elif a==3:
+    self.add("$\\overrightarrow{ED}+\\overrightarrow{DC}=\\overrightarrow{N..}$  ",False)
+    self.add("$\\overrightarrow{ED}+\\overrightarrow{DC}=\\overrightarrow{NK}$")
+elif a==4:
+    self.add("$\\overrightarrow{CG}+\\overrightarrow{GB}=\\overrightarrow{T..}$  ",False)
+    self.add("$\\overrightarrow{CG}+\\overrightarrow{GB}=\\overrightarrow{TS}$")
+elif a==5:
+    self.add("$\\overrightarrow{IL}+\\overrightarrow{PR}+\\overrightarrow{SV}=\\overrightarrow{E..}$  ",False)
+    self.add("$\\overrightarrow{IL}+\\overrightarrow{PR}+\\overrightarrow{SV}=\\overrightarrow{EK}$")
+elif a==6:
+    self.add("$\\overrightarrow{NL}+\\overrightarrow{JH}=\\overrightarrow{U..}$  ",False)
+    self.add("$\\overrightarrow{NL}+\\overrightarrow{JH}=\\overrightarrow{UQ}$")
+elif a==7:
+    self.add("$\\overrightarrow{ED}+\\overrightarrow{CK}=\\overrightarrow{H..}$  ",False)
+    self.add("$\\overrightarrow{ED}+\\overrightarrow{CK}=\\overrightarrow{HS}$")
+elif a==8:
+    self.add("$\\overrightarrow{HT}+\\overrightarrow{UT}=\\overrightarrow{K..}$  ",False)
+    self.add("$\\overrightarrow{HT}+\\overrightarrow{UT}=\\overrightarrow{KV}$")
+self.frame_end()

@@ -1,0 +1,68 @@
+c=randint(1,3)
+a=randint(1,6)
+self.frame_init()
+if c==1 : 
+    self.add("\n \\begin{center} \n  \\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882} \n \\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.5cm,y=0.5cm] \\draw [color=cqcqcq,, xstep=0.5cm,ystep=0.5cm] (-8.08,-1.69) grid (1.08,5.69); \\clip(-8.08,-1.69) rectangle (1.08,5.69); \n \\begin{scriptsize} \n \\draw [color=black] (-7,4)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-6.84,4.42) node {$A$};\n \\draw [color=black] (-1,4)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt);\n \\draw[color=black] (-0.84,4.42) node {$B$};\n \\draw [color=black] (-1,0)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt);\n \\draw[color=black] (-0.84,0.42) node {$C$};\n \\draw [color=black] (-7,0)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt);\n \\draw[color=black] (-6.84,0.42) node {$D$};\n \\draw [color=black] (-5,2)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt);\n \\draw[color=black] (-4.84,2.42) node {$E$};\n \\draw [color=black] (-3,3)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt);\n \\draw[color=black] (-2.84,3.42) node {$F$};\n \\draw [color=black] (-2,0)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt);\n \\draw[color=black] (-1.84,0.42) node {$G$};\n \\draw [color=black] (-6,4)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt);\n \\draw[color=black] (-5.84,4.42) node {$H$};\n \\draw [color=black] (-3,2)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-2.84,2.42) node {$I$}; \n \\draw [color=black] (-5,1)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt);\n \\draw[color=black] (-4.84,1.42) node {$J$}; \n \\end{scriptsize} \n \\end{tikzpicture} \n \\end{center} ",False)
+    self.add("\n \\begin{center} \n  \\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882} \n \\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.5cm,y=0.5cm] \\draw [color=cqcqcq,, xstep=0.5cm,ystep=0.5cm] (-8.08,-1.69) grid (1.08,5.69); \\clip(-8.08,-1.69) rectangle (1.08,5.69); \n \\begin{scriptsize} \n \\draw [color=black] (-7,4)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-6.84,4.42) node {$A$};\n \\draw [color=black] (-1,4)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt);\n \\draw[color=black] (-0.84,4.42) node {$B$};\n \\draw [color=black] (-1,0)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt);\n \\draw[color=black] (-0.84,0.42) node {$C$};\n \\draw [color=black] (-7,0)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt);\n \\draw[color=black] (-6.84,0.42) node {$D$};\n \\draw [color=black] (-5,2)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt);\n \\draw[color=black] (-4.84,2.42) node {$E$};\n \\draw [color=black] (-3,3)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt);\n \\draw[color=black] (-2.84,3.42) node {$F$};\n \\draw [color=black] (-2,0)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt);\n \\draw[color=black] (-1.84,0.42) node {$G$};\n \\draw [color=black] (-6,4)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt);\n \\draw[color=black] (-5.84,4.42) node {$H$};\n \\draw [color=black] (-3,2)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-2.84,2.42) node {$I$}; \n \\draw [color=black] (-5,1)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt);\n \\draw[color=black] (-4.84,1.42) node {$J$}; \n \\end{scriptsize} \n \\end{tikzpicture} \n \\end{center} ")
+    if a==1:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{AH}$",False)
+        self.add("Le vecteur $\\overrightarrow{GC}$ est égal au vecteur $\\overrightarrow{AH}$ ")
+    elif a==2:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{AF}$",False)
+        self.add("Le vecteur $\\overrightarrow{EC}$ est égal au vecteur $\\overrightarrow{AF}$ ")
+    elif a==3:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{AE}$",False)
+        self.add("Le vecteur $\\overrightarrow{IC}$ est égal au vecteur $\\overrightarrow{AE}$ ")
+    elif a==4:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{EF}$",False)
+        self.add("Les vecteurs $\\overrightarrow{JI}$, $\\overrightarrow{FB}$ et $\\overrightarrow{DJ}$ sont égaux au vecteur $\\overrightarrow{EF}$ ")
+    elif a==5:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{HE}$",False)
+        self.add("Le vecteur $\\overrightarrow{IG}$ est égal au vecteur $\\overrightarrow{HE}$ ")
+    elif a==6:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{FI}$",False)
+        self.add("Le vecteur $\\overrightarrow{EJ}$ est égal au vecteur $\\overrightarrow{FI}$ ")
+elif c==2 : 
+    self.add("\n \\begin{center} \n \\includegraphics[scale=0.5]{grilleIso} \n \\end{center}")
+    self.add("\n \\begin{center} \n \\includegraphics[scale=0.5]{grilleIso}  \n \\end{center}",False)
+    if a==1:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{AH}$",False)
+        self.add("Le vecteur $\\overrightarrow{IG}$ est égal au vecteur $\\overrightarrow{AH}$ ")
+    elif a==2:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{EJ}$",False)
+        self.add("Le vecteur $\\overrightarrow{KC}$ est égal au vecteur $\\overrightarrow{EJ}$ ")
+    elif a==3:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{FK}$",False)
+        self.add("Le vecteur $\\overrightarrow{EG}$ est égal au vecteur $\\overrightarrow{FK}$ ")
+    elif a==4:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{EF}$",False)
+        self.add("Les vecteurs $\\overrightarrow{DJ}$ et $\\overrightarrow{GK}$ sont égaux au vecteur $\\overrightarrow{EF}$ ")
+    elif a==5:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{JI}$",False)
+        self.add("Le vecteur $\\overrightarrow{GC}$ est égal au vecteur $\\overrightarrow{JI}$ ")
+    elif a==6:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{FI}$",False)
+        self.add("Le vecteur $\\overrightarrow{BK}$ est égal au vecteur $\\overrightarrow{FI}$ ")
+elif c==3:
+    self.add("\n \\begin{center} \n \\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882} \n \\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.5cm,y=0.5cm] \n \\draw [color=cqcqcq,, xstep=0.5cm,ystep=0.5cm] (-8.08,-1.69) grid (1.08,5.69); \n \\clip(-8.08,-1.69) rectangle (1.08,5.69); \n \\begin{scriptsize} \n \\draw [color=black] (-7,4)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-6.84,4.42) node {$A$}; \n \\draw [color=black] (-1,3)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-0.84,3.42) node {$B$}; \n \\draw [color=black] (-1,0)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-0.84,0.42) node {$C$}; \n \\draw [color=black] (-7,0)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-6.84,0.42) node {$D$}; \n \\draw [color=black] (-4,4)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-3.84,4.42) node {$E$}; \n \\draw [color=black] (-3,3)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-2.84,3.42) node {$F$}; \n \\draw [color=black] (-3,1)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-2.84,1.42) node {$G$}; \n \\draw [color=black] (-6,2)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-5.84,2.42) node {$H$}; \n \\draw [color=black] (-4,3)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-3.84,3.42) node {$I$}; \n \\draw [color=black] (-5,1)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-5.04,1.42) node {$J$}; \n \\draw [color=black] (-2,1)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-1.84,1.42) node {$K$}; \n \\end{scriptsize} \n \\end{tikzpicture} \n \\end{center}",False)
+    self.add("\n \\begin{center} \n \\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882} \n \\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.5cm,y=0.5cm] \n \\draw [color=cqcqcq,, xstep=0.5cm,ystep=0.5cm] (-8.08,-1.69) grid (1.08,5.69); \n \\clip(-8.08,-1.69) rectangle (1.08,5.69); \n \\begin{scriptsize}  \n \\draw [color=black] (-7,4)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-6.84,4.42) node {$A$}; \n \\draw [color=black] (-1,3)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-0.84,3.42) node {$B$}; \n \\draw [color=black] (-1,0)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-0.84,0.42) node {$C$}; \n \\draw [color=black] (-7,0)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-6.84,0.42) node {$D$}; \n \\draw [color=black] (-4,4)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-3.84,4.42) node {$E$}; \n \\draw [color=black] (-3,3)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-2.84,3.42) node {$F$}; \n \\draw [color=black] (-3,1)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-2.84,1.42) node {$G$}; \n \\draw [color=black] (-6,2)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-5.84,2.42) node {$H$}; \n \\draw [color=black] (-4,3)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-3.84,3.42) node {$I$}; \n \\draw [color=black] (-5,1)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-5.04,1.42) node {$J$}; \n \\draw [color=black] (-2,1)-- ++(-2.5pt,0 pt) -- ++(5pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5pt); \n \\draw[color=black] (-1.84,1.42) node {$K$}; \n \\end{scriptsize} \n \\end{tikzpicture} \n \\end{center}")
+    self.add("\n \\begin{center} \n \\end{center}",False)
+    if a==1:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{AH}$",False)
+        self.add("Les vecteurs $\\overrightarrow{IG}$ et $\\overrightarrow{IG}$ est égal au vecteur $\\overrightarrow{AH}$ ")
+    elif a==2:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{BE}$",False)
+        self.add("Le vecteur $\\overrightarrow{GH}$ est égal au vecteur $\\overrightarrow{BE}$ ")
+    elif a==3:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{IB}$",False)
+        self.add("Le vecteur $\\overrightarrow{AE}$ est égal au vecteur $\\overrightarrow{IB}$ ")
+    elif a==4:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{EF}$",False)
+        self.add("Les vecteurs $\\overrightarrow{HJ}$ et $\\overrightarrow{KC}$ sont égaux au vecteur $\\overrightarrow{EF}$ ")
+    elif a==5:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{JI}$",False)
+        self.add("Le vecteur $\\overrightarrow{KB}$ est égal au vecteur $\\overrightarrow{JI}$ ")
+    elif a==6:
+        self.add("Donner un vecteur égal au vecteur $\\overrightarrow{FI}$",False)
+        self.add("Le vecteur $\\overrightarrow{KG}$ est égal au vecteur $\\overrightarrow{FI}$ ")
+self.frame_end()

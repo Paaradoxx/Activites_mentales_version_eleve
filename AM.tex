@@ -1,0 +1,1277 @@
+\documentclass[15pt, mathserif]{beamer}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage{esvect}
+\usepackage{bm}
+\usepackage{eurosym}
+\usepackage{tikz}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{arrows.meta}
+
+\usetikzlibrary{mindmap}
+\usepackage{multicol}
+\usepackage[tikz]{bclogo}
+\usepackage{tkz-tab}
+\usepackage{amsmath, tabu}
+\usepackage{esvect} %\vv{AB} pour le vecteur AB
+%% Tableau
+
+\usepackage{makecell}
+\setcellgapes{1pt}
+\makegapedcells
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}}
+
+
+%pour avoir des parenthèses rondes dans le package fourier
+\DeclareSymbolFont{cmoperators}   {OT1}{cmr} {m}{n}
+\DeclareSymbolFont{cmlargesymbols}{OMX}{cmex}{m}{n}
+
+\usefonttheme{professionalfonts} %permet d'enlever un bug avec fourier
+\usepackage{fourier}
+\DeclareMathDelimiter{(}{\mathopen} {cmoperators}{"28}{cmlargesymbols}{"00}
+\DeclareMathDelimiter{)}{\mathclose}{cmoperators}{"29}{cmlargesymbols}{"01}
+
+%Graphiques 
+
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{mindmap}
+
+%ensembles de nbres
+
+\newcommand{\R}{\mathbb{R}}			%permet d'écrire le R "ensemble des réels"'
+\newcommand{\N}{\mathbb{N}}			%permet d'écrire le N "ensemble des entiers naturels"
+\newcommand{\Z}{\mathbb{Z}}			%permet d'écrire le Z "ensemble des entiers relatifs"
+\newcommand{\Prem}{\mathbb{P}}	%permet d'écrire le P "ensemble des nombres premiers" (qui n'a pas marché avec le \P car il existe déjà)
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Df}{\mathcal{D}_f}
+\newcommand{\Cf}{\mathcal{C}_f}
+
+\newcommand{\Q}{\mathbb{Q}}
+
+\usetheme{Madrid}
+\useoutertheme{miniframes} % Alternatively: miniframes, infolines, split
+\useinnertheme{circles}
+\definecolor{UBCblue}{rgb}{0.1, 0.25, 0.4} % UBC Blue (primary)
+\definecolor{bordeaux}{RGB}{128,0,0}
+\usecolortheme[named=UBCblue]{structure}
+
+\usepackage{color} % J'aime bien définir mes couleurs
+\definecolor{propcolor}{rgb}{0, 0.5, 1}
+\colorlet{louis}{blue!70!green!60!white}
+\colorlet{sakura}{pink!40!red}
+
+\title{Activités Mentales}
+\date{03 Septembre 2022}
+
+\newcommand{\vco}[2]{\begin{pmatrix} #1 \\ #2 \end{pmatrix}} %Coordonnées de vecteur
+\newenvironment{eq}{\begin{cases}\begin{tabu}{ccccc}}{\end{tabu}\end{cases}}
+\newenvironment{eql}{\begin{cases}\begin{tabu}{cccccl}}{\end{tabu}\end{cases}}
+\newenvironment{eqrl}{\begin{cases}\begin{tabu}{rl}}{\end{tabu}\end{cases}}
+
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame} 
+	\frametitle{Question 1}
+Déterminer la mesure principale de l'angle $\dfrac{75\pi}{4}$ puis le placer sur le cercle trigonométrique.\end{frame}
+
+
+\begin{frame} 
+	\frametitle{Question 2}
+Déterminer la mesure principale de l'angle $\dfrac{-102\pi}{5}$ puis le placer sur le cercle trigonométrique.\end{frame}
+
+
+\begin{frame} 
+	\frametitle{Question 3}
+Déterminer la mesure principale de l'angle $\dfrac{-47\pi}{7}$ puis le placer sur le cercle trigonométrique.\end{frame}
+
+
+\begin{frame} 
+	\frametitle{Question 4}
+Déterminer la mesure principale de l'angle $\dfrac{104\pi}{9}$ puis le placer sur le cercle trigonométrique.\end{frame}
+
+
+\begin{frame} 
+	\frametitle{Question 5}
+Déterminer la mesure principale de l'angle $\dfrac{-55\pi}{7}$ puis le placer sur le cercle trigonométrique.\end{frame}
+
+
+\begin{frame} 
+	\frametitle{Question 6}
+Déterminer la mesure principale de l'angle $\dfrac{87\pi}{4}$ puis le placer sur le cercle trigonométrique.\end{frame}
+
+
+\begin{frame} 
+	\frametitle{Question 7}
+Déterminer la mesure principale de l'angle $\dfrac{-58\pi}{3}$ puis le placer sur le cercle trigonométrique.\end{frame}
+
+
+\begin{frame} 
+	\frametitle{Question 8}
+Déterminer la mesure principale de l'angle $\dfrac{49\pi}{5}$ puis le placer sur le cercle trigonométrique.\end{frame}
+
+
+\begin{frame} 
+	\frametitle{Question 9}
+Déterminer la mesure principale de l'angle $\dfrac{104\pi}{5}$ puis le placer sur le cercle trigonométrique.\end{frame}
+
+
+\begin{frame} 
+	\frametitle{Question 10}
+Déterminer la mesure principale de l'angle $\dfrac{-12\pi}{5}$ puis le placer sur le cercle trigonométrique.\end{frame}
+
+
+\begin{frame} 
+	\frametitle{Question 11}
+Déterminer la mesure principale de l'angle $\dfrac{131\pi}{4}$ puis le placer sur le cercle trigonométrique.\end{frame}
+
+
+\begin{frame} 
+	\frametitle{Question 12}
+Déterminer la mesure principale de l'angle $\dfrac{-119\pi}{11}$ puis le placer sur le cercle trigonométrique.\end{frame}
+
+
+\begin{frame} 
+	\frametitle{Question 13}
+Déterminer la mesure principale de l'angle $\dfrac{-105\pi}{11}$ puis le placer sur le cercle trigonométrique.\end{frame}
+
+
+\begin{frame} 
+	\frametitle{Question 14}
+Déterminer la mesure principale de l'angle $\dfrac{-118\pi}{7}$ puis le placer sur le cercle trigonométrique.\end{frame}
+
+
+\begin{frame}
+\vspace{-10mm}
+	\frametitle{Correction 1}
+\begin{minipage}{0.45 \linewidth}
+	\begin{align*}
+		\dfrac{75\pi}{4} &= \dfrac{75}{4}\times \dfrac{2\pi}{2} \\
+		&=\dfrac{75}{8} \times 2 \pi\\
+		&=\dfrac{(8\times 9+3) \times 2 \pi}{8}\\
+		&=\dfrac{8\times 9 \times 2 \pi}{8}+\dfrac{3\times 2\pi}{8}\\
+		&=9\times 2\pi+\dfrac{3\pi}{4}
+	\end{align*}
+\end{minipage}
+\hfil
+\begin{minipage}{0.5 \linewidth}
+	\begin{tikzpicture}[scale = 0.65]
+		\draw[thick] (0,0) circle (2);
+		\draw[-{Straight Barb[length = 0.5mm]}] (-2.25,0) -- (2.25, 0);
+		\draw[-{Straight Barb[length = 0.5mm]}] (0,-2.25) -- (0, 2.25);
+		\begin{scope}[rotate = 90.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 225.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 270.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 315.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 135.0]
+	\draw[dotted, louis, thick] (0,0) -- (2,0);
+	\draw[louis, thick] (1.9, 0) -- (2.1,0);
+	\draw[louis] (2.3, 0) node [above, left] {$\dfrac{75\pi}{4}=\dfrac{3\pi}{4}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 3/4*pi)},0) -- ({2*cos(deg 3/4*pi)}, {2*sin(deg 3/4*pi)}) -- (0, {2*sin(deg 3/4*pi)});\begin{scope}[rotate = 45.0]
+	\draw[thick, dotted, louis] (0,0) -- (2,0);
+	\draw[thick, louis] (1.9, 0) -- (2.1,0) node[above right] {$\dfrac{\pi}{4}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 1/4*pi)},0) -- ({2*cos(deg 1/4*pi)}, {2*sin(deg 1/4*pi)}) -- (0, {2*sin(deg 1/4*pi)});\end{tikzpicture}
+\end{minipage}
+
+Comme $-\pi < \dfrac{3\pi}{4}\leq \pi$, la mesure principale de $\dfrac{75\pi}{4}$ est $\dfrac{-3\pi}{4}$.\end{frame}
+
+
+\begin{frame}
+\vspace{-10mm}
+	\frametitle{Correction 2}
+\begin{minipage}{0.45 \linewidth}
+	\begin{align*}
+		\dfrac{-102\pi}{5} &= \dfrac{-102}{5}\times \dfrac{2\pi}{2} \\
+		&=\dfrac{-102}{10} \times 2 \pi\\
+		&=\dfrac{-(10\times 10+2) \times 2 \pi}{10}\\
+		&=-\dfrac{10\times 10 \times 2 \pi}{10}-\dfrac{2\times 2\pi}{10}\\
+		&=-10\times 2\pi-\dfrac{2\pi}{5}
+	\end{align*}
+\end{minipage}
+\hfil
+\begin{minipage}{0.5 \linewidth}
+	\begin{tikzpicture}[scale = 0.65]
+		\draw[thick] (0,0) circle (2);
+		\draw[-{Straight Barb[length = 0.5mm]}] (-2.25,0) -- (2.25, 0);
+		\draw[-{Straight Barb[length = 0.5mm]}] (0,-2.25) -- (0, 2.25);
+		\begin{scope}[rotate = 72.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 108.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 144.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 216.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 252.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 324.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = -72.0]
+	\draw[dotted, louis, thick] (0,0) -- (2,0);
+	\draw[louis, thick] (1.9, 0) -- (2.1,0);
+	\draw[louis] (2.3, 0) node [below, right] {$\dfrac{-102\pi}{5}=\dfrac{-2\pi}{5}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg -2/5*pi)},0) -- ({2*cos(deg -2/5*pi)}, {2*sin(deg -2/5*pi)}) -- (0, {2*sin(deg -2/5*pi)});\begin{scope}[rotate = 36.0]
+	\draw[thick, dotted, louis] (0,0) -- (2,0);
+	\draw[thick, louis] (1.9, 0) -- (2.1,0) node[above right] {$\dfrac{\pi}{5}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 1/5*pi)},0) -- ({2*cos(deg 1/5*pi)}, {2*sin(deg 1/5*pi)}) -- (0, {2*sin(deg 1/5*pi)});\end{tikzpicture}
+\end{minipage}
+
+Comme $-\pi < -\dfrac{2\pi}{5}\leq \pi$, la mesure principale de $\dfrac{-102\pi}{5}$ est $\dfrac{-2\pi}{5}$.\end{frame}
+
+
+\begin{frame}
+\vspace{-10mm}
+	\frametitle{Correction 3}
+\begin{minipage}{0.45 \linewidth}
+	\begin{align*}
+		\dfrac{-47\pi}{7} &= \dfrac{-47}{7}\times \dfrac{2\pi}{2} \\
+		&=\dfrac{-47}{14} \times 2 \pi\\
+		&=\dfrac{-(14\times 3+5) \times 2 \pi}{14}\\
+		&=-\dfrac{14\times 3 \times 2 \pi}{14}-\dfrac{5\times 2\pi}{14}\\
+		&=-3\times 2\pi-\dfrac{5\pi}{7}
+	\end{align*}
+\end{minipage}
+\hfil
+\begin{minipage}{0.5 \linewidth}
+	\begin{tikzpicture}[scale = 0.65]
+		\draw[thick] (0,0) circle (2);
+		\draw[-{Straight Barb[length = 0.5mm]}] (-2.25,0) -- (2.25, 0);
+		\draw[-{Straight Barb[length = 0.5mm]}] (0,-2.25) -- (0, 2.25);
+		\begin{scope}[rotate = 51.42]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 77.13]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 102.84]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 128.55]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 154.26]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 179.97]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 205.68]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 257.1]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 282.81]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 308.52]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 334.23]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = -128.55]
+	\draw[dotted, louis, thick] (0,0) -- (2,0);
+	\draw[louis, thick] (1.9, 0) -- (2.1,0);
+	\draw[louis] (2.3, 0) node [below, left] {$\dfrac{-47\pi}{7}=\dfrac{-5\pi}{7}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg -5/7*pi)},0) -- ({2*cos(deg -5/7*pi)}, {2*sin(deg -5/7*pi)}) -- (0, {2*sin(deg -5/7*pi)});\begin{scope}[rotate = 25.71]
+	\draw[thick, dotted, louis] (0,0) -- (2,0);
+	\draw[thick, louis] (1.9, 0) -- (2.1,0) node[above right] {$\dfrac{\pi}{7}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 1/7*pi)},0) -- ({2*cos(deg 1/7*pi)}, {2*sin(deg 1/7*pi)}) -- (0, {2*sin(deg 1/7*pi)});\end{tikzpicture}
+\end{minipage}
+
+Comme $-\pi < -\dfrac{5\pi}{7}\leq \pi$, la mesure principale de $\dfrac{-47\pi}{7}$ est $\dfrac{-5\pi}{7}$.\end{frame}
+
+
+\begin{frame}
+\vspace{-10mm}
+	\frametitle{Correction 4}
+\begin{minipage}{0.45 \linewidth}
+	\begin{align*}
+		\dfrac{104\pi}{9} &= \dfrac{104}{9}\times \dfrac{2\pi}{2} \\
+		&=\dfrac{104}{18} \times 2 \pi\\
+		&=\dfrac{(18\times 5+14) \times 2 \pi}{18}\\
+		&=\dfrac{18\times 5 \times 2 \pi}{18}+\dfrac{14\times 2\pi}{18}\\
+		&=5\times 2\pi+\dfrac{14\pi}{9}
+	\end{align*}
+\end{minipage}
+\hfil
+\begin{minipage}{0.5 \linewidth}
+	\begin{tikzpicture}[scale = 0.65]
+		\draw[thick] (0,0) circle (2);
+		\draw[-{Straight Barb[length = 0.5mm]}] (-2.25,0) -- (2.25, 0);
+		\draw[-{Straight Barb[length = 0.5mm]}] (0,-2.25) -- (0, 2.25);
+		\begin{scope}[rotate = 40.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 60.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 80.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 100.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 120.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 140.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 160.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 200.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 220.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 240.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 260.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 300.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 320.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 340.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = -80.0]
+	\draw[dotted, louis, thick] (0,0) -- (2,0);
+	\draw[louis, thick] (1.9, 0) -- (2.1,0);
+	\draw[louis] (2.3, 0) node [below, right] {$\dfrac{104\pi}{9}=\dfrac{-4\pi}{9}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg -4/9*pi)},0) -- ({2*cos(deg -4/9*pi)}, {2*sin(deg -4/9*pi)}) -- (0, {2*sin(deg -4/9*pi)});\begin{scope}[rotate = 20.0]
+	\draw[thick, dotted, louis] (0,0) -- (2,0);
+	\draw[thick, louis] (1.9, 0) -- (2.1,0) node[above right] {$\dfrac{\pi}{9}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 1/9*pi)},0) -- ({2*cos(deg 1/9*pi)}, {2*sin(deg 1/9*pi)}) -- (0, {2*sin(deg 1/9*pi)});\end{tikzpicture}
+\end{minipage}
+
+Or $\dfrac{14\pi}{9}>\pi$, on fait un tour de moins en retirant $2\pi$: $\dfrac{14\pi}{9}-2\pi = \dfrac{-4\pi}{9}$.
+
+Comme $-\pi <-\dfrac{4\pi}{9}\leq \pi$, la mesure principale de $\dfrac{104\pi}{9}$ est $\dfrac{-4\pi}{9}$.\end{frame}
+
+
+\begin{frame}
+\vspace{-10mm}
+	\frametitle{Correction 5}
+\begin{minipage}{0.45 \linewidth}
+	\begin{align*}
+		\dfrac{-55\pi}{7} &= \dfrac{-55}{7}\times \dfrac{2\pi}{2} \\
+		&=\dfrac{-55}{14} \times 2 \pi\\
+		&=\dfrac{-(14\times 3+13) \times 2 \pi}{14}\\
+		&=-\dfrac{14\times 3 \times 2 \pi}{14}-\dfrac{13\times 2\pi}{14}\\
+		&=-3\times 2\pi-\dfrac{13\pi}{7}
+	\end{align*}
+\end{minipage}
+\hfil
+\begin{minipage}{0.5 \linewidth}
+	\begin{tikzpicture}[scale = 0.65]
+		\draw[thick] (0,0) circle (2);
+		\draw[-{Straight Barb[length = 0.5mm]}] (-2.25,0) -- (2.25, 0);
+		\draw[-{Straight Barb[length = 0.5mm]}] (0,-2.25) -- (0, 2.25);
+		\begin{scope}[rotate = 51.42]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 77.13]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 102.84]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 128.55]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 154.26]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 179.97]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 205.68]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 231.39000000000001]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 257.1]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 282.81]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 308.52]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 334.23]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 25.71]
+	\draw[dotted, louis, thick] (0,0) -- (2,0);
+	\draw[louis, thick] (1.9, 0) -- (2.1,0);
+	\draw[louis] (2.3, 0) node [above, right] {$\dfrac{-55\pi}{7}=\dfrac{\pi}{7}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 1/7*pi)},0) -- ({2*cos(deg 1/7*pi)}, {2*sin(deg 1/7*pi)}) -- (0, {2*sin(deg 1/7*pi)});\end{tikzpicture}
+\end{minipage}
+
+Or $-\dfrac{13\pi}{7}\leq-\pi$, on fait un tour de plus en rajoutant $2\pi$: $-\dfrac{13\pi}{7}+2\pi = \dfrac{\pi}{7}$.
+
+Comme $-\pi <\dfrac{\pi}{7}\leq \pi$, la mesure principale de $\dfrac{-55\pi}{7}$ est $\dfrac{\pi}{7}$.\end{frame}
+
+
+\begin{frame}
+\vspace{-10mm}
+	\frametitle{Correction 6}
+\begin{minipage}{0.45 \linewidth}
+	\begin{align*}
+		\dfrac{87\pi}{4} &= \dfrac{87}{4}\times \dfrac{2\pi}{2} \\
+		&=\dfrac{87}{8} \times 2 \pi\\
+		&=\dfrac{(8\times 10+7) \times 2 \pi}{8}\\
+		&=\dfrac{8\times 10 \times 2 \pi}{8}+\dfrac{7\times 2\pi}{8}\\
+		&=10\times 2\pi+\dfrac{7\pi}{4}
+	\end{align*}
+\end{minipage}
+\hfil
+\begin{minipage}{0.5 \linewidth}
+	\begin{tikzpicture}[scale = 0.65]
+		\draw[thick] (0,0) circle (2);
+		\draw[-{Straight Barb[length = 0.5mm]}] (-2.25,0) -- (2.25, 0);
+		\draw[-{Straight Barb[length = 0.5mm]}] (0,-2.25) -- (0, 2.25);
+		\begin{scope}[rotate = 90.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 135.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 225.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 270.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = -45.0]
+	\draw[dotted, louis, thick] (0,0) -- (2,0);
+	\draw[louis, thick] (1.9, 0) -- (2.1,0);
+	\draw[louis] (2.3, 0) node [below, right] {$\dfrac{87\pi}{4}=\dfrac{-\pi}{4}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg -1/4*pi)},0) -- ({2*cos(deg -1/4*pi)}, {2*sin(deg -1/4*pi)}) -- (0, {2*sin(deg -1/4*pi)});\begin{scope}[rotate = 45.0]
+	\draw[thick, dotted, louis] (0,0) -- (2,0);
+	\draw[thick, louis] (1.9, 0) -- (2.1,0) node[above right] {$\dfrac{\pi}{4}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 1/4*pi)},0) -- ({2*cos(deg 1/4*pi)}, {2*sin(deg 1/4*pi)}) -- (0, {2*sin(deg 1/4*pi)});\end{tikzpicture}
+\end{minipage}
+
+Or $\dfrac{7\pi}{4}>\pi$, on fait un tour de moins en retirant $2\pi$: $\dfrac{7\pi}{4}-2\pi = \dfrac{-\pi}{4}$.
+
+Comme $-\pi <-\dfrac{\pi}{4}\leq \pi$, la mesure principale de $\dfrac{87\pi}{4}$ est $\dfrac{-\pi}{4}$.\end{frame}
+
+
+\begin{frame}
+\vspace{-10mm}
+	\frametitle{Correction 7}
+\begin{minipage}{0.45 \linewidth}
+	\begin{align*}
+		\dfrac{-58\pi}{3} &= \dfrac{-58}{3}\times \dfrac{2\pi}{2} \\
+		&=\dfrac{-58}{6} \times 2 \pi\\
+		&=\dfrac{-(6\times 9+4) \times 2 \pi}{6}\\
+		&=-\dfrac{6\times 9 \times 2 \pi}{6}-\dfrac{4\times 2\pi}{6}\\
+		&=-9\times 2\pi-\dfrac{4\pi}{3}
+	\end{align*}
+\end{minipage}
+\hfil
+\begin{minipage}{0.5 \linewidth}
+	\begin{tikzpicture}[scale = 0.65]
+		\draw[thick] (0,0) circle (2);
+		\draw[-{Straight Barb[length = 0.5mm]}] (-2.25,0) -- (2.25, 0);
+		\draw[-{Straight Barb[length = 0.5mm]}] (0,-2.25) -- (0, 2.25);
+		\begin{scope}[rotate = 240.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 300.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 120.0]
+	\draw[dotted, louis, thick] (0,0) -- (2,0);
+	\draw[louis, thick] (1.9, 0) -- (2.1,0);
+	\draw[louis] (2.3, 0) node [above, left] {$\dfrac{-58\pi}{3}=\dfrac{2\pi}{3}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 2/3*pi)},0) -- ({2*cos(deg 2/3*pi)}, {2*sin(deg 2/3*pi)}) -- (0, {2*sin(deg 2/3*pi)});\begin{scope}[rotate = 60.0]
+	\draw[thick, dotted, louis] (0,0) -- (2,0);
+	\draw[thick, louis] (1.9, 0) -- (2.1,0) node[above right] {$\dfrac{\pi}{3}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 1/3*pi)},0) -- ({2*cos(deg 1/3*pi)}, {2*sin(deg 1/3*pi)}) -- (0, {2*sin(deg 1/3*pi)});\end{tikzpicture}
+\end{minipage}
+
+Or $-\dfrac{4\pi}{3}\leq-\pi$, on fait un tour de plus en rajoutant $2\pi$: $-\dfrac{4\pi}{3}+2\pi = \dfrac{2\pi}{3}$.
+
+Comme $-\pi <\dfrac{2\pi}{3}\leq \pi$, la mesure principale de $\dfrac{-58\pi}{3}$ est $\dfrac{2\pi}{3}$.\end{frame}
+
+
+\begin{frame}
+\vspace{-10mm}
+	\frametitle{Correction 8}
+\begin{minipage}{0.45 \linewidth}
+	\begin{align*}
+		\dfrac{49\pi}{5} &= \dfrac{49}{5}\times \dfrac{2\pi}{2} \\
+		&=\dfrac{49}{10} \times 2 \pi\\
+		&=\dfrac{(10\times 4+9) \times 2 \pi}{10}\\
+		&=\dfrac{10\times 4 \times 2 \pi}{10}+\dfrac{9\times 2\pi}{10}\\
+		&=4\times 2\pi+\dfrac{9\pi}{5}
+	\end{align*}
+\end{minipage}
+\hfil
+\begin{minipage}{0.5 \linewidth}
+	\begin{tikzpicture}[scale = 0.65]
+		\draw[thick] (0,0) circle (2);
+		\draw[-{Straight Barb[length = 0.5mm]}] (-2.25,0) -- (2.25, 0);
+		\draw[-{Straight Barb[length = 0.5mm]}] (0,-2.25) -- (0, 2.25);
+		\begin{scope}[rotate = 72.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 108.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 144.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 216.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 252.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 288.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = -36.0]
+	\draw[dotted, louis, thick] (0,0) -- (2,0);
+	\draw[louis, thick] (1.9, 0) -- (2.1,0);
+	\draw[louis] (2.3, 0) node [below, right] {$\dfrac{49\pi}{5}=\dfrac{-\pi}{5}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg -1/5*pi)},0) -- ({2*cos(deg -1/5*pi)}, {2*sin(deg -1/5*pi)}) -- (0, {2*sin(deg -1/5*pi)});\begin{scope}[rotate = 36.0]
+	\draw[thick, dotted, louis] (0,0) -- (2,0);
+	\draw[thick, louis] (1.9, 0) -- (2.1,0) node[above right] {$\dfrac{\pi}{5}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 1/5*pi)},0) -- ({2*cos(deg 1/5*pi)}, {2*sin(deg 1/5*pi)}) -- (0, {2*sin(deg 1/5*pi)});\end{tikzpicture}
+\end{minipage}
+
+Or $\dfrac{9\pi}{5}>\pi$, on fait un tour de moins en retirant $2\pi$: $\dfrac{9\pi}{5}-2\pi = \dfrac{-\pi}{5}$.
+
+Comme $-\pi <-\dfrac{\pi}{5}\leq \pi$, la mesure principale de $\dfrac{49\pi}{5}$ est $\dfrac{-\pi}{5}$.\end{frame}
+
+
+\begin{frame}
+\vspace{-10mm}
+	\frametitle{Correction 9}
+\begin{minipage}{0.45 \linewidth}
+	\begin{align*}
+		\dfrac{104\pi}{5} &= \dfrac{104}{5}\times \dfrac{2\pi}{2} \\
+		&=\dfrac{104}{10} \times 2 \pi\\
+		&=\dfrac{(10\times 10+4) \times 2 \pi}{10}\\
+		&=\dfrac{10\times 10 \times 2 \pi}{10}+\dfrac{4\times 2\pi}{10}\\
+		&=10\times 2\pi+\dfrac{4\pi}{5}
+	\end{align*}
+\end{minipage}
+\hfil
+\begin{minipage}{0.5 \linewidth}
+	\begin{tikzpicture}[scale = 0.65]
+		\draw[thick] (0,0) circle (2);
+		\draw[-{Straight Barb[length = 0.5mm]}] (-2.25,0) -- (2.25, 0);
+		\draw[-{Straight Barb[length = 0.5mm]}] (0,-2.25) -- (0, 2.25);
+		\begin{scope}[rotate = 72.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 108.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 216.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 252.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 288.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 324.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 144.0]
+	\draw[dotted, louis, thick] (0,0) -- (2,0);
+	\draw[louis, thick] (1.9, 0) -- (2.1,0);
+	\draw[louis] (2.3, 0) node [above, left] {$\dfrac{104\pi}{5}=\dfrac{4\pi}{5}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 4/5*pi)},0) -- ({2*cos(deg 4/5*pi)}, {2*sin(deg 4/5*pi)}) -- (0, {2*sin(deg 4/5*pi)});\begin{scope}[rotate = 36.0]
+	\draw[thick, dotted, louis] (0,0) -- (2,0);
+	\draw[thick, louis] (1.9, 0) -- (2.1,0) node[above right] {$\dfrac{\pi}{5}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 1/5*pi)},0) -- ({2*cos(deg 1/5*pi)}, {2*sin(deg 1/5*pi)}) -- (0, {2*sin(deg 1/5*pi)});\end{tikzpicture}
+\end{minipage}
+
+Comme $-\pi < \dfrac{4\pi}{5}\leq \pi$, la mesure principale de $\dfrac{104\pi}{5}$ est $\dfrac{-4\pi}{5}$.\end{frame}
+
+
+\begin{frame}
+\vspace{-10mm}
+	\frametitle{Correction 10}
+\begin{minipage}{0.45 \linewidth}
+	\begin{align*}
+		\dfrac{-12\pi}{5} &= \dfrac{-12}{5}\times \dfrac{2\pi}{2} \\
+		&=\dfrac{-12}{10} \times 2 \pi\\
+		&=\dfrac{-(10\times 1+2) \times 2 \pi}{10}\\
+		&=-\dfrac{10\times 1 \times 2 \pi}{10}-\dfrac{2\times 2\pi}{10}\\
+		&=-1\times 2\pi-\dfrac{2\pi}{5}
+	\end{align*}
+\end{minipage}
+\hfil
+\begin{minipage}{0.5 \linewidth}
+	\begin{tikzpicture}[scale = 0.65]
+		\draw[thick] (0,0) circle (2);
+		\draw[-{Straight Barb[length = 0.5mm]}] (-2.25,0) -- (2.25, 0);
+		\draw[-{Straight Barb[length = 0.5mm]}] (0,-2.25) -- (0, 2.25);
+		\begin{scope}[rotate = 72.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 108.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 144.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 216.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 252.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 324.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = -72.0]
+	\draw[dotted, louis, thick] (0,0) -- (2,0);
+	\draw[louis, thick] (1.9, 0) -- (2.1,0);
+	\draw[louis] (2.3, 0) node [below, right] {$\dfrac{-12\pi}{5}=\dfrac{-2\pi}{5}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg -2/5*pi)},0) -- ({2*cos(deg -2/5*pi)}, {2*sin(deg -2/5*pi)}) -- (0, {2*sin(deg -2/5*pi)});\begin{scope}[rotate = 36.0]
+	\draw[thick, dotted, louis] (0,0) -- (2,0);
+	\draw[thick, louis] (1.9, 0) -- (2.1,0) node[above right] {$\dfrac{\pi}{5}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 1/5*pi)},0) -- ({2*cos(deg 1/5*pi)}, {2*sin(deg 1/5*pi)}) -- (0, {2*sin(deg 1/5*pi)});\end{tikzpicture}
+\end{minipage}
+
+Comme $-\pi < -\dfrac{2\pi}{5}\leq \pi$, la mesure principale de $\dfrac{-12\pi}{5}$ est $\dfrac{-2\pi}{5}$.\end{frame}
+
+
+\begin{frame}
+\vspace{-10mm}
+	\frametitle{Correction 11}
+\begin{minipage}{0.45 \linewidth}
+	\begin{align*}
+		\dfrac{131\pi}{4} &= \dfrac{131}{4}\times \dfrac{2\pi}{2} \\
+		&=\dfrac{131}{8} \times 2 \pi\\
+		&=\dfrac{(8\times 16+3) \times 2 \pi}{8}\\
+		&=\dfrac{8\times 16 \times 2 \pi}{8}+\dfrac{3\times 2\pi}{8}\\
+		&=16\times 2\pi+\dfrac{3\pi}{4}
+	\end{align*}
+\end{minipage}
+\hfil
+\begin{minipage}{0.5 \linewidth}
+	\begin{tikzpicture}[scale = 0.65]
+		\draw[thick] (0,0) circle (2);
+		\draw[-{Straight Barb[length = 0.5mm]}] (-2.25,0) -- (2.25, 0);
+		\draw[-{Straight Barb[length = 0.5mm]}] (0,-2.25) -- (0, 2.25);
+		\begin{scope}[rotate = 90.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 225.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 270.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 315.0]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 135.0]
+	\draw[dotted, louis, thick] (0,0) -- (2,0);
+	\draw[louis, thick] (1.9, 0) -- (2.1,0);
+	\draw[louis] (2.3, 0) node [above, left] {$\dfrac{131\pi}{4}=\dfrac{3\pi}{4}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 3/4*pi)},0) -- ({2*cos(deg 3/4*pi)}, {2*sin(deg 3/4*pi)}) -- (0, {2*sin(deg 3/4*pi)});\begin{scope}[rotate = 45.0]
+	\draw[thick, dotted, louis] (0,0) -- (2,0);
+	\draw[thick, louis] (1.9, 0) -- (2.1,0) node[above right] {$\dfrac{\pi}{4}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 1/4*pi)},0) -- ({2*cos(deg 1/4*pi)}, {2*sin(deg 1/4*pi)}) -- (0, {2*sin(deg 1/4*pi)});\end{tikzpicture}
+\end{minipage}
+
+Comme $-\pi < \dfrac{3\pi}{4}\leq \pi$, la mesure principale de $\dfrac{131\pi}{4}$ est $\dfrac{-3\pi}{4}$.\end{frame}
+
+
+\begin{frame}
+\vspace{-10mm}
+	\frametitle{Correction 12}
+\begin{minipage}{0.45 \linewidth}
+	\begin{align*}
+		\dfrac{-119\pi}{11} &= \dfrac{-119}{11}\times \dfrac{2\pi}{2} \\
+		&=\dfrac{-119}{22} \times 2 \pi\\
+		&=\dfrac{-(22\times 5+9) \times 2 \pi}{22}\\
+		&=-\dfrac{22\times 5 \times 2 \pi}{22}-\dfrac{9\times 2\pi}{22}\\
+		&=-5\times 2\pi-\dfrac{9\pi}{11}
+	\end{align*}
+\end{minipage}
+\hfil
+\begin{minipage}{0.5 \linewidth}
+	\begin{tikzpicture}[scale = 0.65]
+		\draw[thick] (0,0) circle (2);
+		\draw[-{Straight Barb[length = 0.5mm]}] (-2.25,0) -- (2.25, 0);
+		\draw[-{Straight Barb[length = 0.5mm]}] (0,-2.25) -- (0, 2.25);
+		\begin{scope}[rotate = 32.72]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 49.08]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 65.44]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 81.8]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 98.16]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 114.52]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 130.88]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 147.24]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 163.6]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 179.95999999999998]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 196.32]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 229.04]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 245.39999999999998]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 261.76]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 278.12]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 294.48]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 310.84]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 327.2]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 343.56]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = -147.24]
+	\draw[dotted, louis, thick] (0,0) -- (2,0);
+	\draw[louis, thick] (1.9, 0) -- (2.1,0);
+	\draw[louis] (2.3, 0) node [below, left] {$\dfrac{-119\pi}{11}=\dfrac{-9\pi}{11}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg -9/11*pi)},0) -- ({2*cos(deg -9/11*pi)}, {2*sin(deg -9/11*pi)}) -- (0, {2*sin(deg -9/11*pi)});\begin{scope}[rotate = 16.36]
+	\draw[thick, dotted, louis] (0,0) -- (2,0);
+	\draw[thick, louis] (1.9, 0) -- (2.1,0) node[above right] {$\dfrac{\pi}{11}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 1/11*pi)},0) -- ({2*cos(deg 1/11*pi)}, {2*sin(deg 1/11*pi)}) -- (0, {2*sin(deg 1/11*pi)});\end{tikzpicture}
+\end{minipage}
+
+Comme $-\pi < -\dfrac{9\pi}{11}\leq \pi$, la mesure principale de $\dfrac{-119\pi}{11}$ est $\dfrac{-9\pi}{11}$.\end{frame}
+
+
+\begin{frame}
+\vspace{-10mm}
+	\frametitle{Correction 13}
+\begin{minipage}{0.45 \linewidth}
+	\begin{align*}
+		\dfrac{-105\pi}{11} &= \dfrac{-105}{11}\times \dfrac{2\pi}{2} \\
+		&=\dfrac{-105}{22} \times 2 \pi\\
+		&=\dfrac{-(22\times 4+17) \times 2 \pi}{22}\\
+		&=-\dfrac{22\times 4 \times 2 \pi}{22}-\dfrac{17\times 2\pi}{22}\\
+		&=-4\times 2\pi-\dfrac{17\pi}{11}
+	\end{align*}
+\end{minipage}
+\hfil
+\begin{minipage}{0.5 \linewidth}
+	\begin{tikzpicture}[scale = 0.65]
+		\draw[thick] (0,0) circle (2);
+		\draw[-{Straight Barb[length = 0.5mm]}] (-2.25,0) -- (2.25, 0);
+		\draw[-{Straight Barb[length = 0.5mm]}] (0,-2.25) -- (0, 2.25);
+		\begin{scope}[rotate = 32.72]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 49.08]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 65.44]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 98.16]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 114.52]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 130.88]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 147.24]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 163.6]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 179.95999999999998]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 196.32]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 212.68]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 229.04]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 245.39999999999998]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 261.76]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 278.12]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 294.48]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 310.84]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 327.2]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 343.56]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 81.8]
+	\draw[dotted, louis, thick] (0,0) -- (2,0);
+	\draw[louis, thick] (1.9, 0) -- (2.1,0);
+	\draw[louis] (2.3, 0) node [above, right] {$\dfrac{-105\pi}{11}=\dfrac{5\pi}{11}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 5/11*pi)},0) -- ({2*cos(deg 5/11*pi)}, {2*sin(deg 5/11*pi)}) -- (0, {2*sin(deg 5/11*pi)});\begin{scope}[rotate = 16.36]
+	\draw[thick, dotted, louis] (0,0) -- (2,0);
+	\draw[thick, louis] (1.9, 0) -- (2.1,0) node[above right] {$\dfrac{\pi}{11}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 1/11*pi)},0) -- ({2*cos(deg 1/11*pi)}, {2*sin(deg 1/11*pi)}) -- (0, {2*sin(deg 1/11*pi)});\end{tikzpicture}
+\end{minipage}
+
+Or $-\dfrac{17\pi}{11}\leq-\pi$, on fait un tour de plus en rajoutant $2\pi$: $-\dfrac{17\pi}{11}+2\pi = \dfrac{5\pi}{11}$.
+
+Comme $-\pi <\dfrac{5\pi}{11}\leq \pi$, la mesure principale de $\dfrac{-105\pi}{11}$ est $\dfrac{5\pi}{11}$.\end{frame}
+
+
+\begin{frame}
+\vspace{-10mm}
+	\frametitle{Correction 14}
+\begin{minipage}{0.45 \linewidth}
+	\begin{align*}
+		\dfrac{-118\pi}{7} &= \dfrac{-118}{7}\times \dfrac{2\pi}{2} \\
+		&=\dfrac{-118}{14} \times 2 \pi\\
+		&=\dfrac{-(14\times 8+6) \times 2 \pi}{14}\\
+		&=-\dfrac{14\times 8 \times 2 \pi}{14}-\dfrac{6\times 2\pi}{14}\\
+		&=-8\times 2\pi-\dfrac{6\pi}{7}
+	\end{align*}
+\end{minipage}
+\hfil
+\begin{minipage}{0.5 \linewidth}
+	\begin{tikzpicture}[scale = 0.65]
+		\draw[thick] (0,0) circle (2);
+		\draw[-{Straight Barb[length = 0.5mm]}] (-2.25,0) -- (2.25, 0);
+		\draw[-{Straight Barb[length = 0.5mm]}] (0,-2.25) -- (0, 2.25);
+		\begin{scope}[rotate = 51.42]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 77.13]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 102.84]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 128.55]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 154.26]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 179.97]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 231.39000000000001]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 257.1]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 282.81]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 308.52]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = 334.23]
+	\draw[dotted] (0,0) -- (2,0);
+	\draw[thick] (1.9, 0) -- (2.1,0);
+	\end{scope}
+
+\begin{scope}[rotate = -154.26]
+	\draw[dotted, louis, thick] (0,0) -- (2,0);
+	\draw[louis, thick] (1.9, 0) -- (2.1,0);
+	\draw[louis] (2.3, 0) node [below, left] {$\dfrac{-118\pi}{7}=\dfrac{-6\pi}{7}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg -6/7*pi)},0) -- ({2*cos(deg -6/7*pi)}, {2*sin(deg -6/7*pi)}) -- (0, {2*sin(deg -6/7*pi)});\begin{scope}[rotate = 25.71]
+	\draw[thick, dotted, louis] (0,0) -- (2,0);
+	\draw[thick, louis] (1.9, 0) -- (2.1,0) node[above right] {$\dfrac{\pi}{7}$};
+\end{scope}
+
+\draw[dashed, louis, thick] ({2*cos(deg 1/7*pi)},0) -- ({2*cos(deg 1/7*pi)}, {2*sin(deg 1/7*pi)}) -- (0, {2*sin(deg 1/7*pi)});\end{tikzpicture}
+\end{minipage}
+
+Comme $-\pi < -\dfrac{6\pi}{7}\leq \pi$, la mesure principale de $\dfrac{-118\pi}{7}$ est $\dfrac{-6\pi}{7}$.\end{frame}
+
+
+
+
+\end{document}

@@ -1,0 +1,173 @@
+a=randint(-10,10)
+b=randint(-10,10)
+c=randint(-10,10)
+d=randint(-10,10)
+self.frame_init()
+while a==0:
+    a=randint(-10,10)
+self.add("Résoudre dans $\R$ l'inéquation $\\dfrac{",False)
+self.add_nombre(a,False)
+if b==0:
+    self.add("",False)
+else:
+    self.add_coef_somme(b,False)
+    self.add("x",False)
+self.add("}{x}",False) 
+self.add_nombre_somme(c,False)
+self.add(">",False)
+self.add_nombre(d,False)
+self.add("$",False)
+
+self.add(" \\begin{multicols}{2} \n \n \\begin{align*} & \\dfrac{")
+self.add_nombre(a)
+if b==0:
+    self.add("")
+else:
+    self.add_coef_somme(b)
+    self.add("x")
+self.add("}{x}") 
+self.add_nombre_somme(c)
+self.add(">")
+self.add_nombre(d)
+self.add("\\\ \n \\Leftrightarrow & \\dfrac{")
+self.add_nombre(a)
+if b==0:
+    self.add("")
+else:
+    self.add_coef_somme(b)
+    self.add("x")
+self.add("}{x}") 
+self.add(">")
+self.add_nombre(d-c)
+self.add("\\\ \n \\Leftrightarrow & \\dfrac{")
+self.add_nombre(a)
+self.add("}{x}") 
+if b==0:
+    self.add("")
+else:
+    self.add_coef_somme(b)        
+self.add(">")
+self.add_nombre(d-c)
+self.add("\\\ \n \\Leftrightarrow & \\dfrac{")
+self.add_nombre(a)
+self.add("}{x}")      
+self.add(">")
+self.add_nombre(d-c-b)
+f=Fraction(d-b-c,a)
+g=f.numerator
+h=f.denominator
+if a>0:
+    self.add("\\\ \n \\Leftrightarrow & \\dfrac{1}{x}>")
+    if h==1:
+        self.add_nombre(g)
+    else:
+        self.add("\\dfrac{")
+        self.add_nombre(g)
+        self.add("}{")
+        self.add_nombre(h)
+        self.add("}")
+else:
+    self.add("\\\ \n \\Leftrightarrow & \\dfrac{1}{x}<")
+    if h==1:
+        self.add_nombre(g)
+    else:
+        self.add("\\dfrac{")
+        self.add_nombre(g)
+        self.add("}{")
+        self.add_nombre(h)
+        self.add("}")
+self.add(" \n \\end{align*}")
+self.add("\n \n \\begin{tikzpicture}[x=0.5cm,y=0.5cm] \n \\draw[->] (-4,0) -- (4,0);  \n \\draw[->] (0,-4.5) -- (0,4.5);\n \\draw plot[domain=-4:-0.25] (\\x,{1/(\\x)});  \n \\draw plot[domain=0.25:4] (\\x,{1/(\\x)}); \n ")
+if g==0:
+    self.add("\n \\draw[blue] (-4,0) -- (4,0);")
+elif g>0:
+    if h==1:
+        self.add("\n \\draw (-4,2) -- (4,2); \n \\draw (0,2) node[below left] {\\tiny{$")
+        self.add_nombre(g)
+        self.add("$}};")
+    else:
+        self.add("\n \\draw (-4,2) -- (4,2); \n \\draw (0,2) node[below left] {\\tiny{$\\dfrac{")
+        self.add_nombre(g)
+        self.add("}{")
+        self.add_nombre(h)
+        self.add("}$}}; ")
+    if g==1:
+        self.add("\n \\draw[blue,dotted] (0.5,0) -- (0.5,2); \n \\draw[blue] (0.5,0) node[below] {\\tiny{")
+        self.add_nombre(h)
+        self.add("}};")
+    
+    else :
+        self.add("\n \\draw[blue,dotted] (0.5,0) -- (0.5,2); \n \\draw[blue] (0.5,0) node[below] {\\tiny{$\\dfrac{")
+        self.add_nombre(h)
+        self.add("}{")
+        self.add_nombre(g)
+        self.add("}$}};")
+else:
+    if g==-1:
+        self.add("\n \\draw (-4,-2) -- (4,-2); \\draw (0,-2) node[below right] {\\tiny{\\dfrac{$")
+        self.add_nombre(g)
+        self.add("}{")
+        self.add_nombre(h)
+        self.add("}$}}; \n \\draw[blue,dotted] (-0.5,0) -- (-0.5,-2); \n \\draw[blue] (-0.5,0) node[above] {\\tiny{")
+        self.add_nombre(-h)
+        self.add("}};")
+    else:
+        if h==1:
+            self.add("\n \\draw (-4,-2) -- (4,-2); \n \\draw (0,-2) node[below right] {\\tiny{$")
+            self.add_nombre(g)
+            self.add("$}};")
+        else:
+            self.add("\n \\draw (-4,-2) -- (4,-2); \n \\draw (0,-2) node[below right] {\\tiny{$\\dfrac{")
+            self.add_nombre(g)
+            self.add("}{")
+            self.add_nombre(h)
+            self.add("}$}};")
+        if g==1:
+            self.add("\n \\draw[blue,dotted] (-0.5,0) -- (-0.5,-2); \n \\draw[blue] (-0.5,0) node[above] {")
+            self.add_nombre(h)
+            self.add("};")
+        else :
+            self.add("\n \\draw[blue,dotted] (-0.5,0) -- (-0.5,-2); \n \\draw[blue] (-0.5,0) node[above] {\\tiny{$\\dfrac{")
+            self.add_nombre(-h)
+            self.add("}{")
+            self.add_nombre(-g)
+            self.add("}$}};")
+self.add("\n \\end{tikzpicture} \n ")
+self.add("\\\ \n L'ensemble des solutions de l'équation est $S=")
+if g==0:
+    if a<0:
+        self.add(" ]-\\infty;0[$")
+    else:
+        self.add("]0;+\\infty[$")
+else:
+    if a>0:
+        if g>0:
+            self.add("]0;\\dfrac{")
+            self.add_nombre(h)
+            self.add("}{")
+            self.add_nombre(g)
+            self.add("}[$")
+        else : 
+            self.add("]-\\infty;\\dfrac{")
+            self.add_nombre(-h)
+            self.add("}{")
+            self.add_nombre(-g)
+            self.add("}[ \\cup ]0;+\\infty[$")
+    else:
+        if g<0:
+            self.add("]\\dfrac{")
+            self.add_nombre(-h)
+            self.add("}{")
+            self.add_nombre(-g)
+            self.add("};0[$")
+        else : 
+            self.add("]-\\infty;0[ \\cup ]0;\\dfrac{")
+            self.add_nombre(-h)
+            self.add("}{")
+            self.add_nombre(-g)
+            self.add("}[$")
+        
+    
+    
+self.add("\n \\end{multicols} \n ")
+self.frame_end()

@@ -1,0 +1,41 @@
+a = randint(20, 150)
+c, d = simplification_racine(1, a)
+
+while c == 1:
+    a = randint(20, 150)
+    c, d = simplification_racine(1, a)
+
+
+self.frame_init()
+
+self.add("Simplifier la racine $\\sqrt{", False)
+self.add_nombre(a, cor = False)
+self.add("}$.", False)
+
+self.add("\\[\\sqrt{")
+self.add_nombre(a)
+self.add("} = \\sqrt{")
+if d != 1:
+    self.add_nombre(c**2)
+    self.add(" \\times ")
+    self.add_nombre(d)
+    self.add("} = \\sqrt{(")
+    self.add_nombre(c)
+    self.add(")^2 \\times ")
+    self.add_nombre(d)
+    self.add("} = \\sqrt{(")
+    self.add_nombre(c)
+    self.add(")^2} \\times \\sqrt{")
+    self.add_nombre(d)
+    self.add("} =")
+    self.add_nombre(c)
+    self.add("\\sqrt{")
+    self.add_nombre(d)
+    self.add("}")
+else:
+    self.add("(")
+    self.add_nombre(c)
+    self.add(")^2} = ")
+    self.add_nombre(c)
+self.add("\\]")
+self.frame_end()

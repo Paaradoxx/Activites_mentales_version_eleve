@@ -1,0 +1,126 @@
+e=randint(0,3)
+a=randint(-100,100)
+self.frame_init()
+if e==0:    
+    self.add("Résoudre dans $\R$, l'inéquation suivante : $x^2<",False)
+    self.add_nombre(a,False)
+    self.add("$",False)
+
+    self.add("\\begin{multicols}{2} \n \\bigskip \n Résoudre dans $\R$, l'inéquation suivante : $x^2<")
+    self.add_nombre(a)
+    self.add("$ \n \n \\bigskip \n \n ")
+    if a<=0:
+        self.add("L'équation n'admet aucune solution donc l'ensemble des solutions est $S=\\emptyset$.")
+    else  : 
+        self.add("L'ensemble des solutions de l'inéquation est S=$]-\\sqrt{")
+        self.add_nombre(a)
+        self.add("};\\sqrt{")
+        self.add_nombre(a)
+        self.add("}[$")
+    self.add("\n \n \\begin{tikzpicture} \n \\draw[->] (-2,0) -- (2,0); \n \\draw[->] (0,-2) -- (0,4); \n \\draw plot[domain=-2:2] (\\x,{\\x*\\x});")
+    if a<=0:
+        self.add("\\draw[blue] (-2,-1) -- (2,-1); \n \\draw (0,-1) node[below right] {")
+        self.add_nombre(a)
+        self.add("};")
+    else :
+        self.add("\\draw[blue] (-2,2) -- (2,2); \n \\draw[blue,dotted] (1.44,0) --(1.44,2); \n \\draw[blue,dotted] (-1.44,0) --(-1.44,2); \n \\draw (0,2) node[above right] {")
+        self.add_nombre(a)
+        self.add("}; \n \\draw (1.44,0) node[below] {$\sqrt{")
+        self.add_nombre(a)
+        self.add("}$}; \n \\draw (-1.44,0) node[below] {$-\\sqrt{")
+        self.add_nombre(a)
+        self.add("}$}; ")
+    self.add(" \n \\end{tikzpicture} \n \\end{multicols}")
+elif e==1 : 
+    self.add(" Résoudre dans $\R$, l'inéquation suivante : $x^2>",False)
+    self.add_nombre(a,False)
+    self.add("$",False)
+
+    self.add(" \\begin{multicols}{2} \n \\bigskip \n Résoudre dans $\R$, l'inéquation suivante : $x^2>")
+    self.add_nombre(a)
+    self.add("$ \n \n \\bigskip \n \n ")
+    if a<=0:
+        self.add("L'équation admet tous les réels pour solution donc l'ensemble des solutions est $S=\\R$.")
+    else  : 
+        self.add("L'ensemble des solutions de l'inéquation est S=$]-\\infty;-\\sqrt{")
+        self.add_nombre(a)
+        self.add("}[\cup ]\\sqrt{")
+        self.add_nombre(a)
+        self.add("};+\\infty[$")
+    self.add("\n \n \\begin{tikzpicture} \n \\draw[->] (-2,0) -- (2,0); \n \\draw[->] (0,-2) -- (0,4); \n \\draw plot[domain=-2:2] (\\x,{\\x*\\x});")
+    if a<=0:
+        self.add("\\draw[blue] (-2,-1) -- (2,-1); \n \\draw (0,-1) node[below right] {")
+        self.add_nombre(a)
+        self.add("};")
+    else :
+        self.add("\\draw[blue] (-2,2) -- (2,2); \n \\draw[blue,dotted] (1.44,0) --(1.44,2); \n \\draw[blue,dotted] (-1.44,0) --(-1.44,2); \n \\draw (0,2) node[above right] {")
+        self.add_nombre(a)
+        self.add("}; \n \\draw (1.44,0) node[below] {$\sqrt{")
+        self.add_nombre(a)
+        self.add("}$}; \n \\draw (-1.44,0) node[below] {$-\\sqrt{")
+        self.add_nombre(a)
+        self.add("}$}; ")
+    self.add(" \n \\end{tikzpicture} \n \\end{multicols}")
+elif e==2:    
+    self.add("Résoudre dans $\R$, l'inéquation suivante : $x^2\\leqslant",False)
+    self.add_nombre(a,False)
+    self.add("$",False)
+
+    self.add("\\begin{multicols}{2} \n \\bigskip \n Résoudre dans $\R$, l'inéquation suivante : $x^2\\leqslant")
+    self.add_nombre(a)
+    self.add("$ \n \n \\bigskip \n \n ")
+    if a<0:
+        self.add("L'équation n'admet aucune solution donc l'ensemble des solutions est $S=\\emptyset$.")
+    elif a==0:
+        self.add("L'équation admet une unique solution qui est $S={0}$.")
+    else  : 
+        self.add("L'ensemble des solutions de l'inéquation est S=$[-\\sqrt{")
+        self.add_nombre(a)
+        self.add("};\\sqrt{")
+        self.add_nombre(a)
+        self.add("}]$.")
+    self.add("\n \n \\begin{tikzpicture} \n \\draw[->] (-2,0) -- (2,0); \n \\draw[->] (0,-2) -- (0,4); \n \\draw plot[domain=-2:2] (\\x,{\\x*\\x});")
+    if a<=0:
+        self.add("\\draw[blue] (-2,-1) -- (2,-1); \n \\draw (0,-1) node[below right] {")
+        self.add_nombre(a)
+        self.add("};")
+    else :
+        self.add("\\draw[blue] (-2,2) -- (2,2); \n \\draw[blue,dotted] (1.44,0) --(1.44,2); \n \\draw[blue,dotted] (-1.44,0) --(-1.44,2); \n \\draw (0,2) node[above right] {")
+        self.add_nombre(a)
+        self.add("}; \n \\draw (1.44,0) node[below] {$\sqrt{")
+        self.add_nombre(a)
+        self.add("}$}; \n \\draw (-1.44,0) node[below] {$-\\sqrt{")
+        self.add_nombre(a)
+        self.add("}$}; ")
+    self.add(" \n \\end{tikzpicture} \n \\end{multicols}")
+elif e==3 : 
+    self.add(" Résoudre dans $\R$, l'inéquation suivante : $x^2\\geqslant",False)
+    self.add_nombre(a,False)
+    self.add("$",False)
+
+    self.add("\\begin{multicols}{2} \n \\bigskip \n Résoudre dans $\R$, l'inéquation suivante : $x^2\\geqslant")
+    self.add_nombre(a)
+    self.add("$ \n \n \\bigskip \n \n ")
+    if a<=0:
+        self.add("L'équation admet tous les réels pour solution donc l'ensemble des solutions est $S=\\R$.")
+    else  : 
+        self.add("L'ensemble des solutions de l'inéquation est S=$]-\\infty;-\\sqrt{")
+        self.add_nombre(a)
+        self.add("}]\cup [\\sqrt{")
+        self.add_nombre(a)
+        self.add("};+\\infty[$")
+    self.add("\n \n \\begin{tikzpicture} \n \\draw[->] (-2,0) -- (2,0); \n \\draw[->] (0,-2) -- (0,4); \n \\draw plot[domain=-2:2] (\\x,{\\x*\\x});")
+    if a<=0:
+        self.add("\\draw[blue] (-2,-1) -- (2,-1); \n \\draw (0,-1) node[below right] {")
+        self.add_nombre(a)
+        self.add("};")
+    else :
+        self.add("\\draw[blue] (-2,2) -- (2,2); \n \\draw[blue,dotted] (1.44,0) --(1.44,2); \n \\draw[blue,dotted] (-1.44,0) --(-1.44,2); \n \\draw (0,2) node[above right] {")
+        self.add_nombre(a)
+        self.add("}; \n \\draw (1.44,0) node[below] {$\sqrt{")
+        self.add_nombre(a)
+        self.add("}$}; \n \\draw (-1.44,0) node[below] {$-\\sqrt{")
+        self.add_nombre(a)
+        self.add("}$}; ")
+    self.add(" \n \\end{tikzpicture} \n \\end{multicols}")
+self.frame_end()

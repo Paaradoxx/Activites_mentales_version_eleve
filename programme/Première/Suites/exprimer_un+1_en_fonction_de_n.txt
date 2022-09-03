@@ -1,0 +1,165 @@
+a=randint(-10,10)
+while a==0:
+    a=randint(-10,10)
+b=randint(-10,10)
+c=randint(-10,10)
+d=randint(1,10)
+f=randint(0,1)
+self.frame_init()
+if f==0:
+    self.add("Soit $(u_n)_n$ la suite définie pour tout $n \\in \\N$ par $u_n=",False)
+    self.add_coef(a,False)
+    self.add("n^2",False)
+    if b==0:
+        self.add_nombre_somme(c,False)
+        self.add("$. Donner l'expression de $u_{n+1}$ en fonction de $n$.",False)
+    else :
+        self.add_coef_somme(b,False)
+        self.add("n",False)
+        self.add_nombre_somme(c,False)
+        self.add("$. \n \n Donner l'expression de $u_{n+1}$ en fonction de $n$.",False)
+
+    self.add("Soit $(u_n)_n$ la suite définie pour tout $n \\in \\N$ par $u_{\\textcolor{blue}{n}}=")
+    self.add_coef(a)
+    self.add("\\textcolor{blue}{n}^2")
+    if b==0:
+        self.add_nombre_somme(c)
+        self.add("$. Donner l'expression de  $u_{\\textcolor{blue}{n+1}}$ en fonction de $n$.")
+    else :
+        self.add_coef_somme(b)
+        self.add("\\textcolor{blue}{n}")
+        self.add_nombre_somme(c)
+        self.add("$. \n \n Donner l'expression de $u_{\\textcolor{blue}{n+1}}$ en fonction de $n$.")
+    self.add(" \\begin{align*} u_{\\textcolor{blue}{n+1}}&=")
+    self.add_coef(a)
+    self.add("(\\textcolor{blue}{n+1})^2")
+    if b==0:
+        self.add_nombre_somme(c)
+    else :
+        self.add_coef_somme(b)
+        self.add("(\\textcolor{blue}{n+1})")
+        self.add_nombre_somme(c)
+    self.add("\\\ &=")
+    self.add_coef(a)
+    self.add("(n^2+2n+1)")
+    if b==0:
+        self.add_nombre_somme(c)
+    else :
+        self.add_coef_somme(b)
+        self.add("n")
+        self.add_nombre_somme(b)
+        self.add_nombre_somme(c)
+    self.add("\\\ &=")            
+    self.add_coef(a)
+    self.add("\\times n^2")
+    self.add_nombre_somme(a)
+    self.add(" \\times 2n")
+    self.add_nombre_somme(a)
+    self.add("\\times 1")
+    if b==0:
+        self.add_nombre_somme(c)
+    else :
+        self.add_coef_somme(b)
+        self.add("n")
+        self.add_nombre_somme(b+c)
+    self.add("\\\ &=")
+    self.add_coef(a)
+    self.add("n^2")
+    self.add_nombre_somme(2*a)
+    self.add("n")
+    self.add_nombre_somme(a)
+    if b==0:
+        self.add_nombre_somme(c)
+    else :
+        self.add_coef_somme(b)
+        self.add("n")
+        self.add_nombre_somme(b+c)
+    self.add("\\\ &=")
+    self.add_coef(a)
+    self.add("n^2")
+    self.add_nombre_somme(2*a+b)
+    self.add("n")
+    self.add_nombre_somme(a+b+c)
+    self.add("\\end{align*} \n \n \\bcattention ~ Toujours mettre les parenthèses autour du $n+1$ pour éviter au maximum les erreurs !")    
+
+
+else : 
+    self.add("Soit $(u_n)_n$ la suite définie pour tout $n \\in \\N$ par $u_n=\\dfrac{",False)
+    self.add_coef(a,False)
+    self.add("n",False)
+    if b==0:
+        self.add("}{",False)
+    else :
+        self.add_nombre_somme(b,False)
+        self.add("}{",False)
+    if c==0:
+        self.add_nombre(d,False)
+    else:
+        self.add_coef(c,False)
+        self.add("n+",False)
+        self.add_nombre(d,False)
+    self.add("}$. \n \n Donner l'expression de $u_{n+1}$ en fonction de $n$.",False)
+
+    self.add("\\vspace*{1cm} \n Soit $(u_n)_n$ la suite définie pour tout $n \\in \\N$ par $u_{\\textcolor{blue}{n}}=\\dfrac{")
+    self.add_coef(a)
+    self.add("\\textcolor{blue}{n}")
+    if b==0:
+        self.add("}{")
+    else :
+        self.add_nombre_somme(b)
+        self.add("}{")
+    if c==0:
+        self.add_nombre(d)
+    else:
+        self.add_coef(c)
+        self.add("\\textcolor{blue}{n}+")
+        self.add_nombre(d)
+    self.add("}$. \n \n Donner l'expression de $u_{\\textcolor{blue}{n+1}}$ en fonction de $n$. \n \n \\begin{align*} \n u_{\\textcolor{blue}{n+1}} \n &= \\dfrac{")
+    self.add_coef(a)
+    self.add("(\\textcolor{blue}{n+1})")
+    if b==0:
+        self.add("}{")
+    else :
+        self.add_nombre_somme(b)
+        self.add("}{")
+    if c==0:
+        self.add_nombre(d)
+        self.add("}")
+    else:
+        self.add_coef(c)
+        self.add("(\\textcolor{blue}{n+1})+")
+        self.add_nombre(d)
+        self.add("}")
+    self.add("\\\ \n  &= \\dfrac{")
+    self.add_nombre_somme(a)
+    self.add("\\times n")
+    self.add_nombre_somme(a)
+    self.add("\\times 1")
+    if b==0:
+        self.add("}{")
+    else :
+        self.add_nombre_somme(b)
+        self.add("}{")
+    if c==0:
+        self.add_nombre(d)
+        self.add("}")
+    else:
+        self.add_nombre(c)
+        self.add("\\times n")
+        self.add_nombre_somme(c)
+        self.add("\\times 1 +")
+        self.add_nombre(d)
+        self.add("}")
+    self.add("\\\ \n &= \\dfrac{")
+    self.add_nombre(a)
+    self.add("n")
+    self.add_nombre_somme(a+b)
+    self.add("}{")
+    if c==0:
+        self.add_nombre(d)
+    else:
+        self.add_nombre(c)
+        self.add("n")
+        self.add_nombre_somme(c+d)
+    self.add("} \n \\end{align*} \n \n \\bcattention ~ Toujours mettre les parenthèses autour du $n+1$ pour éviter au maximum les erreurs ! \n")
+self.frame_end()

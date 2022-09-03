@@ -1,0 +1,35 @@
+a=randint(-10,10) #coord de u
+b=randint(-10,10) #coord de u
+self.frame_init()
+self.add("On considère le vecteur $\\vec{u} \\begin{pmatrix} ",False)
+self.add_nombre(a,False)
+self.add(" \\\ ",False)
+self.add_nombre(b,False)
+self.add(" \\end{pmatrix}$. Calculer $\\|\\vec{u}\\|$.",False)
+
+self.add("On considère le vecteur $\\vec{u} \\begin{pmatrix} ")
+self.add_nombre(a)
+self.add(" \\\ ")
+self.add_nombre(b)
+self.add(" \\end{pmatrix}$. $$\\|\\vec{u}\\|=\\sqrt{")
+self.add_nombre_produit(a)
+self.add("^2+")
+self.add_nombre_produit(b)
+self.add("^2}=\\sqrt{")
+self.add_nombre(a**2+b**2)
+self.add("}")
+x,y=simplification_racine(1,a**2+b**2)
+if x==1:
+    self.add("$$")
+else :
+    if y==1: 
+        self.add("=")
+        self.add_nombre(x)
+        self.add("$$")
+    else :
+        self.add("=")
+        self.add_coef(x)
+        self.add("\\sqrt{")
+        self.add_nombre(y)
+        self.add("}$$")
+self.frame_end()

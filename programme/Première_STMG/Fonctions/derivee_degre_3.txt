@@ -1,0 +1,363 @@
+self.frame_init()
+a=randint(-5,5)
+b=randint(-10,10)
+c=randint(-10,10)
+d=randint(-10,10)
+while a==b and b==c and c==d and d==0:
+    a=randint(-5,5)
+    b=randint(-10,10)
+    c=randint(-10,10)
+    d=randint(-10,10)
+self.add("Calculer la fonction dérivée de la fonction suivante définie sur $\R$ par : ",False)
+if a==0:
+    if b==0:
+        if c==0: 
+            self.add("$$f(x)=",False)
+            self.add_nombre(d,False)
+            self.add("$$",False)
+        else:
+            if d==0:
+                self.add("$$f(x)=",False)
+                self.add_coef(c,False)
+                self.add("x$$",False)
+            else :
+                self.add("$$f(x)=",False)
+                self.add_coef(c,False)
+                self.add("x",False)
+                self.add_nombre_somme(d,False)
+                self.add("$$",False)
+    else: 
+        if c==0: 
+            self.add("$$f(x)=",False)
+            self.add_coef(b,False)
+            self.add("x^2",False)
+            self.add_nombre_somme(d,False)
+            self.add("$$",False)
+        else:
+            if d==0:
+                self.add("$$f(x)=",False)
+                self.add_coef(b,False)
+                self.add("x^2",False)
+                self.add_coef_somme(c,False)
+                self.add("x$$",False)
+            else :
+                self.add("$$f(x)=",False)
+                self.add_coef(b,False)
+                self.add("x^2",False)
+                self.add_coef_somme(c,False)
+                self.add("x",False)
+                self.add_nombre_somme(d,False)
+                self.add("$$",False)
+else:
+    if b==0:
+        if c==0: 
+            if d==0: 
+                self.add("$$f(x)=",False)
+                self.add_coef(a,False)
+                self.add("x^3",False)
+                self.add("$$",False)
+            else :
+                self.add("$$f(x)=",False)
+                self.add_coef(a,False)
+                self.add("x^3",False)
+                self.add_nombre_somme(d,False)
+                self.add("$$",False)
+        else:
+            if d==0:
+                self.add("$$f(x)=",False)
+                self.add_coef(a,False)
+                self.add("x^3",False)
+                self.add_coef_somme(c,False)
+                self.add("x$$",False)
+            else :
+                self.add("$$f(x)=",False)
+                self.add_coef(a,False)
+                self.add("x^3",False)
+                self.add_coef_somme(c,False)
+                self.add("x",False)
+                self.add_nombre_somme(d,False)
+                self.add("$$",False)
+    else: 
+        if c==0: 
+            if d==0:
+                self.add("$$f(x)=",False)
+                self.add_coef(a,False)
+                self.add("x^3",False)
+                self.add_coef_somme(b,False)
+                self.add("x^2",False)
+                self.add("$$",False)
+            else:
+                self.add("$$f(x)=",False)
+                self.add_coef(a,False)
+                self.add("x^3",False)
+                self.add_coef_somme(b,False)
+                self.add("x^2",False)
+                self.add_nombre_somme(d,False)
+                self.add("$$",False)
+        else:
+            if d==0:
+                self.add("$$f(x)=",False)
+                self.add_coef(a,False)
+                self.add("x^3",False)
+                self.add_coef_somme(b,False)
+                self.add("x^2",False)
+                self.add_coef_somme(c,False)
+                self.add("x$$",False)
+            else :
+                self.add("$$f(x)=",False)
+                self.add_coef(a,False)
+                self.add("x^3",False)
+                self.add_coef_somme(b,False)
+                self.add("x^2",False)
+                self.add_coef_somme(c,False)
+                self.add("x",False)
+                self.add_nombre_somme(d,False)
+                self.add("$$",False)
+self.add("Calculer la fonction dérivée de la fonction suivante définie sur $\R$ par : ")
+if a==0:
+    if b==0:
+        if c==0: 
+            self.add("$$f(x)=\\textcolor{blue}{")
+            self.add_nombre(d)
+            self.add("}$$")
+        else:
+            if d==0:
+                self.add("$$f(x)=")
+                self.add_coef(c)
+                self.add("\\textcolor{blue}{x}$$")
+            else :
+                self.add("$$f(x)=")
+                self.add_coef(c)
+                self.add("\\textcolor{blue}{x")
+                self.add_nombre_somme(d)
+                self.add("}$$")
+    else: 
+        if c==0: 
+            self.add("$$f(x)=")
+            self.add_coef(b)
+            self.add("\\textcolor{blue}{x^2")
+            self.add_nombre_somme(d)
+            self.add("}$$")
+        else:
+            if d==0:
+                self.add("$$f(x)=")
+                self.add_coef(b)
+                self.add("\\textcolor{blue}{x^2}")
+                self.add_coef_somme(c)
+                self.add("\\textcolor{blue}{x}$$")
+            else :
+                self.add("$$f(x)=")
+                self.add_coef(b)
+                self.add("\\textcolor{blue}{x^2}")
+                self.add_coef_somme(c)
+                self.add("\\textcolor{blue}{x")
+                self.add_nombre_somme(d)
+                self.add("}$$")
+else:
+    if b==0:
+        if c==0: 
+            if d==0: 
+                self.add("$$f(x)=")
+                self.add_coef(a)
+                self.add("\\textcolor{blue}{x^3}")
+                self.add("$$")
+            else :
+                self.add("$$f(x)=")
+                self.add_coef(a)
+                self.add("\\textcolor{blue}{x^3")
+                self.add_nombre_somme(d)
+                self.add("}$$")
+        else:
+            if d==0:
+                self.add("$$f(x)=")
+                self.add_coef(a)
+                self.add("\\textcolor{blue}{x^3}")
+                self.add_coef_somme(c)
+                self.add("\\textcolor{blue}{x}$$")
+            else :
+                self.add("$$f(x)=")
+                self.add_coef(a)
+                self.add("\\textcolor{blue}{x^3}")
+                self.add_coef_somme(c)
+                self.add("\\textcolor{blue}{x}")
+                self.add_nombre_somme(d)
+                self.add("$$")
+    else: 
+        if c==0: 
+            if d==0:
+                self.add("$$f(x)=")
+                self.add_coef(a)
+                self.add("\\textcolor{blue}{x^3}")
+                self.add_coef_somme(b)
+                self.add("\\textcolor{blue}{x^2}")
+                self.add("$$")
+            else:
+                self.add("$$f(x)=")
+                self.add_coef(a)
+                self.add("\\textcolor{blue}{x^3}")
+                self.add_coef_somme(b)
+                self.add("\\textcolor{blue}{x^2")
+                self.add_nombre_somme(d)
+                self.add("}$$")
+        else:
+            if d==0:
+                self.add("$$f(x)=")
+                self.add_coef(a)
+                self.add("\\textcolor{blue}{x^3}")
+                self.add_coef_somme(b)
+                self.add("\\textcolor{blue}{x^2}")
+                self.add_coef_somme(c)
+                self.add("\\textcolor{blue}{x}$$")
+            else :
+                self.add("$$f(x)=")
+                self.add_coef(a)
+                self.add("\\textcolor{blue}{x^3}")
+                self.add_coef_somme(b)
+                self.add("\\textcolor{blue}{x^2}")
+                self.add_coef_somme(c)
+                self.add("\\textcolor{blue}{x")
+                self.add_nombre_somme(d)
+                self.add("}$$")
+self.add("\n \n On a alors pour tout $x \in  \R$, $$")
+if a==0:
+    if b==0:
+        if c==0: 
+            self.add("f'(x)=\\textcolor{blue}{0}=0 $$")
+        else:
+            if d==0:
+                self.add("f'(x)=")
+                self.add_nombre(c)
+                self.add("\\times \\textcolor{blue}{1}=")
+                self.add_coef(c)
+                self.add("$$")
+            else :
+                self.add("f'(x)=")
+                self.add_nombre(c)
+                self.add("\\times \\textcolor{blue}{1}+\\textcolor{blue}{0}=")
+                self.add_coef(c)
+                self.add("$$")
+    else: 
+        if c==0: 
+            self.add("f'(x)=")
+            self.add_nombre(b)
+            self.add("\\times \\textcolor{blue}{2x}=")
+            self.add_coef(2*b)
+            self.add("x")
+            self.add("$$")
+        else:
+            if d==0:
+                self.add("f'(x)=")
+                self.add_nombre(b)
+                self.add("\\times \\textcolor{blue}{2x} ")
+                self.add_nombre_somme(c)
+                self.add("\\times \\textcolor{blue}{1}=")
+                self.add_coef(2*b)
+                self.add("x ")
+                self.add_coef_somme(c)
+                self.add("$$")
+            else :
+                self.add("f'(x)=")
+                self.add_nombre(b)
+                self.add("\\times \\textcolor{blue}{2x}")
+                self.add_nombre_somme(c)
+                self.add("\\times \\textcolor{blue}{1}+\\textcolor{blue}{0}=")
+                self.add_coef(2*b)
+                self.add("x")
+                self.add_coef_somme(c)
+                self.add("$$")
+else:
+    if b==0:
+        if c==0: 
+            if d==0: 
+                self.add("f'(x)=")
+                self.add_nombre(a)
+                self.add("\\times \\textcolor{blue}{3x^2}")
+                self.add("= ")
+                self.add_coef(3*a)
+                self.add("x^2")
+                self.add("$$")
+            else :
+                self.add("f'(x)=")
+                self.add_nombre(a)
+                self.add("\\times \\textcolor{blue}{3x^2}+\\textcolor{blue}{0}")
+                self.add("= ")
+                self.add_coef(3*a)
+                self.add("x^2")
+                self.add("$$")
+        else:
+            if d==0:
+                self.add("f'(x)= ")
+                self.add_nombre(a)
+                self.add("\\times \\textcolor{blue}{3x^2}")
+                self.add_nombre_somme(c)
+                self.add("\\times \\textcolor{blue}{1}=")
+                self.add_coef(3*a)
+                self.add("x^2")
+                self.add_nombre_somme(c)
+                self.add("$$")
+            else :
+                self.add("f'(x)= ")
+                self.add_nombre(a)
+                self.add("\\times \\textcolor{blue}{3x^2}")
+                self.add_nombre_somme(c)
+                self.add("\\times \\textcolor{blue}{1}+\\textcolor{blue}{0}=")
+                self.add_coef(3*a)
+                self.add("x^2")
+                self.add_nombre_somme(c)
+                self.add("$$")
+    else: 
+        if c==0: 
+            if d==0:
+                self.add("f'(x)=")
+                self.add_nombre(a)
+                self.add("\\times \\textcolor{blue}{3x^2} ")
+                self.add_nombre_somme(b)
+                self.add("\\times \\textcolor{blue}{2x}")
+                self.add("=")
+                self.add_coef(3*a)
+                self.add("x^2 ")
+                self.add_coef_somme(2*b)
+                self.add("x")
+                self.add("$$")
+            else:
+                self.add("f'(x)= ")
+                self.add_nombre(a)
+                self.add("\\times \\textcolor{blue}{3x^2} ")
+                self.add_nombre_somme(b)
+                self.add("\\times \\textcolor{blue}{2x}+\\textcolor{blue}{0}")
+                self.add("=")
+                self.add_coef(3*a)
+                self.add("x^2")
+                self.add_coef_somme(2*b)
+                self.add("x")
+                self.add("$$")
+        else:
+            if d==0:
+                self.add("f'(x)=")
+                self.add_nombre(a)
+                self.add("\\times \\textcolor{blue}{3x^2}  ")
+                self.add_nombre_somme(b)
+                self.add("\\times \\textcolor{blue}{2x}")
+                self.add_nombre_somme(c)
+                self.add("\\times \\textcolor{blue}{1}=")
+                self.add_coef(3*a)
+                self.add("x^2 ")
+                self.add_coef_somme(2*b)
+                self.add("x")
+                self.add_nombre_somme(c)
+                self.add("$$")
+            else :
+                self.add("f'(x)= ")
+                self.add_nombre(a)
+                self.add("\\times \\textcolor{blue}{3x^2} ")
+                self.add_nombre_somme(b)
+                self.add("\\times \\textcolor{blue}{2x}")
+                self.add_nombre_somme(c)
+                self.add("\\times \\textcolor{blue}{1}+\\textcolor{blue}{0}=")
+                self.add_coef(3*a)
+                self.add("x^2")
+                self.add_nombre_somme(2*b)
+                self.add("x")
+                self.add_nombre_somme(c)
+                self.add("$$")
+self.frame_end()

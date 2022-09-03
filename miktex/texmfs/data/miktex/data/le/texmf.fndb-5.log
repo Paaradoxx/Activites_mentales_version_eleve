@@ -1,0 +1,12 @@
+-CACHEDIR.TAG;fontconfig/cache
++2022-06-18-10-39-33.log;miktex/log/makefmt/xelatex;
++xelatex.fmt;miktex/data/le/xetex;
+-cad3629e0783b8120f6a4793a6a5d287-le64.cache-7;fontconfig/cache
++mf.base;miktex/data/le;
++rsfs10.tfm;fonts/tfm/public/rsfs;
++rsfs5.tfm;fonts/tfm/public/rsfs;
++vect10.tfm;fonts/tfm/public/esvect;
++vect8.tfm;fonts/tfm/public/esvect;
++vect6.tfm;fonts/tfm/public/esvect;
++rsfs7.tfm;fonts/tfm/public/rsfs;
++vect7.tfm;fonts/tfm/public/esvect;

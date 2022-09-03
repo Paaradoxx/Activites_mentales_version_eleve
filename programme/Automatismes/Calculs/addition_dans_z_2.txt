@@ -1,0 +1,61 @@
+a = randint(-20, 20)
+b = randint(-20, 20)
+d = randint(0, 1)
+while a == 0:
+    a = randint(-20, 20)
+while b == 0:
+    b = randint(-20, 20)
+emplacement_trou = randint(0, 2)
+if randint(0, 1) == 0:
+    symbole = "+"
+    c = a+b
+else:
+    symbole = "-"
+    c = a-b
+
+self.frame_init()
+self.add("Compléter le calcul suivant \\[", False)
+self.add("\tCompléter le calcul suivant: \\[", True)
+if emplacement_trou == 0:
+    self.add("\\ldots ", False)
+    self.add(symbole, False)
+    self.add_nombre_produit(b, cor = False)
+    self.add("=", False)
+    self.add_nombre(c, cor = False)
+
+    self.add("\\textcolor{red}{", True)
+    self.add_nombre(a, True)
+    self.add("} ", True)
+    self.add(symbole)
+    self.add_nombre_produit(b, True)
+    self.add("=", True)
+    self.add_nombre(c, True)
+
+elif emplacement_trou == 1:
+    self.add_nombre(a, cor = False)
+    self.add(symbole, False)
+    self.add(" \\ldots=", False)
+    self.add_nombre(c, cor = False)
+
+    self.add_nombre(a, True)
+    self.add(symbole)
+    self.add("\\textcolor{red}{", True)
+    self.add_nombre_produit(b, True)
+    self.add("}=", True)
+    self.add_nombre(c, True)
+else:
+    self.add_nombre(a, cor = False)
+    self.add(symbole, False)
+    self.add_nombre_produit(b, cor = False)
+    self.add(" = \\ldots", False)
+
+    self.add_nombre(a, True)
+    self.add(symbole, True)
+    self.add_nombre_produit(b, True)
+    self.add("= \\textcolor{red}{", True)
+    self.add_nombre(c, True)
+    self.add("}", True)
+
+self.add("\] \n", False)
+self.add("\] \n", True)
+self.frame_end()

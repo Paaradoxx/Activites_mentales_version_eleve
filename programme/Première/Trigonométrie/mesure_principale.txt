@@ -1,0 +1,332 @@
+a = randint(10, 150)
+b = randint(3, 11)
+
+while gcd(a, b)!=1:
+    b += 1
+
+
+q = a//(2*b)
+r = a % (2*b)
+
+if randint(0, 1):
+    a = -a
+
+ad = Fraction(a, b)
+
+while abs(ad) < 2:
+    a = randint(10, 150)
+    b = randint(3, 11)
+
+    while gcd(a, b)!=1:
+        b += 1
+
+
+    q = a//(2*b)
+    r = a % (2*b)
+    
+    if randint(0, 1):
+        a = -a
+    ad = Fraction(a, b)
+
+ad = Fraction(a, b)
+self.frame_init()
+self.add("Déterminer la mesure principale de l'angle $\\dfrac{", cor = False)
+self.add_nombre(ad.numerator, cor = False)
+self.add("\\pi}{", cor = False)
+self.add_nombre(ad.denominator, cor = False)
+self.add("}$ puis le placer sur le cercle trigonométrique.", cor = False)
+
+self.add("\\begin{minipage}{0.45 \\linewidth}\n\t\\begin{align*}\n\t\t\\dfrac{")
+self.add_nombre(ad.numerator)
+self.add("\\pi}{")
+self.add_nombre(ad.denominator)
+self.add("} &= ")
+self.add_frac(ad)
+self.add("\\times \\dfrac{2\\pi}{2} \\\\\n\t\t&=\\dfrac{")
+self.add_nombre(ad.numerator)
+self.add("}{")
+self.add_nombre(2*ad.denominator)
+self.add("} \\times 2 \\pi\\\\\n\t\t&=\\dfrac{")
+if a>0:
+    self.add("(")
+    self.add_nombre(2*b)
+    self.add("\\times ")
+    self.add_nombre_produit(q)
+    self.add_nombre_somme(r)
+    self.add(") \\times 2 \\pi}{")
+    self.add_nombre(2*b)
+    self.add("}\\\\\n\t\t&=\\dfrac{")
+    self.add_nombre(2*b)
+    self.add("\\times ")
+    self.add_nombre_produit(q)
+    self.add(" \\times 2 \\pi}{")
+    self.add_nombre(2*b)
+    self.add("}+\\dfrac{")
+    self.add_nombre(r)
+    self.add("\\times 2\\pi}{")
+    self.add_nombre(2*b)
+    self.add("}\\\\\n\t\t&=")
+
+    self.add_nombre(q)
+    self.add("\\times 2\\pi")
+    if r<0:
+        self.add("-")
+    else:
+        self.add("+")
+    self.add("\\dfrac{")
+    self.add_coef(r)
+    self.add("\\pi}{")
+    self.add_nombre(b)
+    self.add("}\n\t\\end{align*}\n\\end{minipage}")
+else:
+    self.add("-(")
+    self.add_nombre(2*b)
+    self.add("\\times ")
+    self.add_nombre_produit(q)
+    self.add_nombre_somme(r)
+    self.add(") \\times 2 \\pi}{")
+    self.add_nombre(2*b)
+    self.add("}\\\\\n\t\t&=-\\dfrac{")
+    self.add_nombre(2*b)
+    self.add("\\times ")
+    self.add_nombre_produit(q)
+    self.add(" \\times 2 \\pi}{")
+    self.add_nombre(2*b)
+    self.add("}-\\dfrac{")
+    self.add_nombre(r)
+    self.add("\\times 2\\pi}{")
+    self.add_nombre(2*b)
+    self.add("}\\\\\n\t\t&=-")
+
+    self.add_nombre(q)
+    self.add("\\times 2\\pi")
+    self.add("-")
+    self.add("\\dfrac{")
+    self.add_coef(r)
+    self.add("\\pi}{")
+    self.add_nombre(b)
+    self.add("}\n\t\\end{align*}\n\\end{minipage}")
+
+
+mp = mesure_principale(ad)
+
+degre = int(360*100/(2*b))/100
+
+self.add("\n\\hfil\n\\begin{minipage}{0.5 \\linewidth}\n\t\\begin{tikzpicture}[scale = 0.65]\n\t\t")
+self.add("\\draw[thick] (0,0) circle (2);\n\t\t")
+self.add("\\draw[-{Straight Barb[length = 0.5mm]}] (-2.25,0) -- (2.25, 0);\n\t\t")
+self.add("\\draw[-{Straight Barb[length = 0.5mm]}] (0,-2.25) -- (0, 2.25);\n\t\t")
+
+for i in range(2, 2*b):
+    angle = i*degre
+    if angle != 0 and angle != 180:
+        if mp.numerator >= 0:
+            if i != mp.numerator:
+                self.add("\\begin{scope}[rotate = ")
+                self.add_nombre(angle)
+                self.add("]\n\t")
+
+                self.add("\\draw[dotted] (0,0) -- (2,0);\n\t")
+                self.add("\\draw[thick] (1.9, 0) -- (2.1,0);\n\t")
+
+
+                self.add("\\end{scope}\n\n")
+        else:
+            if i-2*b != mp.numerator:
+                self.add("\\begin{scope}[rotate = ")
+                self.add_nombre(angle)
+                self.add("]\n\t")
+
+                self.add("\\draw[dotted] (0,0) -- (2,0);\n\t")
+                self.add("\\draw[thick] (1.9, 0) -- (2.1,0);\n\t")
+                self.add("\\end{scope}\n\n")
+self.add("\\begin{scope}[rotate = ")
+self.add_nombre(mp.numerator*degre)
+self.add("]\n\t")
+
+self.add("\\draw[dotted, louis, thick] (0,0) -- (2,0);\n\t")
+
+if mp.numerator != 0 and mp.denominator != 1:
+
+    self.add("\\draw[louis, thick] (1.9, 0) -- (2.1,0);\n\t\\draw[louis] (2.3, 0) node [")
+    if -1 < mp < -0.5:
+        self.add("below, left")
+    elif mp == 1:
+        self.add("left")
+    elif mp == -0.5:
+        self.add("below")
+    elif -0.5 < mp < 0:
+        self.add("below, right")
+    elif mp == 0:
+        self.add("right")
+    elif 0 < mp < 0.5:
+        self.add("above, right")
+    elif mp == 0.5:
+        self.add("above")
+    else:
+        self.add("above, left")
+
+    self.add("] {$\\dfrac{")
+    self.add_coef(a)
+    self.add("\pi}{")
+    self.add_nombre(b)
+    self.add("}=\\dfrac{")
+    self.add_coef(mp.numerator)
+    self.add("\pi}{")
+    self.add_nombre(mp.denominator)
+    self.add("}$};\n")
+
+    self.add("\\end{scope}\n\n")
+
+    self.add("\\draw[dashed, louis, thick] ({2*cos(deg ")
+    self.add_nombre(mp.numerator)
+    self.add("/")
+    self.add_nombre(mp.denominator)
+    self.add("*pi)},0) -- ({2*cos(deg ")
+    self.add_nombre(mp.numerator)
+    self.add("/")
+    self.add_nombre(mp.denominator)
+    self.add("*pi)}, {2*sin(deg ")
+    self.add_nombre(mp.numerator)
+    self.add("/")
+    self.add_nombre(mp.denominator)
+    self.add("*pi)}) -- (0, {2*sin(deg ")
+    self.add_nombre(mp.numerator)
+    self.add("/")
+    self.add_nombre(mp.denominator)
+    self.add("*pi)});")
+elif mp.numerator == 0:
+    self.add("\\end{scope}\n\n")
+    self.add("\\draw[louis, right] (2.3, 0) node {$\\dfrac{")
+    self.add_coef(a)
+    self.add("\pi}{")
+    self.add_nombre(b)
+    self.add("}=0$};")
+
+else:
+    self.add("\\end{scope}\n\n")
+
+    self.add("\\draw[louis, left] (-2.3, 0) node {$\\dfrac{")
+    self.add_coef(a)
+    self.add("\pi}{")
+    self.add_nombre(b)
+    self.add("}=\pi$};")
+
+if mp.numerator != 1:
+    self.add("\\begin{scope}[rotate = ")
+    self.add_nombre(degre)
+    self.add("]\n\t")
+    self.add("\\draw[thick, dotted, louis] (0,0) -- (2,0);\n\t")
+    self.add("\\draw[thick, louis] (1.9, 0) -- (2.1,0) node[above right] {$\\dfrac{\pi}{")
+    self.add_nombre(b)
+    self.add("}$};\n")
+    self.add("\\end{scope}\n\n")
+    self.add("\\draw[dashed, louis, thick] ({2*cos(deg ")
+    self.add_nombre(1)
+    self.add("/")
+    self.add_nombre(b)
+    self.add("*pi)},0) -- ({2*cos(deg ")
+    self.add_nombre(1)
+    self.add("/")
+    self.add_nombre(b)
+    self.add("*pi)}, {2*sin(deg ")
+    self.add_nombre(1)
+    self.add("/")
+    self.add_nombre(b)
+    self.add("*pi)}) -- (0, {2*sin(deg ")
+    self.add_nombre(1)
+    self.add("/")
+    self.add_nombre(b)
+    self.add("*pi)});")
+
+
+
+
+self.add("\\end{tikzpicture}\n\\end{minipage}")
+
+
+if a < 0 and Fraction(r, b) >= 1:
+    self.add("\n\nOr $")
+    if a < 0:
+        self.add("-")
+    self.add("\\dfrac{")
+    self.add_coef(r)
+    self.add("\\pi}{")
+    self.add_nombre(b)
+    self.add("}\\leq-\\pi$, on fait un tour de plus en rajoutant $2\\pi$: $")
+    self.add("-\\dfrac{")
+    self.add_coef(r)
+    self.add("\\pi}{")
+    self.add_nombre(b)
+    self.add("}+2\\pi = ")
+    self.add("\\dfrac{")
+    self.add_coef(-r+2*b)
+    self.add("\\pi}{")
+    self.add_nombre(b)
+    self.add("}$.\n\nComme $-\\pi <\\dfrac{")
+    self.add_coef(-r+2*b)
+    self.add("\\pi}{")
+    self.add_nombre(b)
+    self.add("}\\leq \\pi$, la mesure principale de $\\dfrac{")
+    self.add_nombre(ad.numerator)
+    self.add("\\pi}{")
+    self.add_nombre(ad.denominator)
+    self.add("}$ est $\\dfrac{") 
+    self.add_coef(-r+2*b)
+    self.add("\\pi}{")
+    self.add_nombre(b)
+    self.add("}$.")
+
+elif a > 0 and Fraction(r, b) > 1:
+    self.add("\n\nOr $")
+    self.add("\\dfrac{")
+    self.add_coef(r)
+    self.add("\\pi}{")
+    self.add_nombre(b)
+    self.add("}>\\pi$, on fait un tour de moins en retirant $2\\pi$: $")
+    self.add("\\dfrac{")
+    self.add_coef(r)
+    self.add("\\pi}{")
+    self.add_nombre(b)
+    self.add("}-2\\pi = ")
+    self.add("\\dfrac{")
+    self.add_coef(r-2*b)
+    self.add("\\pi}{")
+    self.add_nombre(b)
+    self.add("}$.\n\nComme $-\\pi <-\\dfrac{")
+    self.add_coef(-r+2*b)
+    self.add("\\pi}{")
+    self.add_nombre(b)
+    self.add("}\\leq \\pi$, la mesure principale de $\\dfrac{")
+    self.add_nombre(ad.numerator)
+    self.add("\\pi}{")
+    self.add_nombre(ad.denominator)
+    self.add("}$ est $\\dfrac{") 
+    self.add_coef(r-2*b)
+    self.add("\\pi}{")
+    self.add_nombre(b)
+    self.add("}$.")
+
+else:
+    self.add("\n\nComme $-\\pi < ")
+    if a < 0:
+        self.add("-")
+    self.add("\\dfrac{")
+    self.add_coef(r)
+    self.add("\\pi}{")
+    self.add_nombre(b)                
+    self.add("}\\leq \\pi$, la mesure principale de $\\dfrac{")
+    self.add_nombre(ad.numerator)
+    self.add("\\pi}{")
+    self.add_nombre(ad.denominator)
+    self.add("}$ est $\\dfrac{")
+    if a<0:
+        self.add_coef(-r)
+    else:
+        self.add_coef(-r)
+    self.add("\\pi}{")
+    self.add_nombre(b)
+    self.add("}$.")
+
+
+self.frame_end()

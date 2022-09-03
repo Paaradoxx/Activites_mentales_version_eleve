@@ -1,0 +1,26 @@
+2022-06-18 11:24:57,747+0200 INFO  miktex-mf - this process (6240) started by miktex-maketfm in directory C:\Users\ogglo\AppData\Local\Temp\mik42857 with command line: miktex-mf.exe --miktex-enable-installer --miktex-disable-maintenance --miktex-disable-diagnose --undump=mf \mode:=ljfour; nonstopmode; "input rsfs10"
+2022-06-18 11:24:57,748+0200 INFO  miktex-mf - this is MiKTeX-METAFONT 4.0.0 (2.71828182) (MiKTeX 22.3 Portable)
+2022-06-18 11:24:57,771+0200 INFO  miktex-mf - going to create file: mf.base
+2022-06-18 11:24:57,771+0200 INFO  miktex-mf.core - start process: miktex --enable-installer formats build mf
+2022-06-18 11:24:58,597+0200 INFO  miktex-mf - this process (15140) started by miktex-makebase in directory C:\Users\ogglo\AppData\Local\Temp\mik59392 with command line: miktex-mf.exe --miktex-enable-installer --miktex-disable-maintenance --miktex-disable-diagnose --initialize --interaction=nonstopmode --halt-on-error -tcx=cp227.tcx mf.ini
+2022-06-18 11:24:58,597+0200 INFO  miktex-mf - this is MiKTeX-METAFONT 4.0.0 (2.71828182) (MiKTeX 22.3 Portable)
+2022-06-18 11:24:58,680+0200 INFO  miktex-mf - this process (15140) finishes with exit code 0
+2022-06-18 11:24:58,996+0200 INFO  miktex-mf - this process (6240) finishes with exit code 0
+2022-06-18 11:24:59,940+0200 INFO  miktex-mf - this process (8640) started by miktex-maketfm in directory C:\Users\ogglo\AppData\Local\Temp\mik49927 with command line: miktex-mf.exe --miktex-enable-installer --miktex-disable-maintenance --miktex-disable-diagnose --undump=mf \mode:=ljfour; nonstopmode; "input rsfs5"
+2022-06-18 11:24:59,940+0200 INFO  miktex-mf - this is MiKTeX-METAFONT 4.0.0 (2.71828182) (MiKTeX 22.3 Portable)
+2022-06-18 11:25:00,040+0200 INFO  miktex-mf - this process (8640) finishes with exit code 0
+2022-06-18 11:25:00,980+0200 INFO  miktex-mf - this process (15388) started by miktex-maketfm in directory C:\Users\ogglo\AppData\Local\Temp\mik26444 with command line: miktex-mf.exe --miktex-enable-installer --miktex-disable-maintenance --miktex-disable-diagnose --undump=mf \mode:=ljfour; nonstopmode; "input vect10"
+2022-06-18 11:25:00,980+0200 INFO  miktex-mf - this is MiKTeX-METAFONT 4.0.0 (2.71828182) (MiKTeX 22.3 Portable)
+2022-06-18 11:25:01,093+0200 INFO  miktex-mf - this process (15388) finishes with exit code 0
+2022-06-18 11:25:01,991+0200 INFO  miktex-mf - this process (15876) started by miktex-maketfm in directory C:\Users\ogglo\AppData\Local\Temp\mik78695 with command line: miktex-mf.exe --miktex-enable-installer --miktex-disable-maintenance --miktex-disable-diagnose --undump=mf \mode:=ljfour; nonstopmode; "input vect8"
+2022-06-18 11:25:01,991+0200 INFO  miktex-mf - this is MiKTeX-METAFONT 4.0.0 (2.71828182) (MiKTeX 22.3 Portable)
+2022-06-18 11:25:02,101+0200 INFO  miktex-mf - this process (15876) finishes with exit code 0
+2022-06-18 11:25:03,139+0200 INFO  miktex-mf - this process (1324) started by miktex-maketfm in directory C:\Users\ogglo\AppData\Local\Temp\mik51380 with command line: miktex-mf.exe --miktex-enable-installer --miktex-disable-maintenance --miktex-disable-diagnose --undump=mf \mode:=ljfour; nonstopmode; "input vect6"
+2022-06-18 11:25:03,139+0200 INFO  miktex-mf - this is MiKTeX-METAFONT 4.0.0 (2.71828182) (MiKTeX 22.3 Portable)
+2022-06-18 11:25:03,239+0200 INFO  miktex-mf - this process (1324) finishes with exit code 0
+2022-06-19 18:54:47,419+0200 INFO  miktex-mf - this process (4188) started by miktex-maketfm in directory C:\Users\ogglo\AppData\Local\Temp\mik27680 with command line: miktex-mf.exe --miktex-enable-installer --miktex-disable-maintenance --miktex-disable-diagnose --undump=mf \mode:=ljfour; nonstopmode; "input rsfs7"
+2022-06-19 18:54:47,420+0200 INFO  miktex-mf - this is MiKTeX-METAFONT 4.0.0 (2.71828182) (MiKTeX 22.3 Portable)
+2022-06-19 18:54:47,549+0200 INFO  miktex-mf - this process (4188) finishes with exit code 0
+2022-06-19 18:54:48,515+0200 INFO  miktex-mf - this process (12200) started by miktex-maketfm in directory C:\Users\ogglo\AppData\Local\Temp\mik56390 with command line: miktex-mf.exe --miktex-enable-installer --miktex-disable-maintenance --miktex-disable-diagnose --undump=mf \mode:=ljfour; nonstopmode; "input vect7"
+2022-06-19 18:54:48,516+0200 INFO  miktex-mf - this is MiKTeX-METAFONT 4.0.0 (2.71828182) (MiKTeX 22.3 Portable)
+2022-06-19 18:54:48,627+0200 INFO  miktex-mf - this process (12200) finishes with exit code 0

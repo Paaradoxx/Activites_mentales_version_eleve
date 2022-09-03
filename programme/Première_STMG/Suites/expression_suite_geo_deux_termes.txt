@@ -1,0 +1,55 @@
+self.frame_init()
+a=randint(-50,50)
+b=randint(-50,50)
+while a==0 or b==0:
+    a=randint(-50,50)
+    b=randint(-50,50)
+self.add("Soit $(u_n)_n$ une suite arithmétique de premiers termes $u_0=",False)
+self.add_nombre(a,False)
+self.add("$ et $u_1=",False)
+self.add_nombre(b,False)
+self.add("$. \n \n Exprimer $u_{n+1}$ en fonction de $u_n$.",False)
+
+self.add("Soit $(u_n)_n$ une suite arithmétique de premiers termes $u_0=")
+self.add_nombre(a)
+self.add("$ et $u_1=")
+self.add_nombre(b)
+self.add("$. \n \n Exprimer $u_{n+1}$ en fonction de $u_n$. \n \n \\vspace*{1cm} \n \n Comme la suite est arithmétique, on sait que $u_1=u_0\\times q$. On cherche donc la valeur de $q$ en calculant $$\\dfrac{u_1}{u_0}=\\dfrac{")
+self.add_nombre(b)
+self.add("}{")
+self.add_nombre(a)
+self.add("}=")
+f=Fraction(b,a)
+d=f.denominator
+c=f.numerator
+if d==1 : 
+    self.add_nombre(c)
+    if c>0:
+        self.add("$$ \n \n Ainsi, on a $$ \\left\\{ \n \\begin{array}{ll} \n u_{n+1} &= u_n \\times ")
+        self.add_nombre(d)
+    else :
+        self.add("$$ \n \n Ainsi, on a $$ \\left\\{ \n \\begin{array}{ll} \n u_{n+1} &= u_n \\times \\left( ")
+        self.add_nombre(d)
+        self.add(" \\right) ")
+else :
+    self.add("\\dfrac{")
+    self.add_nombre(c)
+    self.add("}{")
+    self.add_nombre(d)
+    self.add("}")
+    if c>0:
+        self.add("$$ \n \n Ainsi, on a $$ \\left\\{ \n \\begin{array}{ll} \n u_{n+1} &= u_n \\times \\dfrac{")
+        self.add_nombre(c)
+        self.add("}{")
+        self.add_nombre(d)
+        self.add("}")
+    else :
+        self.add("$$ \n \n Ainsi, on a $$ \\left\\{ \n \\begin{array}{ll} \n u_{n+1} &= u_n \\times \\left( \\dfrac{")
+        self.add_nombre(c)
+        self.add("}{")
+        self.add_nombre(d)
+        self.add("} \\right) ")
+self.add(" \\\ \n u_0 & = ")
+self.add_nombre(a)
+self.add(" \n \\end{array} \n \\right. $$ \n ")
+self.frame_end()

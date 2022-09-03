@@ -1,0 +1,56 @@
+nbr = [2, 3, 4, 5, 10]
+facteur_commun_1 = nbr[randint(0, len(nbr)-1)]
+facteur_commun_2 = nbr[randint(0, len(nbr)-1)]
+
+if facteur_commun_2 == 10:
+    facteur_commun_1, facteur_commun_2 = facteur_commun_2, facteur_commun_1
+
+if facteur_commun_1 != 10:
+    if facteur_commun_2 < facteur_commun_1:
+        facteur_commun_1, facteur_commun_2 = facteur_commun_2, facteur_commun_1
+a = randint(-10, 30)
+b = randint(-10, 30)
+while  -2 < a < 2:
+    a = randint(-5, 20)
+while -2 < b < 2 or gcd(a, b) != 1:
+    b = randint(-5, 20)
+a = a*facteur_commun_1*facteur_commun_2
+b = b*facteur_commun_1*facteur_commun_2
+
+
+self.frame_init()
+
+self.add("Simplifier la fraction $\\dfrac{", False)
+self.add_nombre(a, False)
+self.add("}{", False)
+self.add_nombre(b, False)
+self.add("}$.", False)
+
+self.add("\\[\\dfrac{")
+self.add_nombre(a)
+self.add("}{")
+self.add_nombre(b)
+self.add("} = \\dfrac{")
+self.add_nombre(facteur_commun_1)
+self.add("\\times ")
+self.add_nombre_produit(a//facteur_commun_1)
+self.add("}{")
+self.add_nombre(facteur_commun_1)
+self.add("\\times ")
+self.add_nombre_produit(b//facteur_commun_1)
+self.add("} = \\dfrac{")
+self.add_nombre(facteur_commun_1)
+self.add("\\times ")
+self.add_nombre(facteur_commun_2)
+self.add("\\times ")
+self.add_nombre_produit(a//facteur_commun_1//facteur_commun_2)
+self.add("}{")
+self.add_nombre(facteur_commun_1)
+self.add("\\times ")
+self.add_nombre(facteur_commun_2)
+self.add("\\times ")
+self.add_nombre_produit(b//facteur_commun_1//facteur_commun_2)
+self.add("} = ")
+self.add_frac(Fraction(a, b))
+self.add("\\]")
+self.frame_end()

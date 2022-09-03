@@ -1,0 +1,86 @@
+a=randint(3,10)
+N=[]
+C=[]
+self.frame_init()
+self.add("\\includegraphics[scale=0.01]{calculatrice}  On considère le tableau suivant \n \n \\begin{center} \n \\begin{tabular}{|p{2cm}|",False)
+for i in range(a):
+    self.add("p{0.5cm}|",False)
+self.add("} \n \\hline \n  \\centering Valeur ",False)
+for i in range(a):
+    e=randint(1,20)
+    while e in N:
+        e=randint(1,20)
+    N.append(e)
+N.sort()
+for i in range(a):
+    self.add("& \\centering ",False)
+    self.add_nombre(N[i],False)
+self.add("\\tabularnewline  \n \\hline \n \\centering Effectif ",False)
+for i in range(a):
+    C.append(randint(1,10))
+for i in range(a):
+    self.add("& \\centering ",False)
+    self.add_nombre(C[i],False)
+self.add("\\tabularnewline  \n \\hline \n \\end{tabular} \n \\end{center}  Calculer la médiane. ",False)
+
+#Correction :
+
+self.add("\\begin{center} \n \\begin{tabular}{|p{2cm}|")
+for i in range(a):
+    self.add("p{0.5cm}|")
+self.add("} \n \\hline \n  \\centering Valeur ")
+for i in range(a):
+    self.add("& \\centering ")
+    self.add_nombre(N[i])
+self.add("\\tabularnewline  \n \\hline \n \\centering Effectif ")
+for i in range(a):
+    self.add("& \\centering ")
+    self.add_nombre(C[i])
+self.add("\\tabularnewline  \n \\hline \n \\centering ECC  & ")
+ECC=[C[0]]
+for i in range(1,a):
+    ECC.append(ECC[i-1]+C[i])
+self.add_nombre(ECC[0])
+for i in range(1,a):
+    self.add("& \\centering ")
+    self.add_nombre(ECC[i])
+self.add("\\tabularnewline  \n \\hline \n \\end{tabular} \n \\end{center} ")
+if ECC[a-1]%2==0:
+    self.add("Il y a ")
+    self.add_nombre(ECC[a-1])
+    self.add(" valeurs. Il s'agit d'un nombre pair, la médiane est la moyenne entre la ")
+    med=round(ECC[a-1]/2)
+    self.add_nombre(med)
+    self.add("e valeur et la ")
+    self.add_nombre(med+1)
+    self.add("e valeur.")
+    i=0
+    m=0
+    while ECC[i]<med:
+        i+=1
+    if ECC[i]==med:
+        m=(N[i]+N[i+1])/2
+    else:
+        m=N[i]
+    self.add("\n \n La médiane de cette série statistique est donc ")
+    self.add_nombre(m)
+    self.add(". \n \n Cela signifie qu'il y a autant de personnes en dessous de ")   
+    self.add_nombre(m)
+    self.add(" qu'au dessus de cette valeur.")
+else :
+    self.add("Il y a ")
+    self.add_nombre(ECC[a-1])
+    self.add(" valeurs. Il s'agit d'un nombre impair, la médiane se trouve donc à la ")
+    med=round(ECC[a-1]/2+1)
+    self.add_nombre(med)
+    self.add("e valeur (il s'agit de la valeur centrale).")
+    i=0
+    while ECC[i]<med:
+        i+=1
+    m=N[i]
+    self.add("\n \n La médiane de cette série statistique est de ")
+    self.add_nombre(m)
+    self.add(". \n \n Cela signifie qu'il y a autant de personnes en dessous de ")   
+    self.add_nombre(m)
+    self.add(" qu'au dessus de cette valeur.")
+self.frame_end()        

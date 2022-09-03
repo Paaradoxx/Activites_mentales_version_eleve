@@ -1,0 +1,229 @@
+x, y = randint(-15, 15), randint(-15, 15)
+while x == 0 or y == 0:
+    x, y = randint(-15, 15), randint(-15, 15)
+
+a, b = randint(-9, 9), randint(-9, 9)
+while a == 0 or a == 1:
+    a = randint(-9, 9)
+while b == 0 or b == 1:
+    b = randint(-9, 9)  
+
+c, d = randint(-9, 9), randint(-9, 9)
+while c == 0 or c == a or c == 1:
+    c = randint(-9, 9)
+while d == 0 or d == b or d == 1:
+    d = randint(-9, 9) 
+
+r = a*x+b*y
+s = c*x+d*y
+a = Fraction(a, 1)
+b = Fraction(b, 1)
+c = Fraction(c, 1)
+d = Fraction(d, 1)
+r = Fraction(r, 1)
+s = Fraction(s, 1)
+
+
+self.frame_init()
+self.add("Résoudre le système suivant \\[(S):~\\begin{eq}", False)
+self.add_frac(a, True, False)
+self.add("x&", False)
+if b < 0:
+    self.add("-&", False)
+    self.add_frac(-b, True, False)
+else:
+    self.add("+&", False)
+    self.add_frac(b, True, False)
+self.add("y&=&", False)
+self.add_frac(r, cor = False)
+self.add("\\\\", False)
+self.add_frac(c, True, False)
+self.add("x&", False)
+if d < 0:
+    self.add("-&", False)
+    self.add_frac(-d, True, False)
+else:
+    self.add("+&", False)
+    self.add_frac(d, True, False)
+self.add("y&=&", False)
+self.add_frac(s, cor = False)
+self.add("\\end{eq}\\]", False)
+
+self.add("On résout le système par combinaisons linéaires.\n\n\\vspace*{-2em}\n\\begin{align*}\n\t(S)&\\Leftrightarrow\\begin{eq}")
+self.add_frac(a, True)
+self.add("x&")
+if b < 0:
+    self.add("-&")
+    self.add_frac(-b, True)
+else:
+    self.add("+&")
+    self.add_frac(b, True)
+self.add("y&=&")
+self.add_frac(r)
+self.add("\\\\")
+self.add_frac(c, True)
+self.add("x&")
+if d < 0:
+    self.add("-&")
+    self.add_frac(-d, True)
+else:
+    self.add("+&")
+    self.add_frac(d, True)
+self.add("y&=&")
+self.add_frac(s)
+self.add("\\end{eq}\\\\&\\Leftrightarrow\\begin{eql}")
+self.add_frac(a*c, True)
+self.add("x&")
+if b*c < 0:
+    self.add("-&")
+    self.add_frac(-b*c, True)
+else:
+    self.add("+&")
+    self.add_frac(b*c, True)
+self.add("y&=&")
+self.add_frac(r*c)
+self.add("& (L_1) \\leftarrow ")
+self.add_frac(c)
+self.add("\\times (L_1) \\\\")
+self.add_frac(c*a, True)
+self.add("x&")
+if d*a < 0:
+    self.add("-&")
+    self.add_frac(-d*a, True)
+else:
+    self.add("+&")
+    self.add_frac(d*a, True)
+self.add("y&=&")
+self.add_frac(s*a)
+self.add("& (L_2) \\leftarrow ")
+self.add_frac(a)
+self.add("\\times (L_2)\\end{eql} \\\\\n\t&\\Leftrightarrow\\begin{eql}")
+
+self.add_frac(a*c, True)
+self.add("x&")
+if b*c < 0:
+    self.add("-&")
+    self.add_frac(-b*c, True)
+else:
+    self.add("+&")
+    self.add_frac(b*c, True)
+self.add("y&=&")
+self.add_frac(r*c)
+self.add("& (L_1) \\\\")
+self.add_frac(a*c, True)
+self.add("x")
+self.add_frac_somme(-c*a, True)
+self.add("x&")
+if d*a < 0:
+    self.add("-&")
+    self.add_frac(-d*a, True)
+else:
+    self.add("+&")
+    self.add_frac(d*a, True)
+self.add("y")
+self.add_frac_somme(-b*c)
+self.add("y&=&")
+self.add_frac(s*a)
+self.add_frac_somme(-r*c)
+self.add("& (L_2) \\leftarrow (L_2) - (L_1)\\end{eql} \\\\\n\t&\\Leftrightarrow\\begin{eql}")
+
+self.add_frac(a*c, True)
+self.add("x&")
+if b*c < 0:
+    self.add("-&")
+    self.add_frac(-b*c, True)
+else:
+    self.add("+&")
+    self.add_frac(b*c, True)
+self.add("y&=&")
+self.add_frac(r*c)
+self.add("& (L_1) \\\\")
+self.add("&")
+if d*a-b*c < 0:
+    self.add("-&")
+    self.add_frac(-(d*a-b*c), True)
+else:
+    self.add("&")
+    self.add_frac(d*a-b*c, True)
+self.add("y&=&")
+self.add_frac(s*a-r*c)
+
+self.add("& (L_2)\\end{eql} ")
+self.add("\n\\end{align*}\n\n\\end{frame}\n\n\\begin{frame}\n\n\\vspace*{-2em}\n\\begin{align*}\n\t(S)&\\Leftrightarrow\\begin{eql}")
+self.add_frac(a*c, True)
+self.add("x&")
+if b*c < 0:
+    self.add("-&")
+    self.add_frac(-b*c, True)
+else:
+    self.add("+&")
+    self.add_frac(b*c, True)
+self.add("y&=&")
+self.add_frac(r*c)
+self.add("& (L_1) \\\\")
+self.add("&")
+if d*a-b*c < 0:
+    self.add("-&")
+    self.add_frac(-(d*a-b*c), True)
+else:
+    self.add("&")
+    self.add_frac(d*a-b*c, True)
+self.add("y&=&")
+self.add_frac(s*a-r*c)
+
+self.add("& (L_2)\\end{eql} \\\\ &\\Leftrightarrow \\begin{eql} ")
+self.add_frac(a*c, True)
+self.add("x&")
+if b*c < 0:
+    self.add("-&")
+    self.add_frac(-b*c, True)
+else:
+    self.add("+&")
+    self.add_frac(b*c, True)
+self.add("y&=&")
+self.add_frac(r*c)
+self.add(" & \\\\")
+self.add("& &y&=&\\dfrac{")
+self.add_frac(s*a-r*c)
+self.add("}{")
+self.add_frac(d*a-b*c)
+self.add("} &= ")
+self.add_frac(y)
+self.add("\\end{eql}\\\\&\\Leftrightarrow \\begin{eqrl}")
+
+self.add_frac(a*c, True)
+self.add("x")
+self.add_frac_somme(b*c, True)
+self.add("\\times")
+self.add_frac_produit(y)
+self.add("&=")
+self.add_frac(r*c)
+self.add("\\\\")
+self.add("y&=")
+self.add_frac((s*a-r*c)/(d*a-b*c))
+self.add("\\end{eqrl}\\\\\n\t&\\Leftrightarrow \\begin{eqrl}")
+
+self.add_frac(a*c, True)
+self.add("x&=")
+self.add_frac(r*c)
+self.add_frac_somme(-b*c*y)
+self.add("\\\\")
+self.add("y&=")
+self.add_frac((s*a-r*c)/(d*a-b*c))
+
+self.add("\\end{eqrl}\\\\\n\t&\\Leftrightarrow \\begin{eqrl}")
+self.add("x&=\\dfrac{")
+self.add_frac(r*c-b*c*y)
+self.add("}{")
+self.add_frac(a*c)
+self.add("} = ")
+self.add_frac(x)
+self.add("\\\\y&=")
+self.add_frac((s*a-r*c)/(d*a-b*c))
+self.add("\\end{eqrl}\n\\end{align*}D'où les solutions de $(S)$ sont $\\left\\{(")
+self.add_frac(x)
+self.add("~;~")
+self.add_frac(y)
+self.add(")\\right\\}$.")
+
+self.frame_end()

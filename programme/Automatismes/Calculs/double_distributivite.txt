@@ -1,0 +1,68 @@
+a = randint(-2, 3)
+b = randint(-10, 10)
+c = randint(-10, 10)
+while a == 0:
+    a = randint(-2, 3)
+while b == 0:
+    b = randint(-10, 10)
+while c == 0:
+    c = randint(-10, 10)
+a = Fraction(a, 1)
+b = Fraction(b, 1)
+c = Fraction(c, 1)
+
+self.frame_init()
+self.add("\tDévelopper l'expression \\[A(x) = ", False)
+self.add_coef(a, cor = False)
+self.add("\\left(x", False)
+self.add_frac_somme(b, cor = False)
+self.add("\\right)", False)
+if b == c:
+    self.add("^2.\\]", False)
+else:
+    self.add(" \\left(x", False)
+    self.add_frac_somme(c, cor = False)
+    self.add("\\right).\\]", False)
+
+self.add("\t\\begin{align*} A(x) &= ", True)
+self.add_coef(a, True)
+self.add("\\left(x", True)
+self.add_frac_somme(b, cor = True)
+self.add("\\right)", True)
+if b == c:
+    self.add("^2", True)
+else:
+    self.add("\\left(x", True)
+    self.add_frac_somme(c, cor = True)
+    self.add("\\right)", True)
+self.add("\\\\\n\t\t&=", True)
+
+if b != c:
+    self.add_coef(a, True)
+    self.add("\\left(x^2", True)
+    self.add_frac_somme(c, coef = True, cor = True)
+    self.add("x", True)
+    self.add_frac_somme(b, coef = True, cor = True)
+    self.add("x", True)
+    self.add_frac_somme(b*c, cor = True)
+    self.add("\\right)", True)
+    self.add("\\\\\n\t\t&=", True)
+
+self.add_coef(a, True)
+self.add("\\left(x^2", True)
+if (c+b).numerator != 0:
+    self.add_frac_somme(c+b, coef = True, cor = True)
+    self.add("x", True)
+self.add_frac_somme(b*c, cor = True)
+self.add("\\right)", True)
+self.add("\\\\\n\t\t&=", True)
+
+self.add_coef(a, True)
+self.add("x^2", True)
+if (c+b).numerator != 0:
+    self.add_frac_somme(a*(c+b), coef = True, cor = True)
+    self.add("x", True)
+self.add_frac_somme(a*b*c, cor = True)
+
+self.add("\n\t\\end{align*}\n", True)
+self.frame_end()

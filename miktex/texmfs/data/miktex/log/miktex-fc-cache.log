@@ -1,0 +1,88 @@
+2022-06-18 10:24:53,709+0200 INFO  miktex-fc-cache - this process (904) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --verbose --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:24:56,501+0200 INFO  miktex-fc-cache - this process (904) finishes with exit code 0
+2022-06-18 10:25:53,039+0200 INFO  miktex-fc-cache - this process (6032) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique\miktex with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:25:53,109+0200 INFO  miktex-fc-cache - this process (6032) finishes with exit code 0
+2022-06-18 10:27:50,690+0200 INFO  miktex-fc-cache - this process (14756) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique\miktex with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:27:50,885+0200 INFO  miktex-fc-cache - this process (14756) finishes with exit code 0
+2022-06-18 10:28:16,025+0200 INFO  miktex-fc-cache - this process (18072) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique\miktex with command line: miktex-fc-cache --verbose --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:28:16,092+0200 INFO  miktex-fc-cache - this process (18072) finishes with exit code 0
+2022-06-18 10:39:47,561+0200 INFO  miktex-fc-cache - this process (2512) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:39:47,626+0200 INFO  miktex-fc-cache - this process (2512) finishes with exit code 0
+2022-06-18 10:39:55,540+0200 INFO  miktex-fc-cache - this process (2576) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:39:55,602+0200 INFO  miktex-fc-cache - this process (2576) finishes with exit code 0
+2022-06-18 10:40:05,518+0200 INFO  miktex-fc-cache - this process (17376) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:40:05,578+0200 INFO  miktex-fc-cache - this process (17376) finishes with exit code 0
+2022-06-18 10:40:13,233+0200 INFO  miktex-fc-cache - this process (14844) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:40:13,291+0200 INFO  miktex-fc-cache - this process (14844) finishes with exit code 0
+2022-06-18 10:40:20,524+0200 INFO  miktex-fc-cache - this process (16676) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:40:20,585+0200 INFO  miktex-fc-cache - this process (16676) finishes with exit code 0
+2022-06-18 10:40:27,820+0200 INFO  miktex-fc-cache - this process (11248) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:40:27,880+0200 INFO  miktex-fc-cache - this process (11248) finishes with exit code 0
+2022-06-18 10:40:35,358+0200 INFO  miktex-fc-cache - this process (16080) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:40:35,419+0200 INFO  miktex-fc-cache - this process (16080) finishes with exit code 0
+2022-06-18 10:40:42,794+0200 INFO  miktex-fc-cache - this process (14996) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:40:42,854+0200 INFO  miktex-fc-cache - this process (14996) finishes with exit code 0
+2022-06-18 10:40:50,068+0200 INFO  miktex-fc-cache - this process (7588) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:40:50,132+0200 INFO  miktex-fc-cache - this process (7588) finishes with exit code 0
+2022-06-18 10:40:58,232+0200 INFO  miktex-fc-cache - this process (17252) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:40:58,293+0200 INFO  miktex-fc-cache - this process (17252) finishes with exit code 0
+2022-06-18 10:41:05,875+0200 INFO  miktex-fc-cache - this process (1576) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:41:05,938+0200 INFO  miktex-fc-cache - this process (1576) finishes with exit code 0
+2022-06-18 10:41:13,295+0200 INFO  miktex-fc-cache - this process (16692) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:41:13,358+0200 INFO  miktex-fc-cache - this process (16692) finishes with exit code 0
+2022-06-18 10:41:20,294+0200 INFO  miktex-fc-cache - this process (2608) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:41:20,354+0200 INFO  miktex-fc-cache - this process (2608) finishes with exit code 0
+2022-06-18 10:41:27,708+0200 INFO  miktex-fc-cache - this process (17536) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:41:27,769+0200 INFO  miktex-fc-cache - this process (17536) finishes with exit code 0
+2022-06-18 10:41:35,312+0200 INFO  miktex-fc-cache - this process (12512) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:41:35,373+0200 INFO  miktex-fc-cache - this process (12512) finishes with exit code 0
+2022-06-18 10:41:42,852+0200 INFO  miktex-fc-cache - this process (1820) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:41:42,912+0200 INFO  miktex-fc-cache - this process (1820) finishes with exit code 0
+2022-06-18 10:41:50,233+0200 INFO  miktex-fc-cache - this process (15800) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:41:50,291+0200 INFO  miktex-fc-cache - this process (15800) finishes with exit code 0
+2022-06-18 10:41:57,985+0200 INFO  miktex-fc-cache - this process (2148) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:41:58,049+0200 INFO  miktex-fc-cache - this process (2148) finishes with exit code 0
+2022-06-18 10:42:05,844+0200 INFO  miktex-fc-cache - this process (14616) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:42:05,906+0200 INFO  miktex-fc-cache - this process (14616) finishes with exit code 0
+2022-06-18 10:42:13,331+0200 INFO  miktex-fc-cache - this process (8092) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:42:13,395+0200 INFO  miktex-fc-cache - this process (8092) finishes with exit code 0
+2022-06-18 10:42:21,287+0200 INFO  miktex-fc-cache - this process (10592) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:42:21,348+0200 INFO  miktex-fc-cache - this process (10592) finishes with exit code 0
+2022-06-18 10:42:30,272+0200 INFO  miktex-fc-cache - this process (5420) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:42:30,333+0200 INFO  miktex-fc-cache - this process (5420) finishes with exit code 0
+2022-06-18 10:42:38,509+0200 INFO  miktex-fc-cache - this process (19236) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:42:38,571+0200 INFO  miktex-fc-cache - this process (19236) finishes with exit code 0
+2022-06-18 10:42:45,438+0200 INFO  miktex-fc-cache - this process (2056) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:42:45,504+0200 INFO  miktex-fc-cache - this process (2056) finishes with exit code 0
+2022-06-18 10:42:53,282+0200 INFO  miktex-fc-cache - this process (17340) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:42:53,351+0200 INFO  miktex-fc-cache - this process (17340) finishes with exit code 0
+2022-06-18 10:43:02,490+0200 INFO  miktex-fc-cache - this process (15600) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:43:02,560+0200 INFO  miktex-fc-cache - this process (15600) finishes with exit code 0
+2022-06-18 10:43:10,204+0200 INFO  miktex-fc-cache - this process (17772) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:43:10,263+0200 INFO  miktex-fc-cache - this process (17772) finishes with exit code 0
+2022-06-18 10:43:17,796+0200 INFO  miktex-fc-cache - this process (14340) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:43:17,864+0200 INFO  miktex-fc-cache - this process (14340) finishes with exit code 0
+2022-06-18 10:43:25,068+0200 INFO  miktex-fc-cache - this process (12420) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:43:25,128+0200 INFO  miktex-fc-cache - this process (12420) finishes with exit code 0
+2022-06-18 10:43:32,236+0200 INFO  miktex-fc-cache - this process (456) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:43:32,299+0200 INFO  miktex-fc-cache - this process (456) finishes with exit code 0
+2022-06-18 10:43:40,388+0200 INFO  miktex-fc-cache - this process (12196) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:43:40,448+0200 INFO  miktex-fc-cache - this process (12196) finishes with exit code 0
+2022-06-18 10:46:08,862+0200 INFO  miktex-fc-cache - this process (8664) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique\miktex with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 10:46:08,922+0200 INFO  miktex-fc-cache - this process (8664) finishes with exit code 0
+2022-06-18 11:12:01,910+0200 INFO  miktex-fc-cache - this process (456) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique\miktex with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 11:12:02,120+0200 INFO  miktex-fc-cache - this process (456) finishes with exit code 0
+2022-06-18 11:18:44,574+0200 INFO  miktex-fc-cache - this process (15172) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique\miktex\texmfs\install\miktex\bin\x64 with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 11:18:44,630+0200 INFO  miktex-fc-cache - this process (15172) finishes with exit code 0
+2022-06-18 11:24:28,406+0200 INFO  miktex-fc-cache - this process (16004) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 11:24:28,468+0200 INFO  miktex-fc-cache - this process (16004) finishes with exit code 0
+2022-06-18 11:24:36,609+0200 INFO  miktex-fc-cache - this process (2540) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 11:24:36,700+0200 INFO  miktex-fc-cache - this process (2540) finishes with exit code 0
+2022-06-18 11:24:44,537+0200 INFO  miktex-fc-cache - this process (2380) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 11:24:44,692+0200 INFO  miktex-fc-cache - this process (2380) finishes with exit code 0
+2022-06-18 11:24:53,282+0200 INFO  miktex-fc-cache - this process (9820) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 11:24:53,378+0200 INFO  miktex-fc-cache - this process (9820) finishes with exit code 0
+2022-06-18 11:25:11,674+0200 INFO  miktex-fc-cache - this process (11200) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 11:25:11,745+0200 INFO  miktex-fc-cache - this process (11200) finishes with exit code 0
+2022-06-18 11:25:20,462+0200 INFO  miktex-fc-cache - this process (9336) started by miktex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-fc-cache --miktex-disable-maintenance --miktex-disable-diagnose
+2022-06-18 11:25:20,559+0200 INFO  miktex-fc-cache - this process (9336) finishes with exit code 0

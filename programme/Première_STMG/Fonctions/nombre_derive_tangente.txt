@@ -1,0 +1,34 @@
+self.frame_init()
+a=randint(-10,10)
+m=randint(-10,10)
+p=randint(-10,10)
+while p==0:
+    p=randint(-10,10)
+self.add("La courbe représentative d’une fonction $g$ admet en $x=",False)
+self.add_nombre(a,False)
+self.add("$ une tangente d'équation $y=",False)
+if m==0:
+    self.add_nombre(p,False)
+else:
+    self.add_coef(m,False)
+    self.add("x",False)
+    self.add_nombre_somme(p,False)
+self.add("$. Donner le nombre dérivé de la fonction $g$ en ce point.",False)
+
+self.add("La courbe représentative d’une fonction $g$ admet en $x=")
+self.add_nombre(a)
+self.add("$ une tangente d'équation $y=")
+if m==0:
+    self.add_nombre(p)
+else:
+    self.add_coef(m)
+    self.add("x")
+    self.add_nombre_somme(p)
+self.add("$.\n \n  Donner le nombre dérivé de la fonction $g$ en ce point. \n \n On connait l'équation de la tangente et on sait que le nombre dérivé correspond au coefficient directeur de la tangente qui est ")
+self.add_nombre(m)
+self.add(". \n \n Ainsi, on a $g'(")
+self.add_nombre(a)
+self.add(")=")
+self.add_nombre(m)
+self.add("$")
+self.frame_end()

@@ -1,0 +1,147 @@
+2022-06-18 11:24:56,456+0200 INFO  miktex-dvipdfmx - this process (16380) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 11:25:03,545+0200 INFO  miktex-dvipdfmx - installing package glyphlist triggered by fonts/map/glyphlist\texglyphlist.txt
+2022-06-18 11:25:03,548+0200 INFO  miktex-dvipdfmx.packagemanager - going to download https://api2.miktex.org/repositories?&releaseState=Stable&orderBy=ranking&take=1&onlySecure=true
+2022-06-18 11:25:03,656+0200 INFO  miktex-dvipdfmx - mpm: starting package maintenance...
+2022-06-18 11:25:03,656+0200 INFO  miktex-dvipdfmx - mpm: installation directory: "C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique\miktex\texmfs\install"
+2022-06-18 11:25:03,656+0200 INFO  miktex-dvipdfmx - mpm: package repository: https://mirror.ibcp.fr/pub/CTAN/systems/win32/miktex/tm/packages/
+2022-06-18 11:25:04,796+0200 INFO  miktex-dvipdfmx - mpm: package repository digest: b5774742ea2888e1892f2db7b171668e
+2022-06-18 11:25:04,797+0200 INFO  miktex-dvipdfmx - mpm: going to download 24978 bytes
+2022-06-18 11:25:04,797+0200 INFO  miktex-dvipdfmx - mpm: going to install 4 file(s) (1 package(s))
+2022-06-18 11:25:05,465+0200 INFO  miktex-dvipdfmx.packagemanager - installing package glyphlist
+2022-06-18 11:25:05,466+0200 INFO  miktex-dvipdfmx - mpm: downloading https://mirror.ibcp.fr/pub/CTAN/systems/win32/miktex/tm/packages/glyphlist.tar.lzma...
+2022-06-18 11:25:05,467+0200 INFO  miktex-dvipdfmx.packagemanager - going to download https://mirror.ibcp.fr/pub/CTAN/systems/win32/miktex/tm/packages/glyphlist.tar.lzma
+2022-06-18 11:25:05,594+0200 INFO  miktex-dvipdfmx - mpm: 0.02 MB, 1.57 Mbit/s
+2022-06-18 11:25:05,605+0200 INFO  miktex-dvipdfmx - mpm: extracting files from glyphlist.tar.lzma...
+2022-06-18 11:25:06,095+0200 INFO  miktex-dvipdfmx.core - start process: miktex fontmaps configure
+2022-06-18 11:25:12,222+0200 INFO  miktex-dvipdfmx - installing package utopia triggered by fonts/type1/adobe/utopia\putr8a.pfb
+2022-06-18 11:25:12,223+0200 INFO  miktex-dvipdfmx.packagemanager - going to download https://api2.miktex.org/repositories/97d75373703012148bd6f06159b83390
+2022-06-18 11:25:12,325+0200 INFO  miktex-dvipdfmx - mpm: starting package maintenance...
+2022-06-18 11:25:12,326+0200 INFO  miktex-dvipdfmx - mpm: installation directory: "C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique\miktex\texmfs\install"
+2022-06-18 11:25:12,326+0200 INFO  miktex-dvipdfmx - mpm: package repository: https://mirror.ibcp.fr/pub/CTAN/systems/win32/miktex/tm/packages/
+2022-06-18 11:25:12,572+0200 INFO  miktex-dvipdfmx - mpm: package repository digest: b5774742ea2888e1892f2db7b171668e
+2022-06-18 11:25:12,573+0200 INFO  miktex-dvipdfmx - mpm: going to download 220289 bytes
+2022-06-18 11:25:12,573+0200 INFO  miktex-dvipdfmx - mpm: going to install 60 file(s) (1 package(s))
+2022-06-18 11:25:13,193+0200 INFO  miktex-dvipdfmx.packagemanager - installing package utopia
+2022-06-18 11:25:13,193+0200 INFO  miktex-dvipdfmx - mpm: downloading https://mirror.ibcp.fr/pub/CTAN/systems/win32/miktex/tm/packages/utopia.cab...
+2022-06-18 11:25:13,194+0200 INFO  miktex-dvipdfmx.packagemanager - going to download https://mirror.ibcp.fr/pub/CTAN/systems/win32/miktex/tm/packages/utopia.cab
+2022-06-18 11:25:13,474+0200 INFO  miktex-dvipdfmx - mpm: 0.22 MB, 6.32 Mbit/s
+2022-06-18 11:25:13,478+0200 INFO  miktex-dvipdfmx - mpm: extracting files from utopia.cab...
+2022-06-18 11:25:14,353+0200 INFO  miktex-dvipdfmx.core - start process: miktex fontmaps configure
+2022-06-18 11:25:21,970+0200 INFO  miktex-dvipdfmx - this process (16380) finishes with exit code 0
+2022-06-18 11:35:09,200+0200 INFO  miktex-dvipdfmx - this process (16016) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 11:35:12,063+0200 INFO  miktex-dvipdfmx - this process (16016) finishes with exit code 0
+2022-06-18 14:12:24,716+0200 INFO  miktex-dvipdfmx - this process (520) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 14:12:25,115+0200 INFO  miktex-dvipdfmx - this process (520) finishes with exit code 0
+2022-06-18 14:13:08,072+0200 INFO  miktex-dvipdfmx - this process (17104) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 14:13:08,473+0200 INFO  miktex-dvipdfmx - this process (17104) finishes with exit code 0
+2022-06-18 14:16:01,483+0200 INFO  miktex-dvipdfmx - this process (5892) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 14:16:03,972+0200 INFO  miktex-dvipdfmx - this process (5892) finishes with exit code 0
+2022-06-18 14:17:06,842+0200 INFO  miktex-dvipdfmx - this process (11128) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 14:17:08,686+0200 INFO  miktex-dvipdfmx - this process (11128) finishes with exit code 0
+2022-06-18 14:18:05,780+0200 INFO  miktex-dvipdfmx - this process (11500) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 14:18:08,920+0200 INFO  miktex-dvipdfmx - this process (11500) finishes with exit code 0
+2022-06-18 14:18:47,458+0200 INFO  miktex-dvipdfmx - this process (8044) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 14:18:48,801+0200 INFO  miktex-dvipdfmx - this process (8044) finishes with exit code 0
+2022-06-18 14:29:55,542+0200 INFO  miktex-dvipdfmx - this process (17176) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 14:29:59,949+0200 INFO  miktex-dvipdfmx - this process (17176) finishes with exit code 0
+2022-06-18 15:17:55,294+0200 INFO  miktex-dvipdfmx - this process (7580) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 15:17:57,051+0200 INFO  miktex-dvipdfmx - this process (7580) finishes with exit code 0
+2022-06-18 15:21:23,063+0200 INFO  miktex-dvipdfmx - this process (13804) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 15:21:24,972+0200 INFO  miktex-dvipdfmx - this process (13804) finishes with exit code 0
+2022-06-18 15:26:02,287+0200 INFO  miktex-dvipdfmx - this process (784) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 15:26:05,347+0200 INFO  miktex-dvipdfmx - this process (784) finishes with exit code 0
+2022-06-18 15:36:01,375+0200 INFO  miktex-dvipdfmx - this process (17264) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 15:36:03,199+0200 INFO  miktex-dvipdfmx - this process (17264) finishes with exit code 0
+2022-06-18 15:37:49,631+0200 INFO  miktex-dvipdfmx - this process (11788) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 15:37:51,131+0200 INFO  miktex-dvipdfmx - this process (11788) finishes with exit code 0
+2022-06-18 15:38:19,206+0200 INFO  miktex-dvipdfmx - this process (4240) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 15:38:23,153+0200 INFO  miktex-dvipdfmx - this process (4240) finishes with exit code 0
+2022-06-18 15:39:49,765+0200 INFO  miktex-dvipdfmx - this process (16900) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 15:39:53,926+0200 INFO  miktex-dvipdfmx - this process (16900) finishes with exit code 0
+2022-06-18 15:44:55,216+0200 INFO  miktex-dvipdfmx - this process (3836) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 15:44:58,678+0200 INFO  miktex-dvipdfmx - this process (3836) finishes with exit code 0
+2022-06-18 15:57:03,929+0200 INFO  miktex-dvipdfmx - this process (15780) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 15:57:05,525+0200 INFO  miktex-dvipdfmx - this process (15780) finishes with exit code 0
+2022-06-18 15:59:07,731+0200 INFO  miktex-dvipdfmx - this process (9764) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 15:59:11,582+0200 INFO  miktex-dvipdfmx - this process (9764) finishes with exit code 0
+2022-06-18 16:00:58,614+0200 INFO  miktex-dvipdfmx - this process (3256) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 16:01:00,350+0200 INFO  miktex-dvipdfmx - this process (3256) finishes with exit code 0
+2022-06-18 16:01:39,544+0200 INFO  miktex-dvipdfmx - this process (11000) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 16:01:42,456+0200 INFO  miktex-dvipdfmx - this process (11000) finishes with exit code 0
+2022-06-18 16:03:13,673+0200 INFO  miktex-dvipdfmx - this process (5580) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 16:03:16,541+0200 INFO  miktex-dvipdfmx - this process (5580) finishes with exit code 0
+2022-06-18 16:14:30,581+0200 INFO  miktex-dvipdfmx - this process (17624) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 16:14:32,043+0200 INFO  miktex-dvipdfmx - this process (17624) finishes with exit code 0
+2022-06-18 16:48:51,991+0200 INFO  miktex-dvipdfmx - this process (17584) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-18 16:48:54,009+0200 INFO  miktex-dvipdfmx - this process (17584) finishes with exit code 0
+2022-06-19 18:28:21,556+0200 INFO  miktex-dvipdfmx - this process (6752) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-19 18:28:24,785+0200 INFO  miktex-dvipdfmx - this process (6752) finishes with exit code 0
+2022-06-19 18:39:17,403+0200 INFO  miktex-dvipdfmx - this process (10612) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-19 18:39:27,066+0200 INFO  miktex-dvipdfmx - this process (10612) finishes with exit code 0
+2022-06-19 18:40:58,739+0200 INFO  miktex-dvipdfmx - this process (10648) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-19 18:42:42,753+0200 INFO  miktex-dvipdfmx - this process (16092) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-19 18:45:30,158+0200 INFO  miktex-dvipdfmx - this process (16092) finishes with exit code 0
+2022-06-19 18:46:23,505+0200 INFO  miktex-dvipdfmx - this process (6024) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-19 18:46:25,412+0200 INFO  miktex-dvipdfmx - this process (6024) finishes with exit code 0
+2022-06-19 18:53:24,332+0200 INFO  miktex-dvipdfmx - this process (3864) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-19 18:53:26,990+0200 INFO  miktex-dvipdfmx - this process (3864) finishes with exit code 0
+2022-06-19 18:54:44,886+0200 INFO  miktex-dvipdfmx - this process (15216) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-19 19:17:49,756+0200 INFO  miktex-dvipdfmx - this process (15004) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-19 19:17:53,221+0200 INFO  miktex-dvipdfmx - this process (15004) finishes with exit code 0
+2022-06-24 19:56:30,674+0200 INFO  miktex-dvipdfmx - this process (12724) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-24 19:56:37,778+0200 INFO  miktex-dvipdfmx - this process (12724) finishes with exit code 0
+2022-06-24 19:57:18,145+0200 INFO  miktex-dvipdfmx - this process (15160) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-24 19:57:19,914+0200 INFO  miktex-dvipdfmx - this process (15160) finishes with exit code 0
+2022-06-24 20:16:57,349+0200 INFO  miktex-dvipdfmx - this process (5800) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-24 20:17:07,939+0200 INFO  miktex-dvipdfmx - this process (5800) finishes with exit code 0
+2022-06-24 20:19:27,006+0200 INFO  miktex-dvipdfmx - this process (12724) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-24 20:22:09,955+0200 INFO  miktex-dvipdfmx - this process (12584) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-24 20:22:12,468+0200 INFO  miktex-dvipdfmx - this process (12584) finishes with exit code 0
+2022-06-24 20:23:14,849+0200 INFO  miktex-dvipdfmx - this process (692) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-24 20:23:17,819+0200 INFO  miktex-dvipdfmx - this process (692) finishes with exit code 0
+2022-06-24 20:25:08,617+0200 INFO  miktex-dvipdfmx - this process (1260) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-24 20:25:11,640+0200 INFO  miktex-dvipdfmx - this process (1260) finishes with exit code 0
+2022-06-26 21:11:05,190+0200 INFO  miktex-dvipdfmx - this process (8844) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-26 21:11:07,707+0200 INFO  miktex-dvipdfmx - this process (8844) finishes with exit code 0
+2022-06-26 22:09:20,964+0200 INFO  miktex-dvipdfmx - this process (15872) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-26 22:09:22,741+0200 INFO  miktex-dvipdfmx - this process (15872) finishes with exit code 0
+2022-06-26 22:10:18,406+0200 INFO  miktex-dvipdfmx - this process (8792) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-26 22:10:20,045+0200 INFO  miktex-dvipdfmx - this process (8792) finishes with exit code 0
+2022-06-26 22:11:42,580+0200 INFO  miktex-dvipdfmx - this process (12440) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-26 22:11:44,893+0200 INFO  miktex-dvipdfmx - this process (12440) finishes with exit code 0
+2022-06-28 17:58:07,001+0200 INFO  miktex-dvipdfmx - this process (9836) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-28 17:58:11,496+0200 INFO  miktex-dvipdfmx - this process (9836) finishes with exit code 0
+2022-06-28 18:00:31,809+0200 INFO  miktex-dvipdfmx - this process (9280) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-28 18:00:36,028+0200 INFO  miktex-dvipdfmx - this process (9280) finishes with exit code 0
+2022-06-28 18:02:40,408+0200 INFO  miktex-dvipdfmx - this process (6264) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-28 18:02:44,649+0200 INFO  miktex-dvipdfmx - this process (6264) finishes with exit code 0
+2022-06-28 18:07:01,537+0200 INFO  miktex-dvipdfmx - this process (7088) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-28 18:07:03,859+0200 INFO  miktex-dvipdfmx - this process (7088) finishes with exit code 0
+2022-06-28 18:07:59,139+0200 INFO  miktex-dvipdfmx - this process (8356) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-06-28 18:08:04,444+0200 INFO  miktex-dvipdfmx - this process (8356) finishes with exit code 0
+2022-07-01 18:43:25,151+0200 INFO  miktex-dvipdfmx - this process (3644) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-07-01 18:43:27,561+0200 INFO  miktex-dvipdfmx - this process (3644) finishes with exit code 0
+2022-07-01 21:34:12,682+0200 INFO  miktex-dvipdfmx - this process (4532) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-07-01 21:34:15,203+0200 INFO  miktex-dvipdfmx - this process (4532) finishes with exit code 0
+2022-07-02 19:17:08,430+0200 INFO  miktex-dvipdfmx - this process (7188) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Interface_graphique with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-07-02 19:17:10,349+0200 INFO  miktex-dvipdfmx - this process (7188) finishes with exit code 0
+2022-07-07 01:21:51,849+0200 INFO  miktex-dvipdfmx - this process (7464) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite mentales (version ordi perso) with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-07-07 01:21:53,954+0200 INFO  miktex-dvipdfmx - this process (7464) finishes with exit code 0
+2022-07-07 01:24:06,831+0200 INFO  miktex-dvipdfmx - this process (13812) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite mentales (version ordi perso) with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-07-07 01:24:08,751+0200 INFO  miktex-dvipdfmx - this process (13812) finishes with exit code 0
+2022-07-07 01:27:25,392+0200 INFO  miktex-dvipdfmx - this process (3140) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite mentales (version ordi perso) with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-07-07 01:27:27,453+0200 INFO  miktex-dvipdfmx - this process (3140) finishes with exit code 0
+2022-07-16 18:14:29,092+0200 INFO  miktex-dvipdfmx - this process (13296) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite mentales (version ordi perso) with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-07-16 18:14:32,022+0200 INFO  miktex-dvipdfmx - this process (13296) finishes with exit code 0
+2022-07-16 18:15:46,443+0200 INFO  miktex-dvipdfmx - this process (16468) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite mentales (version ordi perso) with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-07-16 18:15:48,337+0200 INFO  miktex-dvipdfmx - this process (16468) finishes with exit code 0
+2022-08-21 21:58:14,930+0200 INFO  miktex-dvipdfmx - this process (15084) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite mentales (version ordi perso) with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-08-21 21:58:16,758+0200 INFO  miktex-dvipdfmx - this process (15084) finishes with exit code 0
+2022-08-29 16:28:41,796+0200 INFO  miktex-dvipdfmx - this process (8544) started by xelatex in directory D:\Projet\ActiviteMentale\Activites_Mentales with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-08-29 16:28:48,071+0200 INFO  miktex-dvipdfmx - this process (8544) finishes with exit code 0
+2022-09-03 13:00:56,409+0200 INFO  miktex-dvipdfmx - this process (17580) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite mentales (version ordi perso)\output\activites_mentales_v1.02 with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-09-03 13:00:59,814+0200 INFO  miktex-dvipdfmx - this process (17580) finishes with exit code 0
+2022-09-03 13:14:31,617+0200 INFO  miktex-dvipdfmx - this process (14664) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite mentales (version ordi perso)\output\activites_mentales_v1.02 with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-09-03 13:14:33,697+0200 INFO  miktex-dvipdfmx - this process (14664) finishes with exit code 0
+2022-09-03 13:16:15,765+0200 INFO  miktex-dvipdfmx - this process (6384) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite mentales (version ordi perso)\output\activites_mentales_v1.02 with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-09-03 13:16:18,985+0200 INFO  miktex-dvipdfmx - this process (6384) finishes with exit code 0

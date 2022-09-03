@@ -1,0 +1,175 @@
+a = randint(-3,7)
+aa = randint(-5,5)
+while aa == 0:
+    aa = randint(-5,5)
+
+b = randint(-7,7)
+c = randint(-3,7)
+cc = randint(-5,5)
+while cc == 0:
+    cc = randint(-5,5)
+d = randint(1,7)
+while d == b:
+    d = randint(-7,7)
+
+self.frame_init()
+self.add("Mettre au même dénominateur l'expression suivante: \\[\\dfrac{", False)
+if a != 0:
+    self.add_coef(a, False)
+    self.add("x", False)
+    self.add_nombre_somme(aa, False)
+else:
+    self.add_nombre(aa, False)
+self.add("}{x", False)
+self.add_nombre_somme(b, False)
+self.add("} + \\dfrac{", False)
+if c != 0:
+    self.add_coef(c, False)
+    self.add("x", False)
+
+    self.add_nombre_somme(cc, False)
+else:
+    self.add_nombre(cc, False)
+self.add("}{x", False)
+self.add_nombre_somme(d, False)
+self.add("}\\]", False)
+
+self.add("\n\n\\bigskip \n\nJe multiplie la première fraction par $x")
+self.add_nombre_somme(d)
+self.add("$ qui est le dénominateur de la deuxième fraction et la deuxième fraction par $x")
+self.add_nombre_somme(b)
+self.add("$ qui est le dénominateur de la première fraction. On a alors \n\n \\begin{align*} \\dfrac{")
+if a != 0:
+    self.add_coef(a)
+    self.add("x")
+    self.add_nombre_somme(aa)
+else:
+    self.add_nombre(aa)
+self.add("}{x")
+self.add_nombre_somme(b)
+self.add("} + \\dfrac{")
+if c != 0:
+    self.add_coef(c)
+    self.add("x")
+    self.add_nombre_somme(cc)
+else:
+    self.add_nombre(cc)
+self.add("}{x")
+self.add_nombre_somme(d)
+self.add("} &= \\dfrac{(")
+if a != 0:
+    self.add_coef(a)
+    self.add("x")
+    self.add_nombre_somme(aa)
+else:
+    self.add_nombre(aa)
+self.add(")(x")
+self.add_nombre_somme(d)
+
+self.add(")}{(x")
+self.add_nombre_somme(b)
+self.add(")(x")
+self.add_nombre_somme(d)
+self.add(")} + \\dfrac{(")
+if c != 0:
+    self.add_coef(c)
+    self.add("x")
+    self.add_nombre_somme(cc)
+else:
+    self.add_nombre(cc)
+self.add(")(x")
+self.add_nombre_somme(b)
+self.add(")}{(x")
+self.add_nombre_somme(d)
+self.add(")(x")
+self.add_nombre_somme(b)
+self.add(")}\\\\ &= \\dfrac{")
+
+if a!=0:
+    self.add_coef(a)
+    self.add("x^2")
+    self.add_coef_somme(a*d)
+    self.add("x")
+    self.add_coef_somme(aa)
+else:
+    self.add_coef(aa)
+self.add("x")
+self.add_nombre_somme(aa*d)
+self.add("}{(x")
+self.add_nombre_somme(b)
+self.add(")(x")
+self.add_nombre_somme(d)
+self.add(")}+ \\dfrac{")
+if c != 0:
+    self.add_coef(c)
+    self.add("x^2")
+    self.add_coef_somme(c*b)
+    self.add("x")
+    self.add_coef_somme(cc)
+else:
+    self.add_coef(cc)
+self.add("x")
+self.add_nombre_somme(cc*b)
+self.add("}{(x")
+self.add_nombre_somme(d)
+self.add(")(x")
+self.add_nombre_somme(b)
+self.add(")} \\\\\n\t&=\\dfrac{")
+if a!=0:
+    self.add_coef(a)
+    self.add("x^2")
+    self.add_nombre_somme(a*d+aa)
+    self.add("x")
+    self.add_nombre_somme(aa*d)
+else:
+    self.add_coef(aa)
+    self.add("x")
+    self.add_nombre_somme(aa*d)
+if c!=0:
+    self.add_coef_somme(c)
+    self.add("x^2")
+    self.add_nombre_somme(c*b+cc)
+    self.add("x")
+    self.add_nombre_somme(cc*b)
+else:
+    self.add_coef(cc)
+    self.add("x")
+    self.add_nombre_somme(cc*b)
+self.add("}{(x")
+self.add_nombre_somme(b)
+self.add(")(x")
+self.add_nombre_somme(d)
+self.add(")}\\\\\n\t&=\\dfrac{")
+
+
+if a == 0 and c == 0:
+    if aa + cc == 0:
+        self.add_nombre(aa*d+cc*b)
+    else:
+        self.add_coef(aa+cc)
+        self.add("x")
+        self.add_nombre_somme(aa*d+cc*b)
+else:
+    if a + c != 0:
+        self.add_coef(a+c)
+        self.add("x^2")
+        if a*d+aa+c*b+cc != 0:
+            self.add_coef_somme(a*d+aa+c*b+cc)
+            self.add("x")
+        self.add_nombre_somme(aa*d+cc*b)
+        
+    else:
+        if a*d+aa+c*b+cc != 0:
+            self.add_coef(a*d+aa+c*b+cc)
+            self.add("x")
+            self.add_nombre_somme(aa*d+cc*b)
+        else:
+            self.add_nombre(aa*d+cc*b)
+self.add("}{(x")
+self.add_nombre_somme(b)
+self.add(")(x")
+self.add_nombre_somme(d)
+self.add(")}")
+
+self.add("\n\\end{align*}")
+self.frame_end()

@@ -1,0 +1,72 @@
+xM, yM = randint(-10, 10), randint(-10, 10)
+a, b = randint(-10, 10), randint(-10, 10)
+while a == 0:
+    a = randint(-10, 10)
+while b == 0:
+    b = randint(-10, 10)
+
+c = a*xM+b*yM
+in_d = randint(0, 2)
+if in_d == 0: #N'est pas dans la droite
+    if randint(0, 1) == 1:
+        c += randint(1, 10)
+    else:
+        c -= randint(1, 10)
+
+self.frame_init()
+self.add("On considère l'équation cartésienne $d:~", False)
+self.add_coef(a, False)
+self.add("x", False)
+self.add_coef_somme(b, False)
+self.add("y = ", False)
+self.add_nombre(c, False)
+self.add("$.\n\n\\bigskip\n\n Le point ", False)
+self.point("M", xM, yM, False)
+self.add(" appartient-il à la droite $d$?", False)
+
+self.add("Pour vérifier si ")
+self.point("M", xM, yM)
+self.add(" appartient à la droite $d:~")
+self.add_coef(a)
+self.add("x")
+self.add_coef_somme(b)
+self.add("y = ")
+self.add_nombre(c)
+self.add("$,\n\n je remplace $x$ et $y$ dans l'équation par $x = ")
+self.add_nombre(xM)
+self.add("$ et $y =")
+self.add_nombre(yM)
+self.add("$.\n\n\\medskip\n\n On a $")
+if a == 1:
+    self.add_nombre(xM)
+elif a == -1:
+    self.add("-")
+    self.add_nombre_produit(xM)
+else:
+    self.add_nombre(a)
+    self.add("\\times ")
+    self.add_nombre_produit(xM)
+if b == 1:
+    self.add_nombre_somme(yM)
+elif b == -1:
+    self.add("-")
+    self.add_nombre_produit(yM)
+else:
+    self.add_nombre_somme(b)
+    self.add("\\times ")
+    self.add_nombre_produit(yM)
+self.add("=")
+self.add_nombre(a*xM)
+self.add_nombre_somme(b*yM)
+self.add("=")
+self.add_nombre(a*xM+b*yM)
+if in_d == 0:
+    self.add("\\neq")
+    self.add_nombre(c)
+self.add("$.\n\n\\medskip\n\n Finalement ")
+self.point("M", xM, yM)
+if in_d == 0:
+    self.add(" n'appartient pas à $d$.")
+else:
+    self.add(" appartient à $d$.")
+self.frame_end()

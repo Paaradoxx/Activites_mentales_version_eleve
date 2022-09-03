@@ -1,0 +1,50 @@
+a = randint(-6, 10)
+b = randint(-6, 10)
+while a == 0 or a == 1:
+    a = randint(-6, 10)
+while b == 0 or b == 1:
+    b = randint(-6, 10)
+c = a*b
+emplacement_trou = randint(0, 2)
+
+self.frame_init()
+self.add("\tCompléter le calcul suivant: \\[", False)
+self.add("\tCompléter le calcul suivant: \\[", True)
+if emplacement_trou == 0:
+    self.add("\\ldots \\times ", False)
+    self.add_nombre_produit(b, cor = False)
+    self.add("=", False)
+    self.add_nombre(c, cor = False)
+
+    self.add("\\textcolor{red}{", True)
+    self.add_nombre_produit(a, True)
+    self.add("}\\times", True)
+    self.add_nombre_produit(b, True)
+    self.add("=", True)
+    self.add_nombre(c, True)
+elif emplacement_trou == 1:
+    self.add_nombre_produit(a, cor = False)
+    self.add("\\times \\ldots = ", False)
+    self.add_nombre(c, cor = False)
+
+    self.add_nombre_produit(a, True)
+    self.add("\\times \\textcolor{red}{", True)
+    self.add_nombre_produit(b, True)
+    self.add("}=", True)
+    self.add_nombre(c, True)
+else:
+    self.add_nombre_produit(a, cor = False)
+    self.add("\\times", False)
+    self.add_nombre_produit(b, cor = False)
+    self.add(" = \\ldots", False)
+
+    self.add_nombre_produit(a, True)
+    self.add("\\times", True)
+    self.add_nombre_produit(b, True)
+    self.add("= \\textcolor{red}{", True)
+    self.add_nombre(c, True)
+    self.add("}", True)
+
+self.add("\] \n", False)
+self.add("\] \n", True)
+self.frame_end()

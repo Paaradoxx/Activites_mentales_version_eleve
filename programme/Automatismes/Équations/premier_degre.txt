@@ -1,0 +1,113 @@
+a = randint(-10, 10)
+b = randint(-10, 10)
+c = randint(-10, 10)
+d = randint(-10 ,10)
+
+while b == 0:
+    b = randint(-10, 10)
+
+while -3 < a < 3:
+    a = randint(-10, 10)
+while -3 < c < 3:
+    c = randint(-10, 10)
+
+self.frame_init()
+self.add("\tRésoudre dans $\\mathbb{R}$ l'équation suivante: \\[(E):~ ", False)
+self.add_coef(a, cor = False)
+self.add("x", False)
+self.add_nombre_somme(b, False)
+self.add("=", False)
+self.add_coef(c, cor = False)
+self.add("x", False)
+self.add_nombre_somme(d, False)
+self.add("\\]", False)
+
+self.add("\t\\begin{align*} (E)& \\Leftrightarrow ")
+self.add_coef(a)
+self.add("x")
+self.add_nombre_somme(b)
+self.add("=")
+self.add_coef(c)
+self.add("x")
+self.add_nombre_somme(d)
+self.add("\\\\\n\t\t&\\Leftrightarrow ")
+
+self.add_coef(a)
+self.add("x")
+self.add_nombre_somme(b)
+self.add_frac_somme(Fraction(-c, 1), coef = True)
+self.add("x")
+self.add("=")
+self.add_coef(c)
+self.add("x")
+self.add_nombre_somme(d)
+self.add_frac_somme(Fraction(-c, 1), coef = True)
+self.add("x")
+self.add("\\\\\n\t\t&\\Leftrightarrow ")
+
+if a != c:
+    self.add_coef(a-c)
+    self.add("x")
+    self.add_nombre_somme(b)
+    self.add("=")
+    self.add_nombre(d)
+    self.add("\\\\\n\t\t&\\Leftrightarrow ")
+
+    self.add_coef(a-c)
+    self.add("x")
+    self.add_nombre_somme(b)
+    self.add_nombre_somme(-b)
+    self.add("=")
+    self.add_nombre(d)
+    self.add_nombre_somme(-b)
+    self.add("\\\\\n\t\t&\\Leftrightarrow ")
+
+    if a-c == 1 and b == 0:
+        self.add("\n\t\\end{align*}\n\n\tFinalement l'ensemble des solutions de $(E)$ est $S = \\{")
+        self.add_nombre(d)
+        self.add("\\}$.\n")
+
+    else:
+        if b != d:
+            self.add_coef(a-c)
+            self.add("x")
+            self.add("=")
+            self.add_nombre(d-b)
+
+            if a-c != 1:
+                self.add("\\\\\n\t\t&\\Leftrightarrow ")
+                self.add("\\dfrac{")
+                self.add_coef(a-c)
+                self.add("x}{")
+                self.add_nombre(a-c)
+                self.add("}=\\dfrac{")
+                self.add_nombre(d-b)
+                self.add("}{")
+                self.add_nombre(a-c)
+                self.add("} \\\\\n\t\t&\\Leftrightarrow x= ")
+                self.add_frac(Fraction(d-b, a-c))
+                self.add("\n\t\\end{align*}\n\tFinalement l'ensemble des solutions de $(E)$ est $S = \\left\\{")
+                self.add_frac(Fraction(d-b, a-c))
+                self.add("\\right\\}$.\n")
+
+            else:
+                self.add("\n\t\\end{align*}\n\tFinalement l'ensemble des solutions de $(E)$ est $S = \\left\\{")
+                self.add_nombre(d-b)
+                self.add("\\right\\}$.\n")
+        else:
+            if b != 0:
+                self.add_coef(a-c)
+                self.add("x")
+                self.add("=")
+                self.add_nombre(d-b)
+            self.add("\\\\\n\t\t&\\Leftrightarrow x = 0\n\t\\end{align*}\n\tFinalement l'ensemble des solutions de $(E)$ est $S = \\{0\\}$\n")
+else:
+    self.add_nombre(b)
+    self.add("=")
+    self.add_nombre(d)
+
+    if b == d:
+        self.add("\n\t\\end{align*}\n\tL'équation est toujours vérifiée.\n\nFinalement l'ensemble des solutions de $(E)$ est $S = \\mathbb{R}$.\n")
+    else:
+        self.add("\n\t\\end{align*}\n\tL'équation n'est jamais vérifiée.\n\nFinalement l'ensemble des solutions de $(E)$ est $S = \\emptyset$.\n")
+self.frame_end()

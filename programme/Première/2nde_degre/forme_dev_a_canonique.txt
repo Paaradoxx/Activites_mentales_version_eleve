@@ -1,0 +1,103 @@
+a = randint(-10, 10)
+b = randint(-10, 10)
+c = randint(-20, 20)
+while a == 0:
+    a = randint(-10, 10)    
+while b == 0:
+    b = randint(-10, 10)    
+while c == 0:
+    c = randint(-10, 10)
+a = Fraction(a, 1)
+b = Fraction(b, 1)
+c = Fraction(c, 1)
+
+self.frame_init()
+
+self.add("Soit $f$ la fonction définie sur $\\mathbb{R}$ par sa forme développée \\[f(x) = ", cor = False)
+self.add_coef(a, cor = False)
+self.add("x^2", cor = False)
+self.add_frac_somme(b, coef = True, cor = False)
+self.add("x", cor = False)
+self.add_frac_somme(c, cor = False)
+self.add(".\\] Déterminer la forme canonique de $f$.", cor = False)
+
+self.add("\\begin{align*} f(x) &= ")
+self.add_coef(a)
+self.add("x^2")
+self.add_frac_somme(b, coef = True)
+self.add("x")
+self.add_frac_somme(c)
+self.add("\\\\ \n&=")
+
+self.add_coef(a)
+self.add("\\left(x^2")
+self.add_frac_somme(b/a, coef = True)
+self.add("x\\right)")
+self.add_frac_somme(c)
+self.add("\\\\ \n&=")
+
+self.add_coef(a)
+self.add("\\left[x^2")
+if (b/(2*a)).numerator > 0:
+    self.add("+")
+else:
+    self.add("-")
+self.add("2\\times x \\times")
+if (b/(2*a)).denominator == 1:
+    self.add_nombre_produit(abs((b/(2*a)).numerator))
+else:
+    self.add_frac(Fraction(abs((b/(2*a)).numerator), (b/(2*a)).denominator))
+if Fraction((b/(2*a))).denominator != 1:
+    self.add("+\\left(")
+    self.add_frac(Fraction(abs((b/(2*a)).numerator), (b/(2*a)).denominator))
+    self.add("\\right)^2")
+    self.add("- \\left(")
+    self.add_frac(Fraction(abs((b/(2*a)).numerator), (b/(2*a)).denominator))
+    self.add("\\right)^2\\right]")
+else:
+    self.add("+")
+    self.add_frac(Fraction(abs((b/(2*a)).numerator), (b/(2*a)).denominator))
+    self.add("^2-")
+    self.add_frac(Fraction(abs((b/(2*a)).numerator), (b/(2*a)).denominator))
+    self.add("^2\\right]")
+self.add_frac_somme(c)
+self.add("\\\\ \n&=")
+
+self.add_coef(a)
+self.add("\\left[ \\left( x")
+self.add_frac_somme(b/(2*a))
+self.add("\\right)^2")
+self.add_frac_somme(-(b/(2*a))**2)
+self.add("\\right]")
+self.add_frac_somme(c)
+self.add("\\\\ \n&=")
+
+self.add_coef(a)
+self.add(" \\left( x")
+self.add_frac_somme(b/(2*a))
+self.add("\\right)^2")
+self.add_frac_somme(a)
+self.add("\\times \\left(")
+self.add_frac(-(b/(2*a))**2)
+self.add("\\right)")
+self.add_frac_somme(c)
+self.add("\\\\ \n&=")
+
+self.add_coef(a)
+self.add(" \\left( x")
+self.add_frac_somme(b/(2*a))
+self.add("\\right)^2")
+self.add_frac_somme(-a*(b/(2*a))**2)
+self.add_frac_somme(c)
+self.add("\\\\ \n&=")
+
+self.add_coef(a)
+self.add(" \\left( x")
+self.add_frac_somme(b/(2*a))
+self.add("\\right)^2")
+self.add_frac_somme(c-a*(b/(2*a))**2)
+
+self.add("\n \\end{align*} \n\n \\bigskip")
+
+
+self.frame_end()

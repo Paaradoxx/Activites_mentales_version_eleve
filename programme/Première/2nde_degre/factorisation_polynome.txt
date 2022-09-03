@@ -1,0 +1,479 @@
+i = randint(3, 6)
+if i ==  0:
+    a = randint(-10, 10)
+    b = randint(-10, 10)
+    while a == 0 or a == 1:
+        a = randint(-10, 10)
+    a = Fraction(a, 1)
+    b = Fraction(b, 1)
+    c = Fraction(0, 1)
+elif i == 1:
+    a = randint(-10, 10)
+    c = randint(-20, 20)
+    while a == 0 or a == 1 or a*c >= 0 or c == 0:
+        a = randint(-10, 10)
+        c = randint(-10, 10)
+    a = Fraction(a, 1)
+    b = Fraction(0, 1)
+    c = Fraction(c, 1)
+elif i == 2:
+    a = randint(-10, 10)
+    c = randint(-10, 10)
+    while (a == 0 or a == 1) or a*c <= 0 or c == 0:
+        a = randint(-10, 10)
+        c = randint(-10, 10)
+    a = Fraction(a, 1)
+    b = Fraction(0, 1)
+    c = Fraction(c, 1)
+elif i == 3:
+    a = randint(-10, 10)
+    b = randint(-10, 10)
+    c = randint(-10, 10)
+    while (a == 0 or a == 1) or (b**2-4*a*c >= 0) or b == 0 or c == 0:
+        a = randint(-10, 10)
+        b = randint(-10, 10)
+        c = randint(-10, 10)
+    a = Fraction(a, 1)
+    b = Fraction(b, 1)
+    c = Fraction(c, 1)
+elif i == 4:
+    a = randint(-10, 10)
+    b = randint(-10, 10)
+    c = randint(-10, 10)
+    while (a == 0 or a == 1) or (b**2-4*a*c != 0) or b == 0 or c == 0:
+        a = randint(-10, 10)
+        b = randint(-10, 10)
+        c = randint(-10, 10)
+    a = Fraction(a, 1)
+    b = Fraction(b, 1)
+    c = Fraction(c, 1)
+elif i == 5:
+    a = randint(-10, 10)
+    x1 = randint(-10, 10)
+    x2 = randint(-10, 10)
+    while a == 0:
+        a = randint(-10, 10)
+    while x1 == 0:   
+        x1 = randint(-10, 10)
+    while x2 == 0 or x2 == -x1:  
+        x2 = randint(-10, 10)
+    a = Fraction(a, 1)
+    b = Fraction(-a*(x1+x2), 1)
+    c = Fraction(a*x1*x2, 1)
+else:
+    a = randint(-10, 10)
+    b = randint(-10, 10)
+    c = randint(-10, 10)
+    d1, d2 = simplification_racine(1, b**2-4*a*c)
+    while (a == 0 or a == 1) or (b**2-4*a*c <= 0) or d2 == 1 or b == 0 or c == 0:
+        a = randint(-10, 10)
+        b = randint(-10, 10)
+        c = randint(-10, 10)  
+        d1, d2 = simplification_racine(1, b**2-4*a*c)
+
+    a = Fraction(a, 1)
+    b = Fraction(b, 1)
+    c = Fraction(c, 1)
+
+self.frame_init()
+self.add("Soit $f$ la fonction définie sur $\\mathbb{R}$ par $f(x) = ", cor=False)
+self.add_frac(a, coef = True, cor=False)
+self.add("x^2", cor=False)
+if b.numerator != 0:
+    self.add_frac_somme(b, coef = True, cor=False)
+    self.add("x", cor=False)
+if c.numerator != 0:
+    self.add_frac_somme(c, cor=False)
+self.add("$.\n\n Déterminer si $f$ admet une forme factorisée et préciser celle-ci dans le cas où elle existe. \\bigskip\n\n", cor=False)
+
+self.add("$f$ est un polynôme de degré $2$ dont les coefficients sont $a =")
+self.add_frac(a)
+self.add(", \\; b =")
+self.add_frac(b)
+self.add("$ et $c =")
+self.add_frac(c)
+self.add("$.")
+
+if c.numerator == 0: #Cas 1: f(x) = ax^2+bx
+    self.add("J'observe que le coefficient du terme constant de $f$ est égal à $0$. Je factorise donc par $")
+    self.add_frac(a, True)
+    self.add("x$ et je trouve la forme factorisée de $f$: \\[ f(x) = ")
+
+    self.add_frac(a, True)
+    self.add("x^2")
+    self.add_frac_somme(b, True)
+    self.add("x = ")
+
+    self.add_frac(a, True)
+    self.add("x \\left(x")
+    self.add_frac_somme(b/a)
+    self.add("\\right)\\] \n\n\\bigskip")
+
+elif b.numerator == 0 and a*c < 0: #cas 2
+    self.add("J'observe que le coefficient du terme en $x$ de $f$ est égal à $0$. De plus le coefficient devant $x^2$ et le terme constant n'ont pas le même signe. Je peux donc factoriser à l'aide d'une identité remarquable:\n")
+
+    self.add("\\begin{align*} f(x) &=")
+    self.add_frac(a, True)
+    self.add("x^2")
+    self.add_frac_somme(c)
+    self.add("\\\\ \n &=")
+
+    self.add_frac(a, True)
+    self.add("\\left(x^2")
+    self.add_frac_somme(c/a)
+    self.add("\\right) \\\\ \n &=")
+
+    self.add_frac(a, True)
+    self.add("\\left[x^2-")
+    if (c/a).denominator != 1:
+        self.add("\\left(\\sqrt{")
+        self.add_frac(-c/a)
+        self.add("}\\right)^2")
+    else:
+        self.add("\\left(\\sqrt{")
+        self.add_frac(-c/a)
+        self.add("}\\right)^2")
+    self.add("\\right] \\\\ \n &=")
+
+    self.add_frac(a, True)
+    self.add("\\left(x-")
+    self.add_racine_frac(-c/a)
+    self.add("\\right)\\left(x+")
+    self.add_racine_frac(-c/a)
+    self.add("\\right)")
+
+    self.add("\\end{align*}")
+
+elif b.numerator == 0 and a*c > 0:
+    self.add("J'observe que le coefficient du terme en $x$ de $f$ est égal à $0$. De plus le coefficient devant $x^2$ et le terme constant ont le même signe. \n\n Pour tout réel $x$, $f(x)=")
+    self.add_frac(a, True)
+    self.add("x^2")
+    self.add_frac_somme(c)
+    if a.numerator < 0:
+        self.add("<")
+    else:
+        self.add(">")
+
+    self.add("0$. Ainsi, $f$ ne possède pas de racines réelles. \n\nDonc $f$ n'admet pas de forme factorisée dans $\\mathbb{R}$.\n \n \\bigskip \n \n")
+
+
+else:
+    self.add("On a $\\Delta = b^2-4ac =")
+    if b.numerator < 0:
+        self.add("(")
+        self.add_frac(b)
+        self.add(")")
+    else:
+        self.add_frac(b)
+
+    self.add("^2-4 \\times")
+    if a.numerator < 0:
+        self.add("\\left(")
+        self.add_frac(a)
+        self.add("\\right)")
+    else:
+        self.add_frac(a)
+    self.add("\\times")
+    if c.numerator < 0:
+        self.add("\\left(")
+        self.add_frac(c)
+        self.add("\\right)")
+    else:
+        self.add_frac(c)
+    self.add("=")
+    self.add_frac(b**2)
+    self.add_frac_somme(-4*a*c)
+    self.add(" = ")
+    self.add_frac(b**2-4*a*c)
+
+    if (b**2-4*a*c).numerator < 0:
+        self.add("<0")
+    elif (b**2-4*a*c).numerator > 0:
+        self.add(">0")
+
+    self.add("$.\n\n")
+
+    if (b**2-4*a*c).numerator < 0:
+        self.add("Comme $\\Delta <0$, $f$ ne possède pas de racines réelles et n'admet donc pas de forme factorisée dans $\\mathbb{R}$.")
+    elif (b**2-4*a*c).numerator == 0:
+        self.add("Comme $\\Delta =0$,  $f$ admet une unique racine $x_0 = \\dfrac{-b}{2a} = \\dfrac{-")
+        self.add_nombre_produit(b.numerator)
+        self.add("}{2 \\times ")
+        self.add_nombre_produit(a.numerator)
+        self.add("} = ")
+        self.add_frac(-b/(2*a))
+        self.add("$. \n\nFinalement la forme factorisée de $f$ est: \\[f(x) = a(x-x_0)^2 = ")
+        self.add_frac(a, True)
+        if (-b/(2*a)).numerator > 0:
+            self.add("\\left(x-")
+            self.add_frac(-b/(2*a))
+            self.add("\\right)^2")
+        else:
+            self.add("\\left[x-\\left(")
+            self.add_frac(-b/(2*a))
+            self.add("\\right)\\right]^2 = ")
+            self.add_frac(a, True)
+            self.add("\\left(x+")
+            self.add_frac(b/(2*a))
+            self.add("\\right)^2")
+        self.add("\\] \n\n \\bigskip")
+    else: #Discriminant positif
+        if i == 5:
+            self.add("Comme $\\Delta>0$, $f$ admet deux racines distinctes. \n\n")
+        
+            d1, d2 = simplification_racine(1, (b**2-4*a*c).numerator)
+
+            
+            self.add("\\[ x_1 = \\dfrac{-b-\\sqrt{\\Delta}}{2a} = \\dfrac{-")
+            self.add_nombre_produit(b.numerator)
+            self.add("-")
+            self.add_nombre(d1)
+            self.add("}{2 \\times ")
+            self.add_nombre_produit(a.numerator)
+            self.add("} = \\dfrac{")
+            self.add_nombre(-b.numerator - d1)
+            self.add("}{")
+            self.add_nombre(2*a.numerator)
+            self.add("} = ")         
+            self.add_frac(Fraction(-b.numerator - d1, 2*a.numerator))
+            self.add(" \\] et \\[")
+            self.add(" x_2 = \\dfrac{-b+\\sqrt{\\Delta}}{2a} = \\dfrac{-")
+            self.add_nombre_produit(b.numerator)
+            self.add("+")
+            self.add_nombre(d1)
+            self.add("}{2 \\times ")
+            self.add_nombre_produit(a.numerator)
+            self.add("} = \\dfrac{")
+            self.add_nombre(-b.numerator + d1)
+            self.add("}{")
+            self.add_nombre(2*a.numerator)
+            self.add("}=")
+            self.add_frac(Fraction(-b.numerator + d1, 2*a.numerator))
+            self.add("\\] \n\nFinalement, la forme factorisée de $f$ est: $f(x) = a(x-x_1)(x-x_2) = ")
+            self.add_frac(a, True)
+            self.add("(x-")
+            self.add_nombre_produit(Fraction(-b.numerator - d1, 2*a.numerator).numerator)
+            self.add(")(x-")
+            self.add_nombre_produit(Fraction(-b.numerator + d1, 2*a.numerator).numerator)
+            self.add(")")
+            if Fraction(-b.numerator - d1, 2*a.numerator).numerator < 0 or Fraction(-b.numerator + d1, 2*a.numerator).numerator < 0:
+                self.add("=")
+                self.add_frac(a, True)
+
+                if Fraction(-b.numerator - d1, 2*a.numerator).numerator < 0:
+                    self.add("(x+")
+                    self.add_frac(Fraction(-(-b.numerator - d1), 2*a.numerator).numerator)
+                    self.add(")")
+                else:
+                    self.add("(x-")
+                    self.add_frac(Fraction(-b.numerator - d1, 2*a.numerator).numerator)
+                    self.add(")")
+                if Fraction(-b.numerator + d1, 2*a.numerator).numerator < 0:
+                    self.add("(x+")
+                    self.add_frac(Fraction(-(-b.numerator + d1), 2*a.numerator).numerator)
+                    self.add(")")
+                else:
+                    self.add("(x-")
+                    self.add_frac(Fraction(-b.numerator + d1, 2*a.numerator).numerator)
+                    self.add(")")
+            self.add("$")
+        else: #Cas discriminant positif avec racines réelles
+            self.add("Comme $\\Delta > 0$, $f$ admet deux racines distinctes. \n\n")
+        
+            d1, d2 = simplification_racine(1, (b**2-4*a*c).numerator)
+
+
+                
+
+            self.add("\\[x_1 = \\dfrac{-b-\\sqrt{\\Delta}}{2a} = \\dfrac{-")
+            self.add_nombre_produit(b.numerator)
+            self.add("-")
+            self.racine(d1, d2)
+            self.add("}{2 \\times ")
+            self.add_nombre_produit(a.numerator)
+            self.add("} = \\dfrac{")
+            self.add_nombre(-b.numerator)
+            self.add("-")
+            self.racine(d1, d2)
+            self.add("}{")
+            self.add_nombre(2*a.numerator)
+            self.add("}")
+            
+            if (-b/(2*a)).denominator == 1 and Fraction(-d1,2*a.numerator).denominator == 1:
+                self.add("=")
+                self.add_frac(-b/(2*a))
+                self.add_frac_somme(Fraction(-d1,2*a.numerator), True)
+                self.racine(1,d2)
+            else:
+                if (gcd(-b.numerator, 2*a.numerator) == gcd(-d1, 2*a.numerator)) or (gcd(-b.numerator, 2*a.numerator) % gcd(-d1, 2*a.numerator) == 0) or (gcd(-d1, 2*a.numerator)  % gcd(-b.numerator, 2*a.numerator) == 0):
+                    a1 = 2*a.numerator
+                    if a1 < 0:
+                        a1 = -a1
+                        b1 = -b.numerator
+                        dd1 = False
+                    else:
+                        b1 = b.numerator
+                        dd1 = True
+                    if gcd(-d1, 2*a.numerator) > gcd(-b.numerator, 2*a.numerator):
+                        g1 = gcd(b1, a1)
+                    else:
+                        g1 = gcd(d1, a1)
+                    a1 = a1//g1
+                    b1 = b1//g1
+                    ddd1 = d1//g1
+                    self.add("= \\dfrac{")
+                    self.add_nombre(-b1)
+                    if not dd1:
+                        self.add("+")
+                    else:
+                        self.add("-")
+                    self.racine(ddd1, d2)
+                    self.add("}{")
+                    self.add_nombre(a1)
+                    self.add("}")
+                elif a.numerator < 0:
+                    self.add("= \\dfrac{")
+                    self.add_nombre(b.numerator)
+                    self.add("+")
+                    self.racine(d1, d2)
+                    self.add("}{")
+                    self.add_nombre(-2*a.numerator)
+                    self.add("}")
+
+            self.add("\\] et \\[")
+            self.add(" x_2 = \\dfrac{-b+\\sqrt{\\Delta}}{2a} = \\dfrac{-")
+            self.add_nombre_produit(b.numerator)
+            self.add("+")
+            self.racine(d1, d2)
+            self.add("}{2 \\times ")
+            self.add_nombre_produit(a.numerator)
+            self.add("} = \\dfrac{")
+            self.add_nombre(-b.numerator)
+            self.add("+")
+            self.racine(d1, d2)
+            self.add("}{")
+            self.add_nombre(2*a.numerator)
+            self.add("}  ")
+            if (-b/(2*a)).denominator == 1 and Fraction(d1,2*a.numerator).denominator == 1:
+                self.add("=")
+                self.add_frac(-b/(2*a))
+                self.add_frac_somme(Fraction(d1,2*a.numerator), True)
+                self.racine(1,d2)
+            else:
+                if gcd(-b.numerator, 2*a.numerator) == gcd(d1, 2*a.numerator) or (gcd(-b.numerator, 2*a.numerator) % gcd(-d1, 2*a.numerator) == 0) or (gcd(-d1, 2*a.numerator)  % gcd(-b.numerator, 2*a.numerator) == 0):
+                    self.add("= \\dfrac{")
+                    self.add_nombre(-b1)
+                    if dd1:
+                        self.add("+")
+                    else:
+                        self.add("-")
+                    self.racine(ddd1, d2)                       
+                    self.add("}{")
+                    self.add_nombre(a1)
+                    self.add("}")
+                elif a.numerator < 0:
+                    self.add("= \\dfrac{")
+                    self.add_nombre(b.numerator)
+                    self.add("-")
+                    self.racine(d1, d2)
+                    self.add("}{")
+                    self.add_nombre(-2*a.numerator)
+                    self.add("}")
+
+
+            self.add("\\] Finalement, la forme factorisée de $f$ est: $f(x) = a(x-x_1)(x-x_2) = ")
+
+
+
+            self.add_frac(a, True)
+            self.add("\\left(x-")
+            if (-b/(2*a)).denominator == 1 and Fraction(-d1,2*a.numerator).denominator == 1:
+                self.add("\\left(")
+                self.add_frac(-b/(2*a))
+                self.add_frac_somme(Fraction(-d1,2*a.numerator), True)
+                self.racine(1,d2)
+                self.add("\\right)")
+
+            else:
+                if (gcd(-b.numerator, 2*a.numerator) == gcd(-d1, 2*a.numerator)) or (gcd(-b.numerator, 2*a.numerator) % gcd(-d1, 2*a.numerator) == 0) or (gcd(-d1, 2*a.numerator)  % gcd(-b.numerator, 2*a.numerator) == 0):
+                    self.add("\\dfrac{")
+                    self.add_nombre(-b1)
+                    if not dd1:
+                        self.add("+")
+                    else:
+                        self.add("-")
+                    self.racine(ddd1, d2)
+                    self.add("}{")
+                    self.add_nombre(a1)
+                    self.add("}")
+                elif a.numerator < 0:
+                    self.add("\\dfrac{")
+                    self.add_nombre(b.numerator)
+                    self.add("+")
+                    self.racine(d1, d2)
+                    self.add("}{")
+                    self.add_nombre(-2*a.numerator)
+                    self.add("}")
+                else:
+                    self.add("\\dfrac{")
+                    self.add_nombre(-b.numerator)
+                    self.add("-")
+                    self.racine(d1, d2)
+                    self.add("}{")
+                    self.add_nombre(2*a.numerator)
+                    self.add("}")
+
+
+            self.add("\\right) \\left(x-")
+            if (-b/(2*a)).denominator == 1 and Fraction(d1,2*a.numerator).denominator == 1:
+                self.add("\\left(")
+                self.add_frac(-b/(2*a))
+                self.add_frac_somme(Fraction(d1,2*a.numerator), True)
+                self.racine(1,d2)
+                self.add("\\right)")
+            else:
+                if gcd(-b.numerator, 2*a.numerator) == gcd(d1, 2*a.numerator) or (gcd(-b.numerator, 2*a.numerator) % gcd(-d1, 2*a.numerator) == 0) or (gcd(-d1, 2*a.numerator)  % gcd(-b.numerator, 2*a.numerator) == 0):
+                    self.add("\\dfrac{")
+                    self.add_nombre(-b1)
+                    if dd1:
+                        self.add("+")
+                    else:
+                        self.add("-")
+                    self.racine(ddd1, d2)                       
+                    self.add("}{")
+                    self.add_nombre(a1)
+                    self.add("}")
+                elif a.numerator < 0:
+                    self.add(" \\dfrac{")
+                    self.add_nombre(b.numerator)
+                    self.add("-")
+                    self.racine(d1, d2)
+                    self.add("}{")
+                    self.add_nombre(-2*a.numerator)
+                    self.add("}")
+                else:
+                    self.add("\\dfrac{")
+                    self.add_nombre(-b.numerator)
+                    self.add("+")
+                    self.racine(d1, d2)
+                    self.add("}{")
+                    self.add_nombre(2*a.numerator)
+                    self.add("}")
+            self.add("\\right)")
+            if (-b/(2*a)).denominator == 1 and Fraction(-d1,2*a.numerator).denominator == 1:
+                self.add("=")
+                self.add_frac(a, True)
+                self.add("\\left(x")
+                self.add_frac_somme(b/(2*a))
+                self.add_frac_somme(Fraction(d1,2*a.numerator), True)
+                self.racine(1,d2)
+                self.add("\\right)")
+                self.add("\\left(x")
+                self.add_frac_somme(b/(2*a))
+                self.add_frac_somme(Fraction(-d1,2*a.numerator), True)
+                self.racine(1,d2)
+                self.add("\\right)")
+            
+            
+            self.add("$")
+self.frame_end()    

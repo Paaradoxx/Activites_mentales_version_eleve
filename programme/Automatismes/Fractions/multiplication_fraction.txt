@@ -1,0 +1,124 @@
+nbr = [2, 3, 4, 5, 10]
+facteur_commun_1 = nbr[randint(0, len(nbr)-1)]
+facteur_commun_2 = nbr[randint(0, len(nbr)-1)]
+
+facteur_commun_3 = nbr[randint(0, len(nbr)-1)]
+facteur_commun_4 = nbr[randint(0, len(nbr)-1)]
+
+if facteur_commun_2 == 10:
+    facteur_commun_1, facteur_commun_2 = facteur_commun_2, facteur_commun_1
+
+if facteur_commun_1 != 10:
+    if facteur_commun_2 < facteur_commun_1:
+        facteur_commun_1, facteur_commun_2 = facteur_commun_2, facteur_commun_1
+
+if facteur_commun_4 == 10:
+    facteur_commun_3, facteur_commun_4 = facteur_commun_4, facteur_commun_3
+
+if facteur_commun_3 != 10:
+    if facteur_commun_4 < facteur_commun_3:
+        facteur_commun_3, facteur_commun_4 = facteur_commun_4, facteur_commun_3
+
+
+a = randint(-5, 5)
+b = randint(-5, 5)
+while  a==1 or a==0 :
+        a = randint(-5, 5)
+while gcd(a, b) != 1:
+        b = randint(-5, 5)
+
+c = randint(-5, 5)
+d = randint(-5, 5)
+while  c==1 or c==0 or gcd(c, a) != 1:
+        c = randint(-5, 5)
+while gcd(d, c) != 1 or gcd(d, b) != 1:
+    d = randint(-5, 5)
+
+a = a*facteur_commun_1*facteur_commun_2
+b = b*facteur_commun_1*facteur_commun_2
+
+c = c*facteur_commun_3*facteur_commun_4
+d = d*facteur_commun_3*facteur_commun_4
+
+self.frame_init()
+
+self.add("Donner sous forme irréductible le résultat du calcul suivant \\[\\dfrac{", False)
+self.add_nombre(a, cor = False)
+self.add("}{", False)
+self.add_nombre(c, cor = False)
+self.add("} \\times \\dfrac{", False)
+self.add_nombre(d, cor = False)
+self.add("}{", False)
+self.add_nombre(b, cor = False)
+self.add("}.\\]", False)
+
+self.add("\t\\begin{align*}\n\t\\dfrac{")
+self.add_nombre(a)
+self.add("}{")
+self.add_nombre(c)
+self.add("} \\times \\dfrac{")
+self.add_nombre(d)
+self.add("}{")
+self.add_nombre(b)
+self.add("}&= \\dfrac{")
+self.add_nombre_produit(a)
+self.add(" \\times ")
+self.add_frac_produit(d)
+self.add("}{")
+self.add_nombre_produit(c)
+self.add(" \\times ")
+self.add_nombre_produit(b)
+self.add("}\\\\\n\t\t&=\\dfrac{")
+self.add_nombre(facteur_commun_1)
+self.add(" \\times ")
+self.add_nombre_produit(a//facteur_commun_1)
+self.add(" \\times ")
+self.add_nombre(facteur_commun_3)
+self.add(" \\times ")
+self.add_nombre_produit(d//facteur_commun_3)
+self.add("}{")
+self.add_nombre(facteur_commun_3)
+self.add(" \\times ")
+self.add_nombre_produit(c//facteur_commun_3)
+self.add(" \\times ")
+self.add_nombre(facteur_commun_1)
+self.add(" \\times ")
+self.add_nombre_produit(b//facteur_commun_1)
+
+
+self.add("}\\\\\t\t&=\\dfrac{")
+self.add_nombre(facteur_commun_1)
+self.add(" \\times ")
+self.add_nombre(facteur_commun_2)
+self.add(" \\times ")
+self.add_nombre_produit(a//facteur_commun_1//facteur_commun_2)
+self.add(" \\times ")
+self.add_nombre(facteur_commun_3)
+self.add(" \\times ")
+self.add_nombre(facteur_commun_4)
+self.add(" \\times ")
+self.add_nombre_produit(d//facteur_commun_3//facteur_commun_4)
+self.add("}{")
+self.add_nombre(facteur_commun_3)
+self.add(" \\times ")
+self.add_nombre(facteur_commun_4)
+self.add(" \\times ")
+self.add_nombre_produit(c//facteur_commun_3//facteur_commun_4)
+self.add(" \\times ")
+self.add_nombre(facteur_commun_1)
+self.add(" \\times ")
+self.add_nombre(facteur_commun_2)
+self.add(" \\times ")
+self.add_nombre_produit(b//facteur_commun_1//facteur_commun_2)
+self.add("}\\\\\t\t&=\\dfrac{")
+self.add_nombre_produit(a//facteur_commun_1//facteur_commun_2)
+self.add(" \\times ")
+self.add_nombre_produit(d//facteur_commun_3//facteur_commun_4)
+self.add("}{")
+self.add_nombre_produit(c//facteur_commun_3//facteur_commun_4)
+self.add(" \\times ")
+self.add_nombre_produit(b//facteur_commun_1//facteur_commun_2)
+self.add("}\\\\\t\t&=")
+self.add_frac(Fraction(a*d, c*b))
+self.add("\n\t\\end{align*}")
+self.frame_end()

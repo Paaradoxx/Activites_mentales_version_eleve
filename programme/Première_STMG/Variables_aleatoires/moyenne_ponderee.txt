@@ -1,0 +1,75 @@
+a=randint(3,7)
+L=[0.25,0.5,1,1.5,2,4]
+N=[]
+C=[]
+self.frame_init()
+self.add("\\includegraphics[scale=0.01]{calculatrice}  On considère le tableau suivant récapitulant les notes d'un élève au cours d'un trimestre. \n \n \\begin{center} \n \\begin{tabular}{|p{2cm}|",False)
+for i in range(a+1):
+    self.add("p{0.5cm}|",False)
+self.add("} \n \\hline \n  \\centering Devoir ",False)
+for i in range(a+1):
+    self.add("& \\centering ",False)
+    self.add_nombre(i+1,False)
+self.add("\\tabularnewline  \n \\hline \n \\centering Note (/20) ",False)
+for i in range(a+1):
+    N.append(randint(5,20))
+for i in range(a+1):
+    self.add("& \\centering ",False)
+    self.add_nombre(N[i],False)
+self.add("\\tabularnewline  \n \\hline \n \\centering Coefficient ",False)
+for i in range(a+1):
+    b=choice(L)
+    C.append(b)
+for i in range(a+1):
+    self.add("& \\centering ",False)
+    self.add_nombre(C[i],False)
+self.add("\\tabularnewline  \n \\hline \n \\end{tabular} \n \\end{center}  \n \n Calculer la moyenne de cet élève. ",False)
+
+#Correction :
+
+self.add(" \\begin{center} \n \\begin{tabular}{|p{2cm}|")
+for i in range(a+1):
+    self.add("p{0.5cm}|")
+self.add("} \n \\hline \n  \\centering Devoir ")
+for i in range(a+1):
+    self.add("& \\centering ")
+    self.add_nombre(i+1)
+self.add("\\tabularnewline  \n \\hline \n \\centering Note (/20) ")
+for i in range(a+1):
+    self.add("& \\centering ")
+    self.add_nombre(N[i])
+self.add("\\tabularnewline  \n \\hline \n \\centering Coefficient ")
+for i in range(a+1):
+    self.add("& \\centering ")
+    self.add_nombre(C[i])
+self.add("\\tabularnewline  \n \\hline \n \\end{tabular} \n \\end{center}  En notant $m$ la moyenne, on a \\begin{align*} \n m&= \\dfrac{")
+for i in range(a):
+    self.add_nombre(N[i])
+    self.add("\\times ")
+    self.add_nombre_produit(C[i])
+    self.add("+")
+self.add_nombre(N[a])
+self.add("\\times ")
+self.add_nombre_produit(C[a])
+self.add("}{")
+self.add_nombre_produit(C[0])
+for i in range(1,a+1):
+    self.add("+")
+    self.add_nombre_produit(C[i])
+self.add("}\\\ \n &=\\dfrac{")
+for i in range(a):
+    self.add_nombre(N[i]*C[i])
+    self.add("+")
+self.add_nombre(N[a]*C[a])
+self.add("}{")
+c=0
+for i in range(a+1):
+    c+=C[i]
+self.add_nombre(c)
+self.add("} \\\ \n &\\simeq")
+d=0
+for i in range(a+1):
+    d+=N[i]*C[i]
+self.add_nombre(round(d/c,2))
+self.add("\\end{align*}")
+self.frame_end()

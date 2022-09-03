@@ -1,0 +1,90 @@
+a=randint(-2,2)
+b=randint(-5,5)
+c=randint(-10,10)
+e=randint(0,10)
+self.frame_init()
+self.add("Soit $(u_n)_n$ la suite définie pour tout $n \\in \\N$, par $u_n=",False)
+if a==0: 
+    if b==0:
+        self.add_nombre(c)
+    else : 
+        self.add_coef_somme(b,False)
+    self.add("n",False)
+    self.add_nombre_somme(c,False)
+else :
+    if b==0: 
+        self.add_coef(a,False)
+        self.add("n^2",False)
+        self.add_nombre_somme(c,False)
+    else : 
+        self.add_coef(a,False)
+        self.add("n^2",False)
+        self.add_coef_somme(b,False)
+        self.add("n",False)
+        self.add_nombre_somme(c,False)
+self.add("$. Calculer $u_{",False)
+self.add_nombre(e,False)
+self.add("}$.",False)
+self.add("Soit $(u_n)_n$ la suite définie pour tout $n \\in \\N$, par $u_n=")
+if a==0: 
+    if b==0:
+        self.add_nombre(c)
+    else : 
+        self.add_coef(b)
+        self.add("n")
+        self.add_nombre_somme(c)
+else :
+    if b==0: 
+        self.add_coef(a)
+        self.add("n^2")
+        self.add_nombre_somme(c)
+    else : 
+        self.add_coef(a)
+        self.add("n^2")
+        self.add_coef_somme(b)
+        self.add("n")
+        self.add_nombre_somme(c)
+self.add("$. Calculer $u_{")
+self.add_nombre(e)
+self.add("}$. \n \\vfil \n  On veut calculer le terme de rang ")
+self.add_nombre(e)
+self.add(". \n \\vfil \n On doit donc remplacer $n$ par ")
+self.add_nombre(e)
+self.add(". On a alors $$u_{")
+self.add_nombre(e)
+self.add("}=")
+if a==0:
+    if b==0:
+        self.add_nombre(a*e*e+b*e+c)
+        self.add("$$")
+    else :
+        self.add_nombre(b)
+        self.add("\\times")
+        self.add_nombre_produit(e)
+        self.add_nombre_somme(c)
+        self.add("=")
+        self.add_nombre(a*e*e+b*e+c)
+        self.add("$$")
+else:
+    if b==0:
+        self.add_nombre(a)    
+        self.add("\\times ")
+        self.add_nombre_produit(e)
+        self.add("^2")
+        self.add_nombre_somme(c)
+        self.add("=")
+        self.add_nombre(a*e*e+b*e+c)
+        self.add("$$")
+    else :
+        self.add_nombre(a)    
+        self.add("\\times ")
+        self.add_nombre_produit(e)
+        self.add("^2")
+        self.add_nombre_somme(b)
+        self.add("\\times")
+        self.add_nombre_produit(e)
+        self.add_nombre_somme(c)
+        self.add("=")
+        self.add_nombre(a*e*e+b*e+c)
+        self.add("$$")
+self.frame_end()

@@ -1,0 +1,46 @@
+a = randint(2, 10)
+b = randint(-15, 15)
+c = randint(-15, 15)
+
+while -3 < b < 3:
+    b = randint(-15, 15)
+while -3 < c < 3:
+    c = randint(-15, 15)
+
+self.frame_init()
+self.add("Écrire sous la forme $a^n$, où $a$ et $n$ sont des entiers relatifs, le nombre suivant \\[", False)
+self.add_nombre(a, cor = False)
+self.add("^{", False)
+self.add_nombre(b, cor = False)
+self.add("} \\times ", False)
+self.add_nombre(a, cor = False)
+self.add("^{", False)
+self.add_nombre(c, cor = False)
+self.add("}. \\]", False)
+
+self.add("\\[")
+self.add_nombre(a)
+self.add("^{")
+self.add_nombre(b)
+self.add("} \\times ")
+self.add_nombre(a)
+self.add("^{")
+self.add_nombre(c)
+self.add("} = ")
+self.add_nombre(a)
+self.add("^{")
+self.add_nombre(b)
+self.add_nombre_somme(c)
+self.add("} = ")
+self.add_nombre(a)
+self.add("^{")
+self.add_nombre(b+c)
+if b + c == 0:
+    self.add("} = 1")
+elif b + c == 1:
+    self.add("} = ")
+    self.add_nombre(a)
+else:
+    self.add("}")
+self.add("\\]")
+self.frame_end()

@@ -1,0 +1,159 @@
+a = randint(-10, 10)
+b = randint(-10, 10)
+c = randint(-10, 10)
+d = randint(-10, 10)
+
+while a == 0:
+    a = randint(-10, 10)
+while c == 0 or c == -1:
+    c = randint(-10, 10)
+
+self.frame_init()
+self.add("On considère la fonction $f$, définie et dérivable sur $\\mathbb{R}$ d'expression \\[f(x) = ", cor=False)
+
+if b != 0:
+    self.add("(", cor=False)
+    self.add_coef(a, cor=False)
+    self.add("x", cor=False)
+    self.add_nombre_somme(b, cor=False)
+    self.add(")", cor=False)
+else:
+    self.add_coef(a, cor=False)
+    self.add("x", cor=False)
+
+self.add("e^{", cor=False)
+self.add_coef(c, cor=False)
+self.add("x", cor=False)
+if d != 0:
+    self.add_nombre_somme(d, cor=False)
+self.add("}.\\]\n\nÉtudier les variations de $f$ sur $\\mathbb{R}$", cor=False)
+
+self.add("Pour tout réel $x$, on a $f(x) =")
+if b != 0:
+    self.add("(")
+    self.add_coef(a)
+    self.add("x")
+    self.add_nombre_somme(b)
+    self.add(")")
+else:
+    self.add_coef(a)
+    self.add("x")
+
+self.add("e^{")
+self.add_coef(c)
+self.add("x")
+if d != 0:
+    self.add_nombre_somme(d)
+self.add("}$. On pose pour tout $x \\in \\mathbb{R}$,\\[\\begin{matrix}u(x) = ")
+self.add_coef(a)
+self.add("x")
+if b != 0:
+    self.add_nombre_somme(b)
+self.add("& v(x) = e^{")
+self.add_coef(c)
+self.add("x")
+if d != 0:
+    self.add_nombre_somme(d)
+self.add("}\\\\ u'(x) = ")
+self.add_nombre(a)
+self.add("& v'(x) = ")
+self.add_coef(c)
+self.add("e^{")
+self.add_coef(c)
+self.add("x")
+if d != 0:
+    self.add_nombre_somme(d)
+self.add("}\\end{matrix}\\]et pour tout réel $x$ on a \\begin{align*}f'(x)&= u'(x) \\times v(x) + u(x) \\times v'(x) \\\\ &=")
+self.add_coef(a)
+self.add("e^{")
+self.add_coef(c)
+self.add("x")
+if d != 0:
+    self.add_nombre_somme(d)
+self.add("}")
+if b != 0:
+    self.add("+(")
+    self.add_coef(a)
+    self.add("x")
+    if b != 0:
+        self.add_nombre_somme(b)
+    self.add(")")
+else:
+    self.add_coef(a)
+    self.add("x")
+self.add("\\times ")
+self.add_frac_produit(Fraction(c, 1), coef=True)        
+self.add(" e^{")
+self.add_coef(c)
+self.add("x")
+if d != 0:
+    self.add_nombre_somme(d)
+self.add("} \\\\\n\t &= (")
+self.add_nombre(a)
+self.add_coef_somme(c*a)
+self.add("x")
+if b != 0:
+    self.add_nombre_somme(c*b)
+self.add(")e^{")
+self.add_coef(c)
+self.add("x")
+if d != 0:
+    self.add_nombre_somme(d)
+self.add("} \\\\\n\t &= (")
+self.add_coef(c*a)
+self.add("x")
+self.add_nombre_somme(a+c*b)
+self.add(")e^{")
+self.add_coef(c)
+self.add("x")
+if d != 0:
+    self.add_nombre_somme(d)
+self.add("}\n\\end{align*}")
+self.add("\n\n\\end{frame}\n\n\\begin{frame}")
+
+self.add("On a pour tout réel $x$, $f'(x) = (")
+self.add_coef(c*a)
+self.add("x")
+self.add_nombre_somme(a+c*b)
+self.add(")e^{")
+self.add_coef(c)
+self.add("x")
+if d != 0:
+    self.add_nombre_somme(d)
+self.add("}$.\n\nLe signe de la dérivée est donnée par la fonction affine $x \mapsto ")
+self.add_coef(c*a)
+self.add("x")
+self.add_nombre_somme(a+c*b)
+self.add("$ car pour tout réel $x$, $e^{")
+self.add_coef(c)
+self.add("x")
+if d != 0:
+    self.add_nombre_somme(d)
+self.add("}>0$.\n\nOr comme $")
+self.add_coef(c*a)
+if c*a > 0:
+    self.add(">")
+else:
+    self.add("<")
+self.add("0$, cette fonction est")
+if c*a > 0:
+    self.add(" croissante ")
+else:
+    self.add(" décroissante ")
+self.add("sur $\\mathbb{R}$ et s'annule en $x = ")
+zero = Fraction(a+c*b, -c*a)
+self.add_frac(zero)
+self.add("$.\n\nFinalement, le tableau de variation de $f$ est\n\n\\hfil\\begin{tikzpicture}\n\\tkzTabInit{$x$ / 1, $f'(x)$ / 1, $f$ / 1.5}{$-\\infty$,$")
+self.add_frac(zero)
+self.add("$, $+\\infty$}\n\\tkzTabLine{")
+if c*a > 0:
+    self.add(" , -, z, +, ")
+else:
+    self.add(" , +, z, -, ")
+self.add("}\n\\tkzTabVar{")
+if c*a > 0:
+    self.add("+/, -/, +/")
+else:
+    self.add("-/, +/, -/")
+self.add("}\n\n\\end{tikzpicture}")
+self.frame_end()

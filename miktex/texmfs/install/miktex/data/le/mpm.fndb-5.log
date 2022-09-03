@@ -1,0 +1,10 @@
+-README.md;source/tabu
+-tabu.dtx;source/tabu
+-tabu.pdf;source/tabu
+-tabu.log;source/tabu
+-tabu.sty;source/tabu
++tabu-src.tar.xz;source;tabu
++tabu.sty;tex/latex/tabu;tabu
++tabu.tpm;tpm/packages;tabu
++README.md;doc/latex/tabu;tabu
++tabu.pdf;doc/latex/tabu;tabu

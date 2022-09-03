@@ -1,0 +1,98 @@
+a=randint(-10,10) #coord de u
+b=randint(-10,10) #coord de u
+c=randint(-10,10) #coord de v
+d=randint(-10,10) #coord de v
+while b==d :
+    b=randint(-10,10)
+    d=randint(-10,10)
+e=randint(-5,5) #coef devant u
+f=randint(-5,5) #coef devant v
+while e==f and e==0:
+    e=randint(-5,5) #coef devant u
+    f=randint(-5,5) #coef devant v
+self.frame_init()
+self.add("On considère les vecteurs $\\vec{u} \\begin{pmatrix} ",False)
+self.add_nombre(a,False)
+self.add(" \\\ ",False)
+self.add_nombre(b,False)
+self.add(" \\end{pmatrix}$ et $\\vec{v} \\begin{pmatrix} ",False)
+self.add_nombre(c,False)
+self.add(" \\\ ",False)
+self.add_nombre(d,False)
+self.add(" \\end{pmatrix}$. \n \n Donner les coordonnées de $",False)
+if e==0:
+    self.add_coef(f,False)
+    self.add("\\vec{v}$.",False)
+elif f==0:
+    self.add_coef(f,False)
+    self.add("\\vec{u}$.",False)
+else:
+    self.add_coef(e,False)
+    self.add("\\vec{u}",False)
+    self.add_coef_somme(f,False)
+    self.add("\\vec{v}$.",False)
+
+self.add("Soit $\\vec{u} \\begin{pmatrix} ")
+self.add_nombre(a)
+self.add(" \\\ ")
+self.add_nombre(b)
+self.add(" \\end{pmatrix}$ et $\\vec{v} \\begin{pmatrix} ")
+self.add_nombre(c)
+self.add(" \\\ ")
+self.add_nombre(d)
+self.add(" \\end{pmatrix}$. \n \n $$")
+if e==0:
+    self.add_coef(f)
+    self.add("\\vec{v}\\begin{pmatrix} ")
+    self.add_nombre(f)
+    self.add(" \\times ")
+    self.add_nombre_produit(c)
+    self.add(" \\\  ")
+    self.add_nombre(f)
+    self.add(" \\times ")
+    self.add_nombre_produit(d)
+    self.add("\\end{pmatrix}=\\begin{pmatrix}")
+    self.add_nombre(f*c)
+    self.add(" \\\ ")
+    self.add_nombre(f*d)
+    self.add("\\end{pmatrix}$$")
+
+elif f==0:
+    self.add_coef(e)
+    self.add("\\vec{u}\\begin{pmatrix} ")
+    self.add_nombre(e)
+    self.add(" \\times ")
+    self.add_nombre_produit(a)
+    self.add(" \\\  ")
+    self.add_nombre(e)
+    self.add(" \\times ")
+    self.add_nombre_produit(b)
+    self.add("\\end{pmatrix}=\\begin{pmatrix}")
+    self.add_nombre(e*c)
+    self.add(" \\\ ")
+    self.add_nombre(e*d)
+    self.add("\\end{pmatrix}$$")
+else:
+    self.add_coef(e)
+    self.add("\\vec{u}")
+    self.add_coef_somme(f)
+    self.add("\\vec{v}\\begin{pmatrix} ")
+    self.add_nombre(e)
+    self.add(" \\times ")
+    self.add_nombre_produit(a)
+    self.add_nombre_somme(f)
+    self.add(" \\times ")
+    self.add_nombre_produit(c)
+    self.add("\\\  ")
+    self.add_nombre(e)
+    self.add(" \\times ")
+    self.add_nombre_produit(b)
+    self.add_nombre_somme(f)
+    self.add(" \\times ")
+    self.add_nombre_produit(d)
+    self.add("\\end{pmatrix}=\\begin{pmatrix}")
+    self.add_nombre(e*a+f*c)
+    self.add(" \\\ ")
+    self.add_nombre(e*b+f*d)
+    self.add("\\end{pmatrix}$$")
+self.frame_end()

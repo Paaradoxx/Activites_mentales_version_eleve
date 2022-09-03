@@ -1,0 +1,96 @@
+b = randint(3, 20)
+diviseurs = is_prime(b)
+while len(diviseurs) == 0:
+    b = randint(3, 20)
+    diviseurs = is_prime(b)
+a = diviseurs[randint(0, len(diviseurs)-1)] + 1
+l = -b//(a-1)
+u0 = randint(-10, 10)
+while -1 <= u0 <= 1:
+    u0 = randint(-10, 10)
+
+self.frame_init()
+#Enoncé
+self.add("\n\nOn pose $\\forall n \\in \\mathbb{N}, \\;\\begin{cases} u_{n+1} = ", cor = False)
+self.add_nombre(a, cor = False)
+self.add("u_n", cor = False)
+self.add_nombre_somme(b, cor = False)
+self.add(" \\\\ u_0 = " + str(u0) + "\\end{cases}$.\n\n\\begin{enumerate}\n\t\\item Montrer que $(v_n)$ définie par $v_n = u_n", False)
+self.add_nombre_somme(-l, cor = False)
+self.add("$ est une suite géométrique de raison $" + str(a) + "$.", cor = False)
+self.add("\n\n\t\\item Donner alors $v_n$ en fonction de $n$ et en déduire l'expression de $u_n$.", cor = False)
+self.add("\n\n\\end{enumerate}", cor = False)
+
+
+#Correction
+
+
+self.add("\\vspace{0.5cm}\\begin{enumerate}\n\t\\item  Montrons que $\\forall n \\in \\mathbb{N}$, $v_{n+1} = " + str(a) + "v_n$ ")
+self.add("avec $\\forall n \\in \\mathbb{N}, \\; \\begin{cases}u_n = ")
+self.add_nombre(a)
+self.add("u_n")
+self.add_nombre_somme(b)
+self.add("\\\\ u_0 = " + str(u0) + "\\end{cases}$ et $v_n = u_n ")
+self.add_nombre_somme(-l)
+
+self.add("$.\n\t\\begin{align*}\n\t\tv_{n+1} &= u_{n+1}")
+self.add_nombre_somme(-l)
+self.add("\\\\\n\t\t&=")
+self.add_nombre(a)
+self.add("u_n")
+self.add_nombre_somme(b)
+self.add_nombre_somme(-l)
+self.add("\\\\\n\t\t&=")
+self.add_nombre(a)
+self.add("u_n")
+self.add_nombre_somme(b-l)
+self.add("\\\\\n\t\t&=")
+self.add_nombre(a)
+self.add("(v_n")
+self.add_nombre_somme(l)
+self.add(")")
+self.add_nombre_somme(b-l)
+self.add(" \\quad \\text{car} \\; u_n = v_n")
+self.add_nombre_somme(l)
+self.add("\\\\\n\t\t&=")
+self.add_nombre(a)
+self.add("v_n")
+self.add_nombre_somme(a*l)
+self.add_nombre_somme(b-l)
+self.add("\\\\\n\t\t&=")
+self.add_nombre(a)
+self.add("v_n\n\t\\end{align*}\n\t\t\\item On a $v_0 = u_0")
+self.add_nombre_somme(-l)
+self.add("=")
+self.add_nombre(u0)
+self.add_nombre_somme(-l)
+self.add("=")
+self.add_nombre(u0-l)
+self.add("$ et $\\forall n \\in \\mathbb{N}, \\; v_n = v_0 \\times q^n  = ")
+self.add_nombre(u0-l)
+self.add("\\times")
+self.add_nombre(a)
+self.add("^n$.\n\n\t\tOr comme $u_n = v_n")
+self.add_nombre_somme(l)
+self.add("$, on a finalement, $\\forall n \\in \\mathbb{N}, \; u_n = v_n")
+self.add_nombre_somme(l)
+self.add("= ")
+if u0-l == -1:
+    self.add("-")
+    self.add_nombre(a)
+    self.add("^n")
+elif u0-l == 1:
+    self.add_nombre(a)
+    self.add("^n")
+elif u0-l == 0:
+    None
+else:
+    self.add_nombre(u0-l)
+    self.add("\\times")
+    self.add_nombre(a)
+    self.add("^n")
+self.add_nombre_somme(l)
+self.add("$.\n\\end{enumerate}")
+
+
+self.frame_end()
