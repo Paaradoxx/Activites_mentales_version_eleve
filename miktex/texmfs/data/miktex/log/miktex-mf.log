@@ -24,3 +24,6 @@
 2022-06-19 18:54:48,515+0200 INFO  miktex-mf - this process (12200) started by miktex-maketfm in directory C:\Users\ogglo\AppData\Local\Temp\mik56390 with command line: miktex-mf.exe --miktex-enable-installer --miktex-disable-maintenance --miktex-disable-diagnose --undump=mf \mode:=ljfour; nonstopmode; "input vect7"
 2022-06-19 18:54:48,516+0200 INFO  miktex-mf - this is MiKTeX-METAFONT 4.0.0 (2.71828182) (MiKTeX 22.3 Portable)
 2022-06-19 18:54:48,627+0200 INFO  miktex-mf - this process (12200) finishes with exit code 0
+2022-09-03 15:48:09,696+0200 INFO  miktex-mf - this process (9180) started by miktex-maketfm in directory C:\Users\ogglo\AppData\Local\Temp\mik76085 with command line: miktex-mf.exe --miktex-enable-installer --miktex-disable-maintenance --miktex-disable-diagnose --undump=mf \mode:=ljfour; nonstopmode; "input vect9"
+2022-09-03 15:48:09,697+0200 INFO  miktex-mf - this is MiKTeX-METAFONT 4.0.0 (2.71828182) (MiKTeX 22.3 Portable)
+2022-09-03 15:48:09,809+0200 INFO  miktex-mf - this process (9180) finishes with exit code 0

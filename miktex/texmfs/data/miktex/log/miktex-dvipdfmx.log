@@ -145,3 +145,7 @@
 2022-09-03 13:14:33,697+0200 INFO  miktex-dvipdfmx - this process (14664) finishes with exit code 0
 2022-09-03 13:16:15,765+0200 INFO  miktex-dvipdfmx - this process (6384) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite mentales (version ordi perso)\output\activites_mentales_v1.02 with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
 2022-09-03 13:16:18,985+0200 INFO  miktex-dvipdfmx - this process (6384) finishes with exit code 0
+2022-09-03 15:47:11,090+0200 INFO  miktex-dvipdfmx - this process (3216) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite mentales (version ordi perso)\output\activites_mentales_v1.02 with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-09-03 15:47:13,002+0200 INFO  miktex-dvipdfmx - this process (3216) finishes with exit code 0
+2022-09-03 15:48:07,696+0200 INFO  miktex-dvipdfmx - this process (6168) started by xelatex in directory C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite mentales (version ordi perso)\output\activites_mentales_v1.02 with command line: miktex-dvipdfmx.exe --miktex-enable-installer -q -E -o AM.pdf
+2022-09-03 15:48:10,804+0200 INFO  miktex-dvipdfmx - this process (6168) finishes with exit code 0

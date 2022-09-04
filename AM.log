@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3 Portable) (preloaded format=xelatex 2022.6.18)  3 SEP 2022 13:15
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3 Portable) (preloaded format=xelatex 2022.6.18)  3 SEP 2022 15:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2067,9 +2067,11 @@ Missing character: There is no 2 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 [1
 
+] [2
+
 ]
 LaTeX Font Info:    Trying to load font information for T1+futs on input line 9
-0.
+5.
 
 (C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite m
 entales (version ordi perso)\output\activites_mentales_v1.02\miktex\texmfs\inst
@@ -2077,7 +2079,7 @@ all\tex/latex/fourier\t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 90.
+ 95.
 
 (C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite m
 entales (version ordi perso)\output\activites_mentales_v1.02\miktex\texmfs\inst
@@ -2085,12 +2087,12 @@ all\tex/latex/fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 90.
+(Font)              scaled to size 10.07397pt on input line 95.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 90.
+(Font)              scaled to size 7.63599pt on input line 95.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 90.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 90.
+(Font)              scaled to size 5.51999pt on input line 95.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 95.
 
 
 (C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite m
@@ -2098,7 +2100,7 @@ entales (version ordi perso)\output\activites_mentales_v1.02\miktex\texmfs\inst
 all\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 90.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 95.
 
 
 (C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite m
@@ -2106,7 +2108,7 @@ entales (version ordi perso)\output\activites_mentales_v1.02\miktex\texmfs\inst
 all\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 90
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 95
 .
 
 (C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite m
@@ -2115,7 +2117,7 @@ all\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-90.
+95.
 
 (C:\Users\ogglo\Documents\Enseignement\Projets\Exo aléatoire fanélie\Activite m
 entales (version ordi perso)\output\activites_mentales_v1.02\miktex\texmfs\inst
@@ -2123,14 +2125,12 @@ all\tex/latex/esvect\uesvect.fd
 File: uesvect.fd 
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 90.
+(Font)              scaled to size 10.07397pt on input line 95.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 90.
+(Font)              scaled to size 7.63599pt on input line 95.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 90.
- [2
-
-] [3
+(Font)              scaled to size 5.51999pt on input line 95.
+ [3
 
 ] [4
 
@@ -2140,51 +2140,48 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 ] [7
 
-] [8
+]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 150.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 150.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 150.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 150.
+
+Overfull \hbox (22.65625pt too wide) detected at line 150
+[]
+ []
+
+
+Overfull \vbox (8.59564pt too high) detected at line 150
+ []
+
+[8
 
 ] [9
 
 ] [10
 
-] [11
+]
+Overfull \hbox (40.53023pt too wide) detected at line 198
+[]
+ []
+
+
+Overfull \vbox (8.59564pt too high) detected at line 198
+ []
+
+[11
 
 ]
+Overfull \vbox (16.89568pt too high) detected at line 234
+ []
+
 [12
 
 ] [13
-
-] [14
-
-] [15
-
-] [16
-
-] [17
-
-] [18
-
-] [19
-
-] [20
-
-] [21
-
-] [22
-
-] [23
-
-] [24
-
-] [25
-
-] [26
-
-]
-[27
-
-] [28
-
-] [29
 
 ]
 \tf@nav=\write6
@@ -2201,12 +2198,12 @@ Package rerunfilecheck Info: File `AM.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 41246 strings out of 410673
- 984029 string characters out of 2803579
- 1396216 words of memory out of 3000000
- 61520 multiletter control sequences out of 15000+600000
- 511442 words of font info for 81 fonts, out of 8000000 for 9000
+ 41145 strings out of 410673
+ 981887 string characters out of 2803579
+ 1399592 words of memory out of 3000000
+ 61412 multiletter control sequences out of 15000+600000
+ 531372 words of font info for 106 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,15n,104p,725b,783s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 99i,15n,104p,725b,646s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on AM.pdf (29 pages).
+Output written on AM.pdf (13 pages).
